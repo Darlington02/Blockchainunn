@@ -1,0 +1,924 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Monument Extended;
+    src: url(./fonts/MonumentExtended-Ultrabold.otf);
+}
+
+body{
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    Padding-inline: 4rem;
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    background-color: #212121;
+    margin-inline: -4rem;
+    padding-inline: 3rem;
+    z-index: 40;
+    position: fixed;
+    width: 1440px;
+}
+nav img{
+    margin-bottom: -3rem;
+    margin-top: -2rem;
+    margin-left: -2rem;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+nav li a{
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    color: white;
+}
+nav li a:hover{
+    color: #388E3C;
+}
+.top main{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 61.98%, rgba(75, 75, 75, 0.7) 78.12%), url(./images/aboutpics.jpeg);
+    /* background-image: url(./images/aboutpics.jpeg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-inline: -4rem;
+    position: relative;
+    height: 870px;
+    margin-top: 7rem;
+
+}
+.textarea{
+    padding-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+   padding-bottom: 4.4rem;
+}
+.rectangles{
+    margin-right: 15px;
+}
+.top main h1{
+    width: 806px;
+    font-family: Monument Extended;
+    font-size: 96px;
+    font-weight: 800;
+    line-height: 115px;
+    color: #388E3C;
+}
+.top main p{
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 37px;
+    text-align: center;
+    color: #fff;
+    width: 1300px;
+    z-index: 5;
+}
+.top main button{
+    height: 77px;
+    width: 310px;
+    border-radius: 10px;
+    padding: 24px;
+    background-color: #388E3C;
+    border: none;
+    color: white;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    margin-top: 3em;
+    z-index: 9999;
+}
+.top main button:hover{
+    cursor: pointer;
+}
+.patnership{
+    display: flex;
+    flex-direction: column;
+    margin-inline: -4rem;
+    background-color: #F8F8FB;;
+    margin-top: -8rem;
+    padding-bottom: 5rem;
+}
+.videos{
+    display: flex;
+    gap: 2.1rem;
+    justify-content: center;
+    padding-inline: 2rem;
+    margin-bottom: -4rem;
+}
+.videos iframe{
+    width: 750px;
+    transform: translateY(-10rem);
+    border-radius: 20px;
+}
+.patners{
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    padding-inline: 8rem;
+}
+.patners header{
+    width: 30%;
+}
+.patners main{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.patners h1{
+    font-family: Monument Extended;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 55px;
+    letter-spacing: 0.03em;
+}
+.why{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    
+}
+.why h1{
+    font-family: Monument Extended;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    margin-bottom: 1rem;
+}
+.why p{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 35px;
+    margin-bottom: 7rem;
+    text-align: justify;
+}
+.why button{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    color: #388E3C;
+    background-color: #fff;
+    border: 1px solid #388E3C;
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+.why header{
+    width: 60%;
+}
+.one>div img{
+    width: 100%;
+    height: 640px;  
+}
+.one{
+    display: flex;
+}
+.one>div{
+    width: 55%;
+   display: flex;
+   justify-content: center;
+}
+.one{
+    /* align-items: center; */
+    gap: 3rem;
+    margin-inline: -4rem;
+    padding: 4rem;  
+background-color: #F5FFF3;
+}
+.one h1, .two header, .three header{
+    font-family: Monument Extended;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.one p{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.one article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+}
+.two{
+    flex-direction: column;
+    gap: 2rem;
+}
+.two article{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    /* Padding-inline: 2rem; */
+    margin-bottom: 1.5rem;
+}
+.two div{
+    width: 50%;
+    padding: 6rem 4rem;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    border-radius: 20px;
+}
+.two button{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 10px 15px;
+    background-color: white;
+    margin-top: 2rem;
+  
+}
+#budv, #budv button{
+    color: #388E3C;
+    background-color: #F5FFF3;
+}
+#budv button{
+    border-radius: 10px;
+    border: 0.1px solid #388E3C;
+}
+#buds, #buds button{
+   color: #342662 ; 
+   background-color: #F5F2FF;
+}
+#buds button{
+    border-radius: 10px;
+    border: .1px solid #342662;
+}
+#bucs, #bucs button{
+    color: #5A4C1F;
+    background-color: #F9F6ED;
+}
+#bucs button{
+    border: .1px solid #5A4C1F;
+    border-radius: 10px;
+}
+.two header{
+    width: 50%;
+    padding-right: 5rem;
+}
+.three{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.three article{
+    display: flex;
+    gap: 2rem;
+}
+.three main{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.three div{
+    background-image: url(./images/bg1.png);
+    padding: 2rem 2rem;
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+.three div h1{
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 39px;
+}
+.three div p{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 35px;
+}
+.sold-out{
+    color:#31B219;
+    margin-top: 2rem;
+}
+.three header{
+    font-size: 28px;
+}
+hr{
+    width: 90px;
+    height: 7px;
+    background-color: #388E3C;
+}
+
+.testimonials{
+    display: flex;
+    flex-direction: column;
+ }       
+ /* .teamsec{
+    display: flex;
+    flex-direction: column;
+ } */
+.testimonials main {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 28px;  
+    width: 100%;  
+}
+.testimonials h1{
+    font-family: 'Monument Extended', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+}
+.card1, .card2 {
+    padding: 2rem;
+    box-shadow: 0px 0px 15px #fbf2f2;
+}
+.card1 {
+    background-color: white;
+}
+
+.card2 {
+    background-color: #f7fff9;
+}
+.testimonial-card p {
+    margin-bottom: 12px;
+}
+.testimonial-card h5 {
+    color: #388E3C;
+    padding-top: 2rem;
+}
+.teamsec{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.cfs{
+    display: flex;
+    gap: 3rem;
+}
+.teaml{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 50%;
+    box-shadow: 10px 0px 10px 4px #e5e5e5;
+    clip-path: inset(-5px 0px -5px -5px);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.photo{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.teaml .cfst{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+.teaml a{
+    text-decoration: none;
+    color: #fff;
+}
+.teaml .socials{
+    display: flex;
+    gap: 1rem;
+}
+.teaml .socials img{
+    width: 24px;
+}
+.teaml h2{
+    font-family: Montserrat bold;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 24px;
+}
+.teaml p{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #4a4a4a;
+}
+.teamsec header {
+    font-family: 'Monument Extended', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: 0em;
+ }
+.otherst img{
+    margin-right: -1rem;
+ }
+.otherst{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.otherst a{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #212121;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.otherst h4 img{
+    transform: translateY(3px);
+    padding-left: 4px;
+}
+.otherst div img{
+    width: 60px;
+    border-radius: 50%;
+}
+.community {
+    background: linear-gradient(to right, rgba(215, 247, 227, 1), rgba(215, 247, 227, 0), rgba(215, 247, 227, 1));
+    padding-inline: 2rem;   
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: -3rem;
+    padding: 5rem 4rem;
+    margin-inline: -4rem;
+}
+.community header{
+    width: 100%;
+}
+.community h1 {
+    font-family: 'Monument Extended', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: 0em;
+}
+.community-breakdown {
+    display: flex;
+    width: 100%;
+   justify-content: space-around;
+}
+.community-breakdown li {
+    list-style: none;
+}
+.community-breakdown h4 {
+    font-family: 'Monument Extended', sans-serif;
+    font-size: 64px;
+    color: #2E7D32;
+}
+
+.community-breakdown p {
+    font-family: 'Montserrat', sans-serif;
+}
+footer {
+    margin-inline: -4rem;
+    margin-top: -7rem;
+    padding: 0rem 4rem;
+    background-color: #000000;
+}
+
+.logo {
+    width: 350px;
+    /* margin-right: 18rem; */
+    height: 350px;
+}
+
+.footer-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.footer-container {
+    display: flex;
+    
+}
+
+.footer-container p {
+    padding: 0rem 2rem 2rem;
+}
+
+
+.footer-container a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.footer-container a:hover {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+footer hr {
+    border-style: none;
+    height: 0.5px;
+    background-color: rgb(162, 159, 159);
+    opacity: 0.3;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+}
+
+.copyright p {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    
+}
+
+
+@media only screen and (max-width: 760px){
+    body{
+        width: 100%;
+        padding-inline: 1rem;
+    }
+  
+    /* .one>div{
+      
+    } */
+    .one>div img{
+        justify-content: center;
+        max-width: 100%;
+        opacity: .2;
+        position: absolute;
+        top: 0rem;
+        left: 0rem;
+        bottom: 0rem;
+        right: 0rem;
+        margin: auto;
+    }
+ 
+    .one article{
+        width: 100%;
+        gap: 2.5rem;
+        justify-content: center;
+    }
+    .one{
+        gap: 3rem;
+        padding: 5rem 1rem;
+        background-color: #F5FFF3;
+        flex-direction: column;
+        position: relative;
+        margin-inline: 0;
+    }
+    .one h1{
+        font-size: 22px;
+        margin-top: -.7rem;
+    }
+    .one p, .three article p{
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 25px;
+        letter-spacing: 0em;
+    }
+    hr{
+        width: 50px;
+    }
+    .two{
+        flex-direction: column;
+    }
+    .two article{
+        flex-direction: column;
+        Padding-inline: 1rem;
+    }
+    .two header, .two div{
+        width: 100%;
+    }
+    .two header,.three header{
+        font-family: Monument Extended;
+        font-size: 22px;
+        line-height: 26.4px;
+    }
+    .two div{
+        padding: 3rem 2rem;
+        margin-bottom: 1rem;
+    }
+    #bucs{
+        margin-top: -1rem;
+    }
+    .two div h1, .three article h1{
+        font-size: 18px;
+    }
+    .two div button{
+        font-size: 14px;
+        padding: 7px 11px;
+    }
+    .three{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .three header h1{
+        font-size: 18px;
+    }
+    .three article{
+        flex-direction: column;
+        padding-inline: 0rem;
+        width: 100%;
+    }
+    .three hr{
+        transform: translateY(-1rem);
+    }
+    .testimonials main{
+        flex-direction: column;
+    }
+    .testimonials>div{
+        flex-direction: column;
+    }
+    .team-section header h1{
+        font-size: 22px;
+        line-height: 26.4px;
+       
+    }
+    .testimonials{
+        padding: 1rem;
+    }
+    .testimonials h1{
+        font-size: 22px;
+        line-height: 26.4px;
+        margin-top: 0px;
+    }
+    .card1, .card2 {
+        padding: 1.5rem 1rem;
+        box-shadow: 0px 0px 15px #fbf2f2;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .team-section{
+        padding: 0 1rem;
+        margin-bottom: 13rem;
+    }
+    .team-section main{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 6rem;
+     }
+     .main2{
+        margin-top: 3rem;
+     }
+     .team-section main article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        text-align: center;
+     }
+     .cofoundersImages{
+        width: 90%;
+    }
+    .others{
+        width: 60px;
+        border-radius: 50%;
+    }
+    .team-section h5{
+        font-size: 22px;
+    }
+    .otherTeam ul{
+        display: flex;
+        align-items: center;
+        margin-top: 3rem;
+    }
+    .community{
+        margin-inline: 0rem;
+        margin-top: 0;
+    }
+    .community header h1{
+        font-size: 28px;
+    }
+    .community-breakdown {
+        flex-direction: column;
+        gap: 2rem;
+     }
+     .community-breakdown li {
+         width: 100%;
+     }
+     .community-breakdown h4 {
+        font-family: 'Monument Extended', sans-serif;
+        font-size: 32px;
+        color: #2E7D32;
+    }
+    footer{
+        margin-inline: 0rem;
+        text-align: center;
+    }
+    .footer-div {
+        flex-direction: column;
+        gap: 2rem;
+        padding-top: 3rem;
+    }
+    .footer hr{
+        width: 100%;
+    }
+    .footer-container {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .logo{
+        margin-top: -6rem;
+        margin-bottom: -8rem;
+    }
+}
+@media only screen and (max-width:1400px){
+    .community-breakdown {
+        flex-direction: column;
+     }
+    body{
+        padding-inline: 0rem;
+    }
+    .one h1, .two header, .three header h1{
+        font-size: 22px;
+        margin-top: -.7rem;
+    }
+    #logo{
+        width: 470px;
+        height: 470px; 
+    }
+    .one p, .three article p{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .two div h1, .three article h1{
+        font-size: 18px;
+    }
+    .sold-out{
+        color:#31B219;
+        margin-top: 1rem;
+    }
+    .three{
+        padding-inline: 1rem;
+    }
+    .three main{
+        padding-inline: 1rem;
+    }
+    .three div{
+        padding: min(1rem,1rem);
+    }
+    .two button{
+        font-size: 14px;
+    }
+    .two div{
+        padding: 2rem 3rem;
+    }
+}
+
+@media (max-width:1140px) and (min-width:760px){
+    .three main{
+        flex-direction: row;
+    }
+    .three article{
+        flex-direction: column;
+    }
+    .one>div{
+        justify-content: center;
+        width: 100%;
+        opacity: .2;
+        position: absolute;
+        top: 0rem;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+    #logo{
+       
+        height: 400px; 
+    }
+    .one article{
+        width: 100%;
+        padding-inline: 1rem;
+    }
+    .one article>div{
+        margin-bottom: 2rem;
+    }
+    .two{
+        flex-direction: column;
+    }
+    .two article{
+        flex-direction: column;
+        Padding-inline: 1rem;
+    }
+    .two header, .two div{
+        width: 100%;
+    }
+    .two header,.three header,.testimonials h1,.team-section header h1{
+        font-family: Monument Extended;
+        font-size: 22px;
+        line-height: 26.4px;
+    }
+    .testimonials{
+        padding-inline: 1rem;
+    }
+    .testimonial-card{
+        flex-direction: column;
+    } 
+    .two div{
+        padding: 3rem 2rem;
+        margin-bottom: 1rem;
+    }
+    #bucs{
+        margin-top: -1rem;
+    }
+    .two div h1, .three article h1{
+        font-size: 18px;
+    }
+    .two div button{
+        font-size: 14px;
+        padding: 7px 11px;
+    }
+    .team-section{
+        padding-inline: 1rem;
+    }
+   .team-section .main1,.team-section .main2{
+    flex-direction: column;
+   }
+   .team-section .main2 .otherTeam::before{
+    content: 'Other Team members';
+   }
+   .team-section .main2 .otherTeam{
+    justify-content: center;
+   }
+   .team-section .main1 article,.team-section .main2 article{
+    width: 100%;
+   }
+   .community{
+    margin-inline: 0rem;
+    padding-inline: 1rem;
+    width: 100%;
+
+    }
+    .community header h1{
+        font-size: 28px;
+        line-height: 26px;
+    }
+    .community-breakdown {
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .community-breakdown li {
+        width: 100%;
+    }
+    .community-breakdown h4 {
+        font-family: 'Monument Extended', sans-serif;
+        font-size: 39px;
+        color: #2E7D32;
+    }
+    footer{
+        margin-inline: 0rem;
+        text-align: center;
+    }
+    .footer-div {
+        flex-direction: column;
+        gap: 2rem;
+        padding-top: 3rem;
+    }
+    .footer hr{
+        width: 100%;
+    }
+    .footer-container {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .logo{
+        margin-top: -6rem;
+        margin-bottom: -8rem;
+    }
+}
