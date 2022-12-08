@@ -27,12 +27,13 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding-top: 1rem;
-    background-color: rgb(255, 255, 255, .7);
+    background-color: rgb(255, 255, 255);
     margin-inline: -6rem;
     padding-inline: 3rem;
     z-index: 40;
     position: fixed;
     width: 1600px;
+    border-bottom: 5px solid gainsboro;
     
 }
 nav img{
@@ -64,7 +65,7 @@ nav li a:hover{
     margin-inline: -6rem;
     position: relative;
     height: 870px;
-    margin-top: 7rem;
+    margin-top: 6rem;
 
 }
 .textarea{
@@ -176,21 +177,10 @@ nav li a:hover{
 .why p{
     font-family: Montserrat;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 28px;
-    margin-bottom: 7rem;
+    margin-bottom: 3rem;
     text-align: justify;
-}
-.why button{
-    font-family: Montserrat;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 29px;
-    color: #388E3C;
-    background-color: #fff;
-    border: 1px solid #388E3C;
-    padding: 10px 25px;
-    border-radius: 10px;
 }
 .why header{
     width: 60%;
@@ -214,7 +204,7 @@ nav li a:hover{
     padding: 4rem;  
     background-color: #F5FFF3;
 }
-.one h1, .two header h1, .three header h1{
+.one h1, .two header h1, .three header h1,.problem h1, .why h3{
     font-family: Monument Extended;
     font-size: 30px;
     font-weight: 800;
@@ -222,7 +212,11 @@ nav li a:hover{
     letter-spacing: 0em;
     text-align: left;
 }
-.one p{
+.why h3{
+    font-size: 20px;
+    font-weight: 400;
+}
+.one p,.problem p, .problem .activity li{
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 600;
@@ -238,6 +232,33 @@ nav li a:hover{
 }
 .one article h1{
     font-size: 25px;
+}
+.problem .prosol{
+    display: flex;
+    gap: 4rem;
+}
+.problem div{
+    background-color: #F5FFF3;
+    padding: 1rem 2rem;
+}
+.problem .activity h4{
+    font-family: Monument Extended;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 40px;
+    margin-bottom: 2rem;
+}
+.problem .activity{
+    margin-top: 6rem;
+    padding-inline: 2rem;
+    margin-bottom: -2rem;
+}
+.problem .activity li{
+    list-style: none;
+    font-size: 25px;
+    margin: 1rem 0rem;
+    font-weight: 500;
+    line-height: 40px;
 }
 .two{
     flex-direction: column;
@@ -517,6 +538,21 @@ hr{
 .community-breakdown p {
     font-family: 'Montserrat', sans-serif;
 }
+.achieve{
+    margin-top: 2rem;
+    margin-bottom: 9rem;
+}
+.achieve h1{
+    font-size: 35px;
+}
+.achieve h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    margin-top: 20px;
+    line-height: 40px;
+    font-weight: 400;
+
+}
 footer {
     margin-inline: -6rem;
     margin-top: -7rem;
@@ -591,6 +627,9 @@ footer hr {
     /* .one>div{
       
     } */
+    nav{
+        display: none;
+    }
     .one>div img{
         justify-content: center;
         max-width: 100%;
@@ -786,9 +825,6 @@ footer hr {
 }
 
 @media only screen and (max-width:1440px){
-    .community-breakdown {
-        flex-direction: column;
-     }
 
     nav{
         width: 100%;
