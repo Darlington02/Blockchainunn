@@ -165,7 +165,7 @@ nav li a:hover{
     display: flex;
     gap: 4rem;
     align-items: center;
-    background-color: #F5F2FF;
+    background-color: #f2f4ff;
     padding: 3rem 0rem;
     padding-inline: 6rem;
     margin-inline: -6rem;
@@ -241,7 +241,7 @@ nav li a:hover{
 .problem{
     margin-inline: -6rem;
     padding-inline: 6rem;
-    margin-top: -10rem;
+    margin-top: -8rem;
     padding-top: 4rem;
 }
 .problem .prosol{
@@ -266,7 +266,7 @@ nav li a:hover{
     right: 0;
     bottom: 0;
     left: 0;
-    opacity: .1;
+    opacity: .2;
     filter: blur(0px);
 }
 .problem .pdiv h1{
@@ -274,11 +274,13 @@ nav li a:hover{
 }
 .problem .pdiv p{
     font-weight: 800;
+    font-size: 20px;
+    color: #000000;
 }
 .problem .pdiv{
     padding: 2rem 3rem;
     /* width: 50%; */
-    background-color: #f3f5f3;
+    background-color: #F5F2FF;
     border-radius: 5px;
     position: relative;
 }
@@ -510,7 +512,7 @@ nav li a:hover{
     position: relative;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    padding-left: 2rem;
+    padding-left: 4rem;
     margin-bottom: 2;
 }
 .newevent::before{
