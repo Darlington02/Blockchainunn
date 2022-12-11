@@ -14,7 +14,7 @@ body{
     margin: auto;
     display: flex;
     flex-direction: column;
-    gap: 10rem;
+    gap: 8rem;
     Padding-inline: 6rem;
     overflow-x: hidden;
 }
@@ -165,7 +165,11 @@ nav li a:hover{
     display: flex;
     gap: 4rem;
     align-items: center;
-    
+    background-color: #F5F2FF;
+    padding: 3rem 0rem;
+    padding-inline: 6rem;
+    margin-inline: -6rem;
+    margin-top: -3rem;
 }
 .why h1{
     font-family: Monument Extended;
@@ -200,8 +204,8 @@ nav li a:hover{
 .one{
     /* align-items: center; */
     gap: 3rem;
-    margin-inline: -4rem;
-    padding: 4rem;  
+    margin-inline: -6rem;
+    padding: 6rem;  
     background-color: #F5FFF3;
 }
 .one h1, .two header h1, .three header h1,.problem h1, .why h3{
@@ -216,7 +220,7 @@ nav li a:hover{
     font-size: 20px;
     font-weight: 400;
 }
-.one p,.problem p, .problem .activity li{
+.one p,.problem p{
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 600;
@@ -233,13 +237,57 @@ nav li a:hover{
 .one article h1{
     font-size: 25px;
 }
+.problem{
+    margin-inline: -6rem;
+    padding-inline: 6rem;
+    margin-top: -10rem;
+    padding-top: 4rem;
+}
 .problem .prosol{
     display: flex;
+    flex-direction: column;
     gap: 4rem;
+    position: relative;
+    margin-inline: -6rem;
+    padding-inline: 6rem;
+    margin-top: -4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;   
 }
-.problem div{
+.problem .prosol::before{
+    content: '';
+    background-image: url(./images/IMG-20221211-WA0003.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: blur(8px);
+}
+.problem .pdiv h1{
+    color: #31B219;
+}
+.problem .pdiv p{
+    font-weight: 800;
+}
+.problem .pdiv{
+    padding: 2rem 3rem;
+    /* width: 50%; */
+    background-color: #f3f5f3;
+    border-radius: 5px;
+    position: relative;
+}
+.problem .pdiv::before{
+    content: '';
     background-color: #F5FFF3;
-    padding: 1rem 2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .2;
 }
 .problem .activity h4{
     font-family: Monument Extended;
@@ -247,18 +295,78 @@ nav li a:hover{
     font-weight: 800;
     line-height: 40px;
     margin-bottom: 2rem;
+    margin-top: 7rem;
 }
-.problem .activity{
-    margin-top: 6rem;
-    padding-inline: 2rem;
-    margin-bottom: -2rem;
+.teaches{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
-.problem .activity li{
-    list-style: none;
-    font-size: 25px;
-    margin: 1rem 0rem;
+.teaches main{
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    justify-content: center;
+}
+.teaches main div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url(./images/web3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px; */
+    /* filter: blur(5px); */
+    width: 25%;
+    padding: 9rem 1rem 2rem 1rem;
+    position: relative;
+}
+.teaches main div::before{
+    content: '';
+    background-image: url(./images/web3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: blur(2.5px) brightness(70%) grayscale(10%);
+    border-radius: 15px;
+    
+}
+.teaches main div p{
+    position: absolute;
+    color:white;
+    font-family: Monument Extended;
+    font-size: 20px;
     font-weight: 500;
-    line-height: 40px;
+    line-height: 28px;
+    padding-bottom: 1.6rem;
+    filter: drop-shadow(70px 20px 20px #000000);
+    padding-left: 1rem;
+}
+
+.problem .activity #t1::before{
+    background-image: url(./images/blockchain\ tech.png);
+}
+.problem .activity #t2::before{
+    background-image: url(./images/web3.jpg);
+}
+.problem .activity #t3::before{
+    background-image: url(./images/community.jpg);
+}
+.problem .activity #t4::before{
+    background-image: url(./images/crypto.jpg);
+}
+.problem .activity #t5::before{
+    background-image: url(./images/content.png);
+}
+.problem .activity #t6::before{
+    background-image: url(./images/nft.jpg);
+}
+.problem .activity #t7::before{
+    background-image: url(./images/ui\ ux.jpg);
 }
 .two{
     flex-direction: column;
@@ -324,43 +432,126 @@ nav li a:hover{
     width: 50%;
     padding-right: 5rem;
 }
+.achieve{
+    margin-top: -7rem;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    position: relative;
+    margin-inline: -6rem;
+    padding-inline: 6rem;
+}
+.achieve::before{
+    content: '';
+    background-image: url(./images/blockchain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: blur(2px);
+    opacity: .4;
+}
+.achieve h1{
+    font-size: 35px;
+    font-family: Monument Extended;
+    font-weight: 500;
+    line-height: 48px;
+    position: relative;
+}
+.achieve h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    margin-top: 20px;
+    line-height: 40px;
+    font-weight: 400;
+    background-color: #f3f5f3;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 5px 2.5px 5px #F5F2FF;
+    position: relative;
+}
+.achieve h3:hover{
+    cursor: pointer;
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #31B219;
+    font-weight: 700;
+    transition: 1s ease-in-out;
+}
 .three{
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
-.three article{
-    display: flex;
-    gap: 2rem;
+.newevent h1{
+    font-size: 85px;
+    font-family: Monument Extended;
+    font-weight: 500;
+    line-height: 108px;
+    color: white;
+    /* color: #2E7D32; */
+    position: relative;
+}
+.newevent{
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 2rem;
+    margin-bottom: 2;
+}
+.newevent::before{
+    content: '';
+    background-image: url(./images/conference\ 2.0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: blur(0px);
 }
 .three main{
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
+}
+.otherevents{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-x: hidden;
 }
 .three div{
     background-image: url(./images/bg1.png);
-    padding: 2rem 2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:1rem;
     color: white;
-    border-radius: 20px;
-    border: none;
+    border-radius: 10px;
+    
+}
+.oevents{
+    width: 40vw;
 }
 .three div h1{
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 900;
     line-height: 39px;
 }
 .three div p{
     font-family: Montserrat;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
     line-height: 35px;
     text-align: justify;
 }
 .sold-out{
     color:#31B219;
-    margin-top: 2rem;
+    margin-top: .5rem;
 }
 .three header{
     font-size: 23px;
@@ -375,10 +566,6 @@ hr{
     display: flex;
     flex-direction: column;
  }       
- /* .teamsec{
-    display: flex;
-    flex-direction: column;
- } */
 .testimonials main {
     display: flex;
     gap: 2rem;
@@ -538,21 +725,7 @@ hr{
 .community-breakdown p {
     font-family: 'Montserrat', sans-serif;
 }
-.achieve{
-    margin-top: 2rem;
-    margin-bottom: 9rem;
-}
-.achieve h1{
-    font-size: 35px;
-}
-.achieve h3{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
-    margin-top: 20px;
-    line-height: 40px;
-    font-weight: 400;
 
-}
 footer {
     margin-inline: -6rem;
     margin-top: -7rem;
@@ -589,7 +762,19 @@ footer {
     color: white;
     font-size: 20px;
 }
-
+footer h3{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 300;
+}
+.orgs{
+    display: flex;
+    gap: 5rem;
+    float: right;
+    margin-top: -8rem;
+}
 .footer-container a:hover {
     font-size: 20px;
     font-weight: 600;
