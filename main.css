@@ -120,7 +120,7 @@ nav li a:hover{
 .patnership{
     display: flex;
     flex-direction: column;
-    margin-inline: -4rem;
+    margin-inline: -6rem;
     background-color: #F8F8FB;;
     margin-top: -8rem;
     padding-bottom: 5rem;
@@ -169,7 +169,7 @@ nav li a:hover{
     padding: 3rem 0rem;
     padding-inline: 6rem;
     margin-inline: -6rem;
-    margin-top: -3rem;
+    margin-top: -8rem;
 }
 .why h1{
     font-family: Monument Extended;
@@ -207,6 +207,7 @@ nav li a:hover{
     margin-inline: -6rem;
     padding: 6rem;  
     background-color: #F5FFF3;
+    margin-top: -8rem;
 }
 .one h1, .two header h1, .three header h1,.problem h1, .why h3{
     font-family: Monument Extended;
@@ -257,6 +258,7 @@ nav li a:hover{
 .problem .prosol::before{
     content: '';
     background-image: url(./images/IMG-20221211-WA0003.jpg);
+    background-color: rgb(255, 255, 255 0.5);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -264,7 +266,8 @@ nav li a:hover{
     right: 0;
     bottom: 0;
     left: 0;
-    filter: blur(8px);
+    opacity: .1;
+    filter: blur(0px);
 }
 .problem .pdiv h1{
     color: #31B219;
@@ -296,6 +299,14 @@ nav li a:hover{
     line-height: 40px;
     margin-bottom: 2rem;
     margin-top: 7rem;
+}
+.activity{
+    background-color: #F5FFF3;
+    margin-top: -8rem;
+    padding-top: 5rem;
+    margin-inline: -6rem;
+    padding-inline: 6rem;
+    padding-bottom: 5rem;
 }
 .teaches{
     display: flex;
@@ -371,6 +382,7 @@ nav li a:hover{
 .two{
     flex-direction: column;
     gap: 2rem;
+    margin-top: -4rem;
 }
 .two article{
     display: flex;
@@ -451,7 +463,7 @@ nav li a:hover{
     bottom: 0;
     left: 0;
     filter: blur(2px);
-    opacity: .4;
+    opacity: .1;
 }
 .achieve h1{
     font-size: 35px;
@@ -512,6 +524,7 @@ nav li a:hover{
     bottom: 0;
     left: 0;
     filter: blur(0px);
+    border-radius: 20px;
 }
 .three main{
     display: flex;
