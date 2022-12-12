@@ -442,6 +442,17 @@ nav li a:hover{
     border: .1px solid #5A4C1F;
     border-radius: 10px;
 }
+#bucs button, #buds button, #budv button :hover{
+    cursor: pointer;
+}
+#teleb:hover{
+    cursor: pointer;
+}
+#tele{
+    margin-bottom: -5px;
+    padding-left: 10px;
+    width: 40px;
+}
 .two header{
     width: 50%;
     padding-right: 5rem;
@@ -488,7 +499,7 @@ nav li a:hover{
 }
 .achieve h3:hover{
     cursor: pointer;
-    font-size: 26px;
+    font-size: 23px;
     margin-bottom: 15px;
     color: #31B219;
     font-weight: 700;
@@ -542,20 +553,16 @@ nav li a:hover{
 .bhub{
     position: relative;
     padding: 2rem 1rem;
-    width: 50%;
-    padding-right: 6rem;
-    animation: slide_events 12s linear 1s infinite;
-}
-.bhub:hover{
-    cursor: pointer;
-    transition: none;
+    width: 100%;
+    animation: slide_events 22s linear 1s infinite;
 }
 .bhub img{
-    object-fit: cover;
+    width: 200px;
+    border-radius: 10px;
 }
 @keyframes slide_events {
     50%{
-        transform: translateX(-2100px);
+        transform: translateX(-680px);
     }
     100%{
         transform: translateX(0px);
@@ -575,43 +582,6 @@ nav li a:hover{
     100%{
         transform: translateX(-10px);
     } */
-}
-.bhub::before{
-    content: '';
-    background-image: url(./images/IMG-20221212-WA0000.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    border-radius: 10px;
-}
-#eve1::before{
-    background-image: url(./images/IMG-20221212-WA0004.jpg);
-}
-#eve2::before{
-    background-image: url(./images/IMG-20221212-WA0000.jpg);
-}
-#eve3::before{
-    background-image: url(./images/IMG-20221212-WA0002.jpg);
-}
-#eve4::before{
-    background-image: url(./images/IMG-20221212-WA0003.jpg);
-}
-#eve5::before{
-    background-image: url(./images/IMG-20221212-WA0008.jpg);
-}
-#eve6::before{
-    background-image: url(./images/IMG-20221212-WA0006.jpg);
-}
-#eve7::before{
-    background-image: url(./images/IMG-20221212-WA0007.jpg);
-}
-#eve8::before{
-    background-image: url(./images/IMG-20221212-WA0009.jpg);
 }
 .three div h2{
     font-family: Montserrat;
@@ -639,7 +609,7 @@ hr{
     overflow-x: hidden;
  }
  .card1, .card2{
-    animation: sliding 4s linear infinite;
+    animation: sliding 20s linear infinite;
     object-fit: cover;
  }
  @keyframes sliding {
@@ -697,7 +667,7 @@ hr{
     width: 100%;
 }
 .card1 {
-    background-color: white;
+    background-color: #f7fff9;
 }
 
 .card2 {
@@ -811,7 +781,7 @@ hr{
     flex-direction: column;
     gap: 2rem;
     margin-bottom: -3rem;
-    padding: 5rem 4rem;
+    padding: 6rem 4rem;
     margin-inline: -6rem;
 }
 .community header{
@@ -826,6 +796,7 @@ hr{
 }
 .community-breakdown {
     display: flex;
+    justify-content: space-evenly;
     width: 100%;
     gap: 7rem;
    /* justify-content: space-evenly; */
