@@ -7,16 +7,27 @@
     font-family: Monument Extended;
     src: url(./fonts/MonumentExtended-Ultrabold.otf);
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     max-width: 1600px;
-    /* width: 100%; */
     margin: auto;
     display: flex;
     flex-direction: column;
     gap: 8rem;
     Padding-inline: 6rem;
     overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+    width: 6px;
+}
+body::-webkit-scrollbar-track{
+    background-color: #b4cfb5;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #31B219;
+    border-radius: 100vw;
 }
 #blogo{
     width: 370px;
@@ -165,7 +176,7 @@ nav li a:hover{
     display: flex;
     gap: 4rem;
     align-items: center;
-    background-color: #f1f1f1;
+    background-color: #f5f5fd;
     padding: 3rem 0rem;
     padding-inline: 6rem;
     margin-inline: -6rem;
@@ -325,11 +336,6 @@ nav li a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-image: url(./images/web3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0px; */
-    /* filter: blur(5px); */
     width: 25%;
     padding: 9rem 1rem 2rem 1rem;
     position: relative;
@@ -384,13 +390,15 @@ nav li a:hover{
 .two{
     flex-direction: column;
     gap: 2rem;
-    margin-top: -4rem;
+    margin-top: -8rem;
+}
+#comm{
+    transform: translateY(-7rem);
 }
 .two article{
     display: flex;
     gap: 1rem;
     align-items: center;
-    /* Padding-inline: 2rem; */
     margin-bottom: 1.5rem;
 }
 .two div{
@@ -467,7 +475,7 @@ nav li a:hover{
 }
 .achieve::before{
     content: '';
-    background-image: url(./images/blockchain.jpg);
+    background-image: url(./images/IMG-20221213-WA0000.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -476,7 +484,7 @@ nav li a:hover{
     bottom: 0;
     left: 0;
     filter: blur(2px);
-    opacity: .1;
+    opacity: .3;
 }
 .achieve h1{
     font-size: 35px;
@@ -519,6 +527,9 @@ nav li a:hover{
     /* color: #2E7D32; */
     position: relative;
 }
+.three a{
+    text-decoration: none;
+}
 .newevent{
     position: relative;
     padding-top: 5rem;
@@ -542,13 +553,23 @@ nav li a:hover{
 .three main{
     display: flex;
     gap: 2rem;
-    overflow-x: hidden;
 }
 .oldevents{
     display: flex;
     gap: 2rem;
     width: 100vw;
-    
+}
+.featured{
+    overflow-x: hidden;
+}
+.featured::-webkit-scrollbar-button{
+    background-color: #e5e5e5;
+    color: #2E7D32;
+}
+.featured ::-webkit-scrollbar-track{
+    background-color: #e5e5e5;
+    color: #2E7D32;
+    height: 5px;
 }
 .bhub{
     position: relative;
@@ -556,32 +577,24 @@ nav li a:hover{
     width: 100%;
     animation: slide_events 22s linear 1s infinite;
 }
+
+.bhub img:hover{
+    width: 250px;
+    transition: 1s linear;
+    transition-delay: .2s;
+}
 .bhub img{
     width: 200px;
     border-radius: 10px;
+    transition: 1s linear;
 }
 @keyframes slide_events {
-    50%{
+    40%,60%{
         transform: translateX(-680px);
     }
-    100%{
+    90%,100%{
         transform: translateX(0px);
     }
-    /* 30%{
-        transform: translateX(-200px);
-    }
-    70%{
-        transform: translateX(0px);
-    }
-    100%{
-        transform: translateX(0px);
-    } */
-    /* 80%{
-        transform: translateX(0px);
-    }
-    100%{
-        transform: translateX(-10px);
-    } */
 }
 .three div h2{
     font-family: Montserrat;
@@ -606,28 +619,32 @@ hr{
     flex-direction: column;
  }       
  .testimonial-card{
-    overflow-x: hidden;
+    overflow-x: scroll;
+ }
+ .testimonial-card::-webkit-scrollbar{
+    border-radius: 20px;
+    width: 50vw;
+    height: 6px;
+    cursor: pointer;
+ }
+ .testimonial-card::-webkit-scrollbar-thumb{
+    background-color: #388E3C;
+    height: 3px;
+    border-radius: 200vw;
+ }
+ .testimonial-card::-webkit-scrollbar-track-piece{
+    background-color: rgb(255, 255, 255);
+    width: 10px;
+    height: 2px;
+ }
+ .testimonial-card::-webkit-scrollbar-track{
+    height: 20px;
+    width: 1em;
+    background-color: #31B219;
  }
  .card1, .card2{
     animation: sliding 20s linear infinite;
     object-fit: cover;
- }
- @keyframes sliding {
-    /* 0% {
-        transform: translateX(0%);
-    }
-    25%{
-        transform: translateX(-100%);
-    }
-    50%{
-        transform: translateX(-200%);
-    }
-    75%{
-        transform: translateX(0%);
-    } */
-    100%{
-        transform: translateX(-1320px);
-    }
  }
 
 .testimonials main {
@@ -780,9 +797,9 @@ hr{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin-bottom: -3rem;
     padding: 6rem 4rem;
     margin-inline: -6rem;
+    margin-top: -8rem;
 }
 .community header{
     width: 100%;
@@ -799,11 +816,9 @@ hr{
     justify-content: space-evenly;
     width: 100%;
     gap: 7rem;
-   /* justify-content: space-evenly; */
 }
 .community-breakdown li {
     list-style: none;
-    /* width: 25%; */
 }
 .community-breakdown h4 {
     font-family: 'Monument Extended', sans-serif;
@@ -824,7 +839,6 @@ footer {
 
 .logo {
     width: 350px;
-    /* margin-right: 18rem; */
     height: 350px;
 }
 
