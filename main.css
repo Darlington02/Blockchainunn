@@ -206,20 +206,18 @@ nav li a:hover{
     width: 100%;
     height: 640px;  
 }
-.one{
-    display: flex;
-}
 .one>div{
     width: 50%;
    display: flex;
    justify-content: center;
 }
 .one{
-    /* align-items: center; */
+    display: flex;
     gap: 3rem;
     margin-inline: -6rem;
     padding: 6rem;  
     background-color: #F5FFF3;
+    /* background-color: #daf7e5; */
     margin-top: -8rem;
 }
 .one h1, .two header h1, .three header h1,.problem h1, .why h3{
@@ -283,7 +281,7 @@ nav li a:hover{
     filter: blur(0px);
 }
 .problem .pdiv h1{
-    color: #31B219;
+    color: #2E7D32;
 }
 .problem .pdiv p{
     font-weight: 800;
@@ -470,7 +468,7 @@ nav li a:hover{
 .achieve{
     margin-top: -7rem;
     padding-top: 4rem;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
     position: relative;
     margin-inline: -6rem;
     padding-inline: 6rem;
@@ -507,9 +505,13 @@ nav li a:hover{
     box-shadow: 5px 2.5px 5px #F5F2FF;
     position: relative;
 }
+#achieve_null{
+    visibility: hidden;
+    background-color: none;
+}
 .achieve h3:hover{
     cursor: pointer;
-    font-size: 23px;
+    font-size: 25px;
     margin-bottom: 15px;
     color: #31B219;
     font-weight: 700;
@@ -619,19 +621,25 @@ hr{
 .testimonials{
     display: flex;
     flex-direction: column;
+    position: relative;
  }       
  .testimonial-card{
-    overflow-x: scroll;
+    overflow-x: hidden;
+    /* scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scroll-snap-align: center; */
  }
- .testimonial-card::-webkit-scrollbar{
+ /* .testimonial-card::-webkit-scrollbar{
     border-radius: 20px;
     width: 50vw;
-    height: 6px;
+    height: 2px;
     cursor: pointer;
+    opacity: 0.7;
+    scrollbar-width: thin;
  }
  .testimonial-card::-webkit-scrollbar-thumb{
-    background-color: #388E3C;
-    height: 3px;
+    background-color: #6f9971;
+    height: 1px;
     border-radius: 200vw;
  }
  .testimonial-card::-webkit-scrollbar-track-piece{
@@ -640,10 +648,10 @@ hr{
     height: 2px;
  }
  .testimonial-card::-webkit-scrollbar-track{
-    height: 20px;
+    height: 2px;
     width: 1em;
     background-color: #31B219;
- }
+ } */
  .card1, .card2{
     animation: sliding 20s linear infinite;
     object-fit: cover;
@@ -657,6 +665,8 @@ hr{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 28px;   
+    position: relative;
+    width: 95%;
 }
 .testimonials h1{
     font-family: 'Monument Extended', sans-serif;
@@ -698,6 +708,16 @@ hr{
 .testimonial-card h5 {
     color: #388E3C;
     padding-top: 2rem;
+}
+#next{
+    width: 80px;
+    border-radius: 55%;
+    padding: 10px;
+    position: absolute;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px 1px #aeb8ac;
+    right: -1rem;
+    top: 40%;
 }
 .reviewidentity{
     display: flex;
@@ -917,9 +937,13 @@ footer hr {
 
 
 @media only screen and (max-width: 670px){
+    html{
+        overflow-x: hidden;
+    }
     body{
         width: 100%;
         padding-inline: 1rem;
+        overflow-x: hidden;
     }
   
     /* .one>div{
