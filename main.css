@@ -916,7 +916,7 @@ footer hr {
 }
 
 
-@media only screen and (max-width: 760px){
+@media only screen and (max-width: 670px){
     body{
         width: 100%;
         padding-inline: 1rem;
@@ -929,7 +929,6 @@ footer hr {
         display: none;
     }
     .top main{
-        background: black;
         margin-inline: -1rem;
         margin-top: 5rem;
         height: 700px;
@@ -952,8 +951,6 @@ footer hr {
         position: relative;
         font-size: 55px;
         line-height: 68px;
-        border: 1px solid;
-        width: 90%;
     }
     .top main p{
         font-size: 16px;
@@ -973,7 +970,7 @@ footer hr {
         margin-bottom: 1rem;
     }
     .videos iframe{
-        width: 95%;
+        width: 98%;
         height: 310px;
         transform: translateY(-5rem);
     }
