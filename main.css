@@ -949,7 +949,7 @@ footer hr {
     }
     .top main h1{
         position: relative;
-        font-size: 55px;
+        font-size: 45px;
         line-height: 68px;
     }
     .top main p{
@@ -981,9 +981,13 @@ footer hr {
     .patners h1{
         font-size: 22px;
         text-align: center;
+        line-height: 30px;
     }
     .patners{
         margin-top: -3rem;
+    }
+    .patners img{
+        width: 150px;
     }
     #meet{
         display: none;
@@ -1032,15 +1036,12 @@ footer hr {
         border-radius: 15px;
     }
     .one>div img{
-        justify-content: center;
-        width: 100%;
         opacity: .2;
         position: absolute;
         top: 0rem;
-        left: 0rem;
+        left: -1rem;
         bottom: 0rem;
         right: 0rem;
-        margin: auto;
     }
     .textarea{
         margin: auto;
@@ -1172,9 +1173,9 @@ footer hr {
         font-size: 16px;
     }
     .newevent h1{
-        font-size: 50px;
-        line-height: 68px;
-        width: 100%;
+        font-size: 40px;
+        line-height: 58px;
+        width: 90%;
     }
     .three{
         padding-left: 1rem;
