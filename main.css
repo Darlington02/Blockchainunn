@@ -563,8 +563,16 @@ nav li a:hover{
     gap: 2rem;
     width: 100vw;
 }
+.oldevents img{
+    width: 150px;
+}
 .featured{
     overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    box-shadow: -5px 5px 10px 5px #b2d1ac;
+    border-radius: 30px;
 }
 .featured::-webkit-scrollbar-button{
     background-color: #e5e5e5;
@@ -575,29 +583,31 @@ nav li a:hover{
     color: #2E7D32;
     height: 5px;
 }
-.bhub{
+.oldevents{
+    width: 50%;
     position: relative;
     padding: 2rem 1rem;
     width: 100%;
-    animation: slide_events 22s linear 1s infinite;
+    animation: slide_events 10s linear 1s infinite;
 }
-
-.bhub img:hover{
-    width: 250px;
+.oldevents img:hover{
+    width: 180px;
     transition: 1s linear;
     transition-delay: .2s;
 }
-.bhub img{
-    width: 200px;
+.oldevents img{
     border-radius: 10px;
-    transition: 1s linear;
+    transition: .5s linear;
 }
 @keyframes slide_events {
-    40%,60%{
-        transform: translateX(-680px);
+    /* 0%{
+        transform: translateX(-27.65%);
+    } */
+    0%{
+        transform: translateX(-6%);
     }
-    90%,100%{
-        transform: translateX(0px);
+    100%{
+        transform: translateX(-110%);
     }
 }
 .three div h2{
@@ -624,34 +634,10 @@ hr{
     position: relative;
  }       
  .testimonial-card{
+    width: 80%;
     overflow-x: hidden;
-    /* scroll-behavior: smooth;
-    scrollbar-width: thin;
-    scroll-snap-align: center; */
+    margin: auto;
  }
- /* .testimonial-card::-webkit-scrollbar{
-    border-radius: 20px;
-    width: 50vw;
-    height: 2px;
-    cursor: pointer;
-    opacity: 0.7;
-    scrollbar-width: thin;
- }
- .testimonial-card::-webkit-scrollbar-thumb{
-    background-color: #6f9971;
-    height: 1px;
-    border-radius: 200vw;
- }
- .testimonial-card::-webkit-scrollbar-track-piece{
-    background-color: rgb(255, 255, 255);
-    width: 10px;
-    height: 2px;
- }
- .testimonial-card::-webkit-scrollbar-track{
-    height: 2px;
-    width: 1em;
-    background-color: #31B219;
- } */
  .card1, .card2{
     animation: sliding 20s linear infinite;
     object-fit: cover;
@@ -697,6 +683,7 @@ hr{
 }
 .card1 {
     background-color: #f7fff9;
+    z-index: 1;
 }
 
 .card2 {
@@ -716,8 +703,21 @@ hr{
     position: absolute;
     background: #ffffff;
     box-shadow: 0px 0px 10px 1px #aeb8ac;
+    z-index: 2;
     right: -1rem;
     top: 40%;
+}
+#prev{
+    width: 80px;
+    border-radius: 55%;
+    padding: 10px;
+    position: absolute;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px 1px #aeb8ac;
+    z-index: 2;
+    top: 40%;
+    left: -1rem;
+    visibility: hidden;
 }
 .reviewidentity{
     display: flex;
@@ -768,7 +768,7 @@ hr{
 }
 .teaml h2{
     font-family: 'Monument Extended', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 34px;
     color: #4a4a4a;
@@ -1109,6 +1109,10 @@ footer hr {
     .problem .prosol{
         margin-inline: -1rem;
         padding-inline: 1rem; 
+        gap: 1rem;
+    }
+    .problem .pdiv{
+        padding: 1rem;
     }
     .problem .pdiv h1{
         font-size: 22px;
@@ -1116,6 +1120,7 @@ footer hr {
     .problem .pdiv p{
         font-size: 16px;
         text-align: justify;
+        line-height: 25px;
     }
     .activity{
         margin-top: -3rem;
@@ -1124,6 +1129,7 @@ footer hr {
     }
     .problem .activity h4{
         font-size: 22px;
+        line-height: 25px;
         margin-top: 1rem;
     }
     .teaches main{
@@ -1142,15 +1148,21 @@ footer hr {
     }
     .two header h1{
         font-size: 22px;
+        line-height: 25px;
+        padding-top: 10px;
     }
    #budv h1, #buds h1, #bucs h1{
-        font-size: 18px;
+        font-size: 15px;
+    }
+    #tele{
+        width: 30px;
     }
     #budv{
         margin-bottom: -.5rem;
     }
     .two button{
         font-size: 16px;
+        margin-top: 1rem;
     }
     .two article{
         flex-direction: column;
@@ -1185,25 +1197,32 @@ footer hr {
     .achieve{
         margin-inline: -1rem;
         padding-inline: 1rem;
+        padding-top: 2rem;
+        padding-bottom: .5rem;
     }
     .achieve h1{
         font-size: 22px;
+        line-height: 30p;
     }
     .achieve h3{
         font-size: 16px;
-        line-height: 32px;
+        line-height: 25px;
     }
     .achieve h3:hover{
         font-size: 16px;
     }
     .newevent h1{
-        font-size: 40px;
-        line-height: 58px;
+        font-size: 30px;
+        line-height: 38px;
         width: 90%;
+    }
+    .newevent::before{
+        border-radius: 10px;
     }
     .three{
         padding-left: 1rem;
         padding-right: 1rem;
+        margin-top: -5rem;
     }
     .three header{
         margin-bottom: -2rem;
@@ -1226,14 +1245,52 @@ footer hr {
     .three hr{
         transform: translateY(0rem);
     }
+    /* .oldevents{
+        animation: none;
+    } */
     .testimonials{
         padding: 1rem;
         margin-top: -7rem;
     }
     .testimonials h1{
-        font-size: 22px;
-        line-height: 48px;
-        margin-top: 0px;
+        font-size: 18px;
+        line-height: 25px;
+        margin-top: 10px;
+    }
+    .testimonial-card{
+        width: 100%;
+        overflow-x: scroll;
+    }
+    .testimonial-card::-webkit-scrollbar{
+        border-radius: 20px;
+        height: 2px;
+        opacity: .7;
+        scrollbar-width: thin;
+    }
+    .testimonial-card::-webkit-scrollbar-thumb{
+        background-color: #6f9971;
+        height: 1px;
+        border-radius: 200vw;
+    }
+    .testimonial-card::-webkit-scrollbar-track{
+        height: 2px;
+        width: 1em;
+        background-color: #31b219;
+    }
+    .testimonial-card::-webkit-scrollbar-track-piece{
+        height: 2px;
+    }
+    .reviewidentity h2{
+        font-size: 16px;
+    }
+    .reviewidentity header{
+        margin-left: -4rem;
+    }
+    .reviewimg{
+        width: 70px;
+    }
+    #next,#prev{
+        display: none;
     }
     .card1, .card2 {
         padding: 1.5rem 1rem;
@@ -1313,7 +1370,7 @@ footer hr {
         align-items: center;
     }
     .otherst div img{
-        width: 80px;
+        width: 60px;
         padding-bottom: 10px;
     }
     .otherst h4 img{
@@ -1336,7 +1393,7 @@ footer hr {
         margin-top: -8rem;
     }
     .community header h1{
-        font-size: 28px;
+        font-size: 22px;
     }
     .community-breakdown {
         flex-direction: column;
@@ -1347,7 +1404,7 @@ footer hr {
      }
      .community-breakdown h4 {
         font-family: 'Monument Extended', sans-serif;
-        font-size: 32px;
+        font-size: 22px;
         color: #2E7D32;
     }
     footer{
@@ -1431,6 +1488,14 @@ footer hr {
     .two div{
         padding: 2rem 3rem;
     }
+    @keyframes slide_events {
+        /* 0%{
+            transform: translateX(-6%);
+        } */
+    100%{
+        transform: translateX(-123%);
+    }
+}
 }
 
 @media (max-width:1140px) and (min-width:760px){
