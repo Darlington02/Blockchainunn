@@ -11,10 +11,12 @@
   <body>
    
         <nav>
+            <img src="./images/icons8-menu-rounded-50.png" alt="" id="menu" onclick="menuOpen()">
+            <img src="./images/icon-close.svg" alt="" id="close" onclick="menuClose()">
             <main>
             <img src="./images/bunn logo (2).png" alt="" id="blogo">
         </main>
-            <ul>
+            <ul id="navList">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#comm">Community</a></li>
                 <li><a href="">Events</a></li>
@@ -27,7 +29,7 @@
         <section class="top">
         <main>
             <div class="textarea">
-            <h1>
+            <h1 id="bunn">
                 BLOCKCHAIN <br> UNN <img class="rectangles" src="./images/Rectangle 1.png" alt=""><img class="rectangles" src="./images/Rectangle 2.png" alt=""><img class="rectangles" src="./images/Rectangle 3.png" alt=""><img class="rectangles" src="./images/Rectangle 4.png" alt="">
             </h1>
             <p>
@@ -48,9 +50,9 @@ src="https://www.youtube.com/embed/XBuTjIBjQOA">
 </iframe>
         </div>
         <div class="patners">
+            <hr class="hr" id="meet">
             <header>
-                <hr class="hr" id="meet">
-            <h1>
+            <h1 id="patnersHeaders">
                 MEET OUR PATNERS
             </h1>
         </header>
@@ -69,7 +71,7 @@ src="https://www.youtube.com/embed/XBuTjIBjQOA">
     <section class="why">
         <header>
             <hr class="hr">
-            <h1>
+            <h1 id="whyH">
                 WHY BLOCKCHAINUNN
             </h1>
             <h3>
@@ -86,8 +88,7 @@ src="https://www.youtube.com/embed/XBuTjIBjQOA">
                 WHO WE ARE
             </h3>
             <P>
-                BlockchainUNN is a Tech community established with the aim of educating members of the University Community with both basic and advanced practical knowledge of cryptocurrency, Blockchain technology, its development, and its opportunities. 
-                Though we are focused on the University of Nigeria, we have a diverse community made up of people from diverse fields, institutions and campuses who are blockchain enthusiasts.
+                BlockchainUNN is a Tech community established with the aim of educating members of the University Community with both basic and advanced practical knowledge of cryptocurrency, Blockchain technology, its development, and its opportunities. Though we are focused on the University of Nigeria, we have a diverse community made up of people from diverse fields, institutions and campuses who are blockchain enthusiasts.
             </P>
         </header>
         <main>
@@ -273,9 +274,9 @@ src="https://www.youtube.com/embed/XBuTjIBjQOA">
         </main>
     </section> 
   <section class="teamsec">
+    <hr >
     <header>       
-        <hr >
-        <h1>LEADERSHIP AND TEAM</h1>
+        <h1 id="teamHead">LEADERSHIP AND TEAM</h1>
     </header>
     <article class="cfs">
         <main class="teaml">
@@ -339,12 +340,11 @@ src="https://www.youtube.com/embed/XBuTjIBjQOA">
     <section class="testimonials">
         <hr class="header-line">
         <header>        
-        <h1>WHAT PEOPLE ARE SAYING</h1>
+        <h1 id="reviewsHeader">WHAT PEOPLE ARE SAYING</h1>
     </header>
-    <img src="./images/icons8-forward-80.png" alt="" id="next">
-    <img src="./images/icons8-prev-100.png" alt="" id="prev">
+    <img src="./images/icons8-forward-80.png" alt="" id="next" onclick="next()">
+    <img src="./images/icons8-prev-100.png" alt="" id="prev" onclick="prev()">
         <main class="testimonial-card">
-            
             <div class="card1">
                 <main class="reviewidentity">
                     <img src="./images/shezzy.png" alt="" class="reviewimg">
