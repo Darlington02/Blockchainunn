@@ -54,7 +54,7 @@ nav{
 }
 nav img{
     margin-bottom: -3rem;
-    margin-top: -2rem;
+    margin-top: 0rem;
     margin-left: -2rem;
 }
 nav ul{
@@ -81,7 +81,7 @@ nav li a:hover{
     margin-inline: -6rem;
     position: relative;
     height: 870px;
-    margin-top: -1.3rem;
+    margin-top: 4.5rem;
 }
 .textarea{
     padding-top: 7rem;
@@ -103,7 +103,7 @@ nav li a:hover{
     font-weight: 800;
     line-height: 115px;
     color: #388E3C;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 .top main p{
     font-family: Montserrat;
@@ -375,10 +375,10 @@ nav li a:hover{
 }
 
 .problem .activity #t1::before{
-    background-image: url(./images/blockchain\ tech.png);
+    background-image: url(./images/image\ 6.png);
 }
 .problem .activity #t2::before{
-    background-image: url(./images/web3.jpg);
+    background-image: url(./images/image\ 7.png);
 }
 .problem .activity #t3::before{
     background-image: url(./images/community.jpg);
@@ -387,13 +387,16 @@ nav li a:hover{
     background-image: url(./images/crypto.jpg);
 }
 .problem .activity #t5::before{
-    background-image: url(./images/content.png);
+    background-image: url(./images/image\ 9.png);
 }
 .problem .activity #t6::before{
     background-image: url(./images/nft.jpg);
 }
 .problem .activity #t7::before{
     background-image: url(./images/ui\ ux.jpg);
+}
+.problem .activity #t8::before{
+    background-image: url(./images/web3.jpg);
 }
 .two{
     flex-direction: column;
@@ -1006,9 +1009,6 @@ footer hr {
         width: 300px;
         margin-left: -2.5rem;
     }
-    /* .one>div{
-      
-    } */
     nav{
         width: 100%;
         padding-inline: 1rem;
@@ -1036,7 +1036,7 @@ footer hr {
     }
     .top main{
         margin-inline: -1rem;
-        margin-top: -0rem;
+        margin-top: 0rem;
         padding-top: 3rem;
         height: 700px;
         padding-inline: 1rem;
@@ -1053,12 +1053,13 @@ footer hr {
         right: 0;
         bottom: 0;
         left: 0;
-        filter: blur(0px);
+        /* filter: blur(0px); */
+        filter: brightness(40%);
         opacity: .6;
     }
     .top main h1{
         position:relative;
-        width: 95%;
+        width: 80%;
         font-size: 45px;
         line-height: 45px;
         /* margin-top: 18rem; */
@@ -1200,6 +1201,9 @@ footer hr {
     .one article h1{
         font-size: 20px;
     }
+    .one article{
+        margin-top: -2rem;
+    }
     hr{
         width: 50px;
     }
@@ -1224,7 +1228,7 @@ footer hr {
         line-height: 25px;
     }
     .activity{
-        margin-top: -3rem;
+        margin-top: -7.5rem;
         margin-inline: -1rem;
         padding-inline: 1rem;
     }
@@ -1261,6 +1265,7 @@ footer hr {
     }
     #budv h1, #buds h1, #bucs h1{
         font-size: 15px;
+        line-height: 25px;
     }
     #tele{
         width: 30px;
@@ -1318,6 +1323,7 @@ footer hr {
     .achieve h3{
         font-size: 16px;
         line-height: 25px;
+        margin-top: 10px;
     }
     .achieve h3:hover{
         font-size: 16px;

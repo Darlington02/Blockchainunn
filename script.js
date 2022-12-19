@@ -87,6 +87,7 @@ if(phoneSize2.matches){
     document.getElementById('reviewsHeader').textContent = 'OUR REVIEWS'
     document.getElementById('teamHead').style.fontSize = '20px'
     document.getElementById('bunn').style.fontSize = '37px'
+    document.getElementById('bunn').style.width = '90%'
     document.getElementById('whyH').style.fontSize = '20px'
     communityHeader.style.cssText = 'font-size:20px;'
     for(i=0; i<rectangles.length; i++){
