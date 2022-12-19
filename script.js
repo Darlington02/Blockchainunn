@@ -71,4 +71,4 @@ if(phoneSize.matches){
     teachingHeader.textContent = 'WHAT WE TEACH'
 }
 
-console.log(reviews)
+

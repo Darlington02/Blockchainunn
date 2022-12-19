@@ -45,7 +45,6 @@ nav{
     position: fixed;
     width: 1600px;
     border-bottom: 5px solid gainsboro;
-    
 }
 nav img{
     margin-bottom: -3rem;
@@ -311,6 +310,8 @@ nav li a:hover{
     font-weight: 800;
     line-height: 40px;
     margin-bottom: 2rem;
+}
+.problem .activity header{
     margin-top: 7rem;
 }
 .activity{
@@ -554,6 +555,20 @@ nav li a:hover{
     filter: blur(3px);
     border-radius: 20px;
 }
+.neweventText{
+    margin-top: -4rem;
+    margin-bottom: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    line-height: 30px;
+    font-weight: 500;    
+}
+.neweventText a{
+    font-family: Monument Extended;
+    color: #31B219;
+    font-weight: 300;
+    font-size: 20px;
+}
 .three main{
     display: flex;
     gap: 2rem;
@@ -570,6 +585,7 @@ nav li a:hover{
     overflow-x: hidden;
     position: relative;
     width: 100%;
+    margin-top: -1rem;
 }
 .featured::-webkit-scrollbar-button{
     background-color: #e5e5e5;
@@ -584,10 +600,10 @@ nav li a:hover{
     position: relative;
     padding: 2rem 1rem;
     width: 100%;
-    animation: slide_events 10s linear 1s infinite;
+    animation: slide_events 16s linear 1s infinite;
 }
 .oldevents img:hover{
-    width: 180px;
+    width: 170px;
     transition: 1s linear;
     transition-delay: .2s;
 }
@@ -941,17 +957,50 @@ footer hr {
         padding-inline: 1rem;
         overflow-x: hidden;
     }
-  
+    nav main{
+        width: 100%;
+        background-color: white;
+        position: relative;
+        padding-top: 14px;
+        padding-bottom: 10px;
+    }
+    #blogo{
+        width: 300px;
+        margin-left: -2.5rem;
+    }
     /* .one>div{
       
     } */
     nav{
-        display: none;
+        width: 100%;
+        padding-inline: 1rem;
+        margin-inline: -1rem;
+    }
+    nav img{
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+        margin-left: -2rem;
+        padding-left: -10rem;
+    }
+    nav ul{
+        /* display: none; */
+        position:absolute;
+        inset: 0 0 0 30%;
+        flex-direction: column;
+        justify-content: initial;
+        background-color: white;
+        height: 100vh;
+        padding-left: 2rem;
+        padding-top: 5rem;
+        transition: .5s linear;
+        transform: translateX(100%);
     }
     .top main{
         margin-inline: -1rem;
-        margin-top: 5rem;
+        margin-top: 0rem;
         height: 700px;
+        padding-inline: 1rem;
+        /* position: relative; */
         /* padding-top: 5rem; */
     }
     .top main::before{
@@ -964,18 +1013,27 @@ footer hr {
         right: 0;
         bottom: 0;
         left: 0;
-        filter: blur(5px);
+        filter: blur(0px);
         opacity: .6;
     }
     .top main h1{
-        position: relative;
+        position:relative;
+        width: 100%;
         font-size: 45px;
-        line-height: 68px;
+        line-height: 45px;
+        margin-top: 4rem;
     }
     .top main p{
         font-size: 16px;
-        line-height: 30px;
-        width: 60%;
+        line-height: 25px;
+        width: 100%;
+    }
+    .textarea{
+        margin: auto;
+    }
+    .rectangles{
+        margin-right: 15px;
+        width: 30px;
     }
     .top main button{
         height: 49px;
@@ -1062,14 +1120,6 @@ footer hr {
         left: -1rem;
         bottom: 0rem;
         right: 0rem;
-    }
-    .textarea{
-        margin: auto;
-        text-align: center;
-    }
-    .rectangles{
-        margin-right: 15px;
-        width: 40px;
     }
     .one article{
         width: 100%;
@@ -1214,6 +1264,20 @@ footer hr {
     }
     .newevent::before{
         border-radius: 10px;
+    }
+    .neweventText{
+        margin-top: -4rem;
+        margin-bottom: 2rem;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 500;    
+    }
+    .neweventText a{
+        font-family: Monument Extended;
+        color: #31B219;
+        font-weight: 300;
+        font-size: 14px;
     }
     .three{
         padding-left: 1rem;
