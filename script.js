@@ -87,7 +87,6 @@ let rectangles = document.querySelectorAll('.rectangles')
 
 
 if(phoneSize2.matches){
-    document.getElementById('reviewsHeader').textContent = 'OUR REVIEWS'
     document.getElementById('teamHead').style.fontSize = '22px'
     document.getElementById('bunn').style.fontSize = '37px'
     document.getElementById('bunn').style.width = '90%'

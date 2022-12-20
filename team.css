@@ -25,16 +25,76 @@ hr{
     height: 5px;
     background-color: #388E3C;
 }
+html{
+    scroll-behavior: smooth;
+}
+#menu{
+    display: none;
+}
+#close{
+    display: none;
+}
+body::-webkit-scrollbar{
+    width: 6px;
+}
+body::-webkit-scrollbar-track{
+    background-color: #b4cfb5;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #31B219;
+    border-radius: 100vw;
+}
+#blogo{
+    width: 370px;
+    margin: -9rem 0rem;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    margin-top: -1rem;
+    background-color: rgb(255, 255, 255);
+    margin-inline: -3rem;
+    padding-inline: 3rem;
+    z-index: 40;
+    position: fixed;
+    right: 0;
+    left: 0;
+    max-width: 1600px;
+    border-bottom: 5px solid gainsboro;
+}
+nav img{
+    margin-bottom: -3rem;
+    margin-top: 0rem;
+    margin-left: 0rem;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+nav li a{
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+    color: black;
+}
+nav li a:hover{
+    color: #388E3C;
+}
 
-header,section{
+.header,.section{
     padding-left: 3rem;
     padding-right: 3rem;
 }
-header{
+.header{
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
-header h1{
+.header h1{
     font-family: Monument Extended;
     font-size: 40px;
     font-weight: 800;
@@ -42,7 +102,7 @@ header h1{
     letter-spacing: 0em;
     text-align: left;
 }
-section{
+.section{
     display: flex;
     flex-direction: column;
     gap: 4rem;
@@ -195,7 +255,7 @@ footer hr {
         gap: 3.5rem;
         flex-direction: column;
     }
-    header,section{
+    header,.section{
         padding-left: 1rem;
         padding-right: 1rem;
     }

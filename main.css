@@ -1478,6 +1478,15 @@ footer hr {
         overflow-x: scroll;
         width: 100%;
         margin: auto;
+        
+    }
+    .card1{
+        animation: phoneR 10s linear infinite;
+    }
+    @keyframes phoneR {
+        100%{
+            transform: translateX(-670px);
+        }
     }
     .testimonial-card::-webkit-scrollbar{
         border-radius: 20px;
