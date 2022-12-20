@@ -12,6 +12,7 @@ let menubar = document.getElementById('menu')
 let closeBar = document.getElementById('close')
 let navList = document.getElementById('navList')
 let reviewH = document.querySelectorAll('.reviewH')
+let achieveList = document.querySelectorAll('.achieveList')
 
 
 
@@ -79,6 +80,7 @@ if(phoneSize.matches){
 if(phoneSize.matches){
     teachingHeader.textContent = 'WHAT WE TEACH'
     document.getElementById('logo').style.cssText = 'width: 100%; height: 400px; object-fit:cover';
+    document.getElementById('webbrigde').style.width = '150px'
 }
 
 let rectangles = document.querySelectorAll('.rectangles')
@@ -103,6 +105,22 @@ if(phoneSize2.matches){
 document.getElementById('b1_0').style.width = '140px'
 document.getElementById('b1_1').style.width = '140px'
 
+
+// for(i=0; i<achieveList.length; i++){
+//     achieveList[i].addEventListener('touch', ()=>{
+//         achieveList[i].style.cssText = '#31B219'
+//     })
+// }
+
+function achieveL (){
+    for(i=0; i<achieveList.length; i++){
+        achieveList[i].style.cssText = '#31B219'
+    }
+}
+
+achieveList[i].addEventListener('ontouchstart', ()=>{
+    return achieveL()
+})
 // nextReview.addEventListener('click', ()=>{
 //     console.log('food')
 //         return next()

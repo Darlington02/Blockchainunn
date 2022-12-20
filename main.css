@@ -165,12 +165,12 @@ nav li a:hover{
 }
 .patners article{
     display: flex;
-    gap: 8rem;
+    gap: 3rem;
 }
 .patners main{
     display: flex;
     align-items: center;
-    gap: 8rem;
+    gap: 3rem;
     width: 100%;
 }
 .patners h1{
@@ -179,6 +179,18 @@ nav li a:hover{
     font-weight: 800;
     line-height: 55px;
     letter-spacing: 0.03em;
+}
+#webbrigde{
+    width: 220px;
+}
+#ekolance{
+    width: 120px;
+}
+#baf{
+    width: 180px;
+    background-color: #000000;
+    padding: 0px 10px;
+    object-fit: cover;
 }
 .why{
     display: flex;
@@ -688,6 +700,9 @@ hr{
     position: relative;
     width: 95%;
 }
+#reviewsSwipe{
+    display: none;
+}
 .testimonials h1{
     font-family: 'Monument Extended', sans-serif;
     font-size: 30px;
@@ -827,7 +842,7 @@ hr{
     font-weight: 800;
     line-height: 0px;
     letter-spacing: 0em;
-    margin-top: -40px;
+    margin-top: 15px;
     margin-bottom: 1rem;
  }
 .otherst img{
@@ -1115,18 +1130,39 @@ footer hr {
     }
     .patners{
         margin-top: -3rem;
-    }
-    .patners img{
-        width: 150px;
+        padding-inline: 2rem;
+        gap: 1rem;
     }
     #meet{
         display: none;
     }
     .patners article{
         flex-direction: column;
+        gap: 8rem;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
     .patners main{
-        gap: 2rem;
+        gap: 1rem;
+        /* border: 1px solid; */
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+    }
+    #webbridge{
+        width: 100px;
+    }
+    #baf{
+        width: 140px;
+    }
+    .patners img{
+        width: 150px;
+    }
+    .patner3{
+        display: flex;
+        justify-content: space-between;
+        margin-top: -9rem;
     }
     .patnertop{
         margin-bottom: -12rem;
@@ -1344,6 +1380,10 @@ footer hr {
     .achieve h3:hover{
         font-size: 16px;
     }
+    .achieve h3:active{
+        color: #31B219;
+        transition: .2s linear;
+    }
     .newevent h1{
         font-size: 30px;
         line-height: 38px;
@@ -1401,9 +1441,6 @@ footer hr {
         color: #2E7D32;
         height: 5px;
     }
-    .oldevents{
-        animation: none;
-    }
     .bhub{
         animation: none;
     }
@@ -1413,6 +1450,12 @@ footer hr {
     /* .oldevents{
         animation: none;
     } */
+    #reviewsSwipe{
+        display: block;
+        position: absolute;
+        right: 3rem;
+        top: 1rem;
+    }
     .testimonials{
         padding-inline: 1.5rem;
         margin-inline: -1rem;
