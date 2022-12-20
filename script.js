@@ -11,6 +11,7 @@ let phoneSize2 = window.matchMedia('(max-width:420px)')
 let menubar = document.getElementById('menu')
 let closeBar = document.getElementById('close')
 let navList = document.getElementById('navList')
+let reviewH = document.querySelectorAll('.reviewH')
 
 
 
@@ -77,7 +78,7 @@ if(phoneSize.matches){
 
 if(phoneSize.matches){
     teachingHeader.textContent = 'WHAT WE TEACH'
-    document.getElementById('logo').style.cssText = 'width: 100%; height: 400px; object-fit:cover'
+    document.getElementById('logo').style.cssText = 'width: 100%; height: 400px; object-fit:cover';
 }
 
 let rectangles = document.querySelectorAll('.rectangles')
@@ -85,16 +86,22 @@ let rectangles = document.querySelectorAll('.rectangles')
 
 if(phoneSize2.matches){
     document.getElementById('reviewsHeader').textContent = 'OUR REVIEWS'
-    document.getElementById('teamHead').style.fontSize = '20px'
+    document.getElementById('teamHead').style.fontSize = '22px'
     document.getElementById('bunn').style.fontSize = '37px'
     document.getElementById('bunn').style.width = '90%'
-    document.getElementById('whyH').style.fontSize = '20px'
-    communityHeader.style.cssText = 'font-size:20px;'
+    document.getElementById('whyH').style.fontSize = '21px'
+    communityHeader.style.cssText = 'font-size:20.6px;'
     for(i=0; i<rectangles.length; i++){
         rectangles[i].style.width = '25px'
     }
-    document.getElementById('patnersHeaders').style.cssText = 'font-size:16px; line-height:25px'
+    document.getElementById('patnersHeaders').style.cssText = 'font-size:20px; line-height:25px'
+    for(i=0; i<rectangles.length; i++){
+        reviewH[i].style.width = '40vw'
+    }
 }
+
+document.getElementById('b1_0').style.width = '140px'
+document.getElementById('b1_1').style.width = '140px'
 
 // nextReview.addEventListener('click', ()=>{
 //     console.log('food')

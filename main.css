@@ -566,12 +566,18 @@ nav li a:hover{
     border-radius: 20px;
 }
 .neweventText{
-    margin-top: -4rem;
+    margin-top: -1rem;
     margin-bottom: 2rem;
     font-family: 'Montserrat', sans-serif;
     font-size: 23px;
     line-height: 30px;
     font-weight: 500;    
+}
+#eventH{
+    margin-top: -2rem;
+    font-family: Monument Extended;
+    font-size: 22px;
+
 }
 .neweventText a{
     font-family: Monument Extended;
@@ -620,6 +626,9 @@ nav li a:hover{
 .oldevents img{
     border-radius: 10px;
     transition: .5s linear;
+}
+#b1_0{
+    width: 120px;
 }
 @keyframes slide_events {
     /* 0%{
@@ -1133,7 +1142,7 @@ footer hr {
         flex-direction: column;
         gap: 1rem;
         margin-inline: -1rem;
-        padding-inline: 1rem;
+        padding-inline: 1.5rem;
     }
     .why h1{
         font-size: 22px;
@@ -1141,14 +1150,13 @@ footer hr {
         margin-top: 10px;
     }
     .why header{
-        width: 95%;
+        width: 100%;
     }
     .why h3{
         font-size: 18px;
     }
     .why p{
         font-size: 16px;
-        text-align: left;
     }
     .why main{
         width: 100%;
@@ -1169,7 +1177,7 @@ footer hr {
     #logo{
         opacity: .1;
         position: absolute;
-        top: 1rem;
+        top: 3rem;
         left: 0rem;
         bottom: 0rem;
         right: 0rem;
@@ -1181,11 +1189,12 @@ footer hr {
     }
     .one{
         gap: 3rem;
-        padding: 2rem 1rem;
+        padding: 5rem 1rem;
         background-color: #F5FFF3;
         flex-direction: column;
         position: relative;
         margin-inline: -1rem;
+        padding-inline: 1.5rem;
     }
     .one h1{
         font-size: 22px;
@@ -1198,8 +1207,11 @@ footer hr {
         line-height: 25px;
         letter-spacing: 0em;
     }
+    .one p{
+        text-align: justify;
+    }
     .one article h1{
-        font-size: 20px;
+        font-size: 24px;
     }
     .one article{
         margin-top: -2rem;
@@ -1224,13 +1236,13 @@ footer hr {
     }
     .problem .pdiv p{
         font-size: 16px;
-        text-align: left;
         line-height: 25px;
+        text-align: justify;
     }
     .activity{
         margin-top: -7.5rem;
         margin-inline: -1rem;
-        padding-inline: 1rem;
+        padding-inline: 1.5rem;
     }
     .problem .activity h4{
         font-size: 22px;
@@ -1239,6 +1251,9 @@ footer hr {
     }
     .teaches main{
         flex-direction: column;
+    }
+    #teaching{
+        margin-top: 10px;
     }
     .teaches main div{
         width: 100%;
@@ -1251,9 +1266,9 @@ footer hr {
     .two{
         flex-direction: column;
         margin-inline: -1rem;
-        padding-inline: 1rem;
+        padding-inline: 1.5rem;
         margin-bottom: -2rem;
-        margin-top: -12rem;
+        margin-top: -10rem;
     }
     .two header h1{
         font-size: 22px;
@@ -1283,10 +1298,10 @@ footer hr {
         Padding-inline: 0rem;
     }
     #budv,#budc,#bucs{
-        margin-left: -1rem;
+        margin-left: 0rem;
     }
     .two header{
-        margin-left: -5%;
+        margin-left: 0%;
     }
     .two header, .two div{
         width: 95%;
@@ -1312,7 +1327,7 @@ footer hr {
     }
     .achieve{
         margin-inline: -1rem;
-        padding-inline: 1rem;
+        padding-inline: 1.5rem;
         padding-top: 2rem;
         padding-bottom: .5rem;
     }
@@ -1323,7 +1338,7 @@ footer hr {
     .achieve h3{
         font-size: 16px;
         line-height: 25px;
-        margin-top: 10px;
+        margin-top: 15px;
     }
     .achieve h3:hover{
         font-size: 16px;
@@ -1332,17 +1347,25 @@ footer hr {
         font-size: 30px;
         line-height: 38px;
         width: 90%;
+        padding-left: .5rem;
     }
     .newevent::before{
         border-radius: 10px;
     }
+    #eventH{
+        font-size: 16px;
+        line-height: 28px;
+        padding-inline: .5rem;
+    }
     .neweventText{
-        margin-top: -4rem;
+        margin-top: -1rem;
         margin-bottom: 2rem;
         font-family: 'Montserrat', sans-serif;
-        font-size: 16px;
-        line-height: 30px;
+        font-size: 17px;
+        line-height: 25px;
         font-weight: 500;    
+        text-align: justify;
+        padding-inline: .5rem;
     }
     .neweventText a{
         font-family: Monument Extended;
@@ -1350,15 +1373,20 @@ footer hr {
         font-weight: 300;
         font-size: 14px;
     }
+    .newevent::before{
+        padding-inline: 1.5rem;
+        left: .5rem;
+        right: .5rem;
+    }
     .three{
-        padding-left: 1rem;
-        padding-right: 1rem;
-        margin-top: -5rem;
+        margin-top: -3rem;
         margin-inline: -1rem;
-        margin-bottom: -4rem;
+        margin-bottom: -3rem;
+        /* padding-inline: 7rem; */
     }
     .three header{
         margin-bottom: -2rem;
+        padding-left: .5rem;
     }
     .featured{
         overflow-x: scroll;
@@ -1372,6 +1400,9 @@ footer hr {
         color: #2E7D32;
         height: 5px;
     }
+    .oldevents{
+        animation: none;
+    }
     .bhub{
         animation: none;
     }
@@ -1382,8 +1413,9 @@ footer hr {
         animation: none;
     } */
     .testimonials{
-        padding-inline: 1rem;
-        margin-top: -7rem;
+        padding-inline: 1.5rem;
+        margin-inline: -1rem;
+        margin-top: -4rem;
     }
     .testimonials h1{
         font-size: 18px;
@@ -1392,6 +1424,8 @@ footer hr {
     }
     .testimonial-card{
         overflow-x: scroll;
+        width: 100%;
+        margin: auto;
     }
     .testimonial-card::-webkit-scrollbar{
         border-radius: 20px;
@@ -1441,7 +1475,11 @@ footer hr {
         line-height: 22px;
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 100vw;
+        margin-right: -2rem;
+    }
+    .card1 p{
+        text-align: justify;
     }
     #reviewsHeader{
         font-size: 18px;
@@ -1451,12 +1489,14 @@ footer hr {
     }
     .testimonials main{
         width: 100%;
-        margin-inline: -1rem;
+        margin-inline: 0rem;
+        padding-left: 1rem;
     }
     .teamsec{
         margin-inline: -1rem;
-        padding-inline: 1rem;
+        padding-inline: 1.5rem;
         gap: 0rem;
+        margin-top: 3rem;
     }
     .team-section{
         padding: 0 1rem;
@@ -1542,7 +1582,7 @@ footer hr {
     .community{
         margin-inline: -1rem;
         padding: 0;
-        padding-left: 1rem;
+        padding-left: 1.5rem;
         padding-top: 2rem;
         padding-bottom: 2rem;
         margin-top: -8rem;
@@ -1646,7 +1686,11 @@ footer hr {
     }
     .reviewidentity header{
         margin-left: -3rem;
-        width: 80vw;
+        width: 25vw;
+    }
+    .testimonials main{
+        width: 100%;
+        gap: 4rem;
     }
     @keyframes slide_events {
         /* 0%{
@@ -1658,6 +1702,10 @@ footer hr {
 }
 #next{
     padding-left: 1rem;
+    transform: translateX(3rem);
+}
+#prev{
+    transform: translateX(-3rem);
 }
 
 }
