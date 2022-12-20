@@ -775,6 +775,9 @@ hr{
     left: -1rem;
     visibility: hidden;
 }
+#reviewsSwipe2{
+    display: none;
+}
 .reviewidentity{
     display: flex;
     align-items: center;
@@ -1463,6 +1466,19 @@ footer hr {
         background-color: #f3f5f3;
         padding: 4px 4px;
         border-radius: 50%;
+        /* visibility: hidden; */
+    }
+    #reviewsSwipe2{
+        display: block;
+        position: absolute;
+        left: .5rem;
+        top: 50%;
+        width: 40px;
+        z-index: 2;
+        background-color: #f3f5f3;
+        padding: 4px 4px;
+        border-radius: 50%;
+        visibility: hidden;
     }
     .testimonials{
         padding-inline: 1.5rem;
@@ -1475,19 +1491,28 @@ footer hr {
         margin-top: 10px;
     }
     .testimonial-card{
-        overflow-x: scroll;
+        overflow-x: hidden;
         width: 100%;
         margin: auto;
         
     }
-    .card1{
-        animation: phoneR 10s linear infinite;
+    /* .card1{
+        animation: phoneR 30s linear infinite;
     }
     @keyframes phoneR {
-        100%{
-            transform: translateX(-670px);
+        0%{
+            transform: translateX(-100%);
         }
-    }
+        25%{
+            transform: translateX(-200%);
+        }
+        50%{
+            transform: translateX(-300%);
+        }
+        75%,100%{
+            transform: translateX(-328%);
+        }
+    } */
     .testimonial-card::-webkit-scrollbar{
         border-radius: 20px;
         height: 2px;

@@ -3,6 +3,7 @@ let prevReview = document.getElementById('prev')
 let reviews = document.querySelectorAll('.card1')
 let reviewMoveNext = false
 let reviewMovePrev = false
+let phoneReviewMoveNext = false
 let reviewMove;
 let communityHeader = document.getElementById('dive')
 let teachingHeader = document.getElementById('teaching')
@@ -13,7 +14,7 @@ let closeBar = document.getElementById('close')
 let navList = document.getElementById('navList')
 let reviewH = document.querySelectorAll('.reviewH')
 let achieveList = document.querySelectorAll('.achieveList')
-
+let phoneReviewLeft = document.getElementById('reviewsSwipe2')
 
 
 function menuOpen(){
@@ -31,6 +32,7 @@ function next(){
         reviews[i].style.cssText = 'transform: translateX(-110%); transition: 1s linear'
     }
     prevReview.style.visibility = 'visible'
+    phoneReviewLeft.style.visibility = 'visible'
     prevReview.style.transition = '.5s linear'
     reviewMoveNext = true
     reviewMove = 1;
@@ -54,6 +56,7 @@ function prev(){
             reviews[i].style.cssText = 'transform: translateX(-110%); transition: 1s linear'
         }
         nextReview.style.visibility = 'visible'
+        // document.getElementById('reviewsSwipe').style.visibility = 'hidden'
         reviewMovePrev = true
         reviewMoveNext = false
         
