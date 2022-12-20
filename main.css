@@ -1260,8 +1260,9 @@ footer hr {
         padding-bottom: 1rem;
     }
     .teaches main div p{
-        font-size: 14px;
+        font-size: 18px;
         text-align: center;
+        margin-left: -1rem;
     }
     .two{
         flex-direction: column;
