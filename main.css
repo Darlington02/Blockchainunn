@@ -1146,6 +1146,7 @@ footer hr {
     }
     .patners main{
         gap: 1rem;
+        justify-content: space-between;
         /* border: 1px solid; */
         width: 100%;
         display: flex;
@@ -1297,9 +1298,10 @@ footer hr {
         padding-bottom: 1rem;
     }
     .teaches main div p{
-        font-size: 18px;
-        text-align: center;
-        margin-left: -1rem;
+        font-size: 22px;
+        /* text-align: center; */
+        /* margin-left: -1rem; */
+        margin-top: -2rem;
     }
     .two{
         flex-direction: column;
@@ -1454,8 +1456,13 @@ footer hr {
     #reviewsSwipe{
         display: block;
         position: absolute;
-        right: 3rem;
-        top: 1rem;
+        right: .5rem;
+        top: 50%;
+        width: 40px;
+        z-index: 2;
+        background-color: #f3f5f3;
+        padding: 4px 4px;
+        border-radius: 50%;
     }
     .testimonials{
         padding-inline: 1.5rem;
