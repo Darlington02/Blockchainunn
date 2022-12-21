@@ -5,16 +5,86 @@ let reviewMoveNext = false
 let reviewMovePrev = false
 let phoneReviewMoveNext = false
 let reviewMove;
+let phoneReviewMove;
 let communityHeader = document.getElementById('dive')
 let teachingHeader = document.getElementById('teaching')
 let phoneSize = window.matchMedia('(max-width:670px)')
-let phoneSize2 = window.matchMedia('(max-width:420px)')
+let phoneSize2 = window.matchMedia('(max-width:450px)')
+let phoneSize3 = window.matchMedia('(max-width:425px)')
+let phoneSize4 = window.matchMedia('(max-width:400px)')
+let phoneSize5 = window.matchMedia('(max-width:375px)')
+let phoneSize6 = window.matchMedia('(max-width:350px)')
 let menubar = document.getElementById('menu')
 let closeBar = document.getElementById('close')
 let navList = document.getElementById('navList')
 let reviewH = document.querySelectorAll('.reviewH')
 let achieveList = document.querySelectorAll('.achieveList')
 let phoneReviewLeft = document.getElementById('reviewsSwipe2')
+let phoneReviewright = document.getElementById('reviewsSwipe')
+let phoneScroll;
+let forward;
+
+function nextPhone(){
+    if(reviewMoveNext === false){
+        for(i = 0; i<reviews.length; i++){
+            reviews[i].style.cssText = 'transform: translateX(-110%); transition: 1s linear'
+        }
+        reviewMoveNext = true 
+        phoneScroll = false
+        phoneReviewMove = 1
+        phoneReviewLeft.style.visibility = 'visible'
+    }
+    else if(reviewMoveNext === true && phoneScroll === false){
+        for(i = 0; i<reviews.length; i++){
+            reviews[i].style.cssText = 'transform: translateX(-220%); transition: 1s linear'
+        }
+        reviewMoveNext = true
+        phoneScroll = true
+        phoneReviewMove = 2
+        phoneReviewLeft.style.visibility = 'visible'
+    }
+    else if(phoneScroll === true){
+        for(i = 0; i<reviews.length; i++){
+            reviews[i].style.cssText = 'transform: translateX(-330%); transition: 1s linear'
+        }
+        phoneScroll == true
+        phoneReviewMove = 3
+        phoneReviewright.style.visibility = 'hidden'
+    }
+}
+
+
+// prev phone review
+function prevPhone(){
+    if(reviewMovePrev === false && phoneReviewMove === 1){
+        for(i = 0; i<reviews.length; i++){
+            reviews[i].style.cssText = 'transform: translateX(0%); transition: 1s linear'
+        }
+        reviewMoveNext = false
+        phoneReviewright.style.visibility = 'visible'
+        phoneReviewLeft.style.visibility = 'hidden'
+
+    }
+    else if(phoneReviewMove === 2){
+        for(i = 0; i<reviews.length; i++){
+            reviews[i].style.cssText = 'transform: translateX(-110%); transition: 1s linear'
+        }
+        reviewMovePrev = false
+        phoneReviewMove = 1
+        reviewMoveNext = false
+        phoneReviewright.style.visibility = 'visible'
+    }
+    else if(phoneReviewMove === 3){
+        for(i = 0; i<reviews.length; i++){
+            reviews[i].style.cssText = 'transform: translateX(-220%); transition: 1s linear'
+        }
+        phoneReviewMove = 2
+        reviewMoveNext = false
+        phoneScroll = true
+        forward = true
+        phoneReviewLeft.style.visibility = 'visible'
+    }
+}
 
 
 function menuOpen(){
@@ -56,7 +126,6 @@ function prev(){
             reviews[i].style.cssText = 'transform: translateX(-110%); transition: 1s linear'
         }
         nextReview.style.visibility = 'visible'
-        // document.getElementById('reviewsSwipe').style.visibility = 'hidden'
         reviewMovePrev = true
         reviewMoveNext = false
         
@@ -92,7 +161,8 @@ let rectangles = document.querySelectorAll('.rectangles')
 if(phoneSize2.matches){
     document.getElementById('teamHead').style.fontSize = '22px'
     document.getElementById('bunn').style.fontSize = '37px'
-    document.getElementById('bunn').style.width = '90%'
+    document.getElementById('bunn').style.width = '80%'
+    document.getElementById('bunn').style.margin = 'auto'
     document.getElementById('whyH').style.fontSize = '21px'
     communityHeader.style.cssText = 'font-size:20.6px;'
     for(i=0; i<rectangles.length; i++){
@@ -102,6 +172,18 @@ if(phoneSize2.matches){
     for(i=0; i<rectangles.length; i++){
         reviewH[i].style.width = '40vw'
     }
+}
+if(phoneSize3.matches){
+    document.getElementById('bunn').style.fontSize = '35px'
+}
+if(phoneSize4.matches){
+    document.getElementById('bunn').style.fontSize = '33px'
+}
+if(phoneSize5.matches){
+    document.getElementById('bunn').style.fontSize = '31px'
+}
+if(phoneSize6.matches){
+    document.getElementById('bunn').style.fontSize = '29px'
 }
 
 document.getElementById('b1_0').style.width = '140px'
