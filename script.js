@@ -8,6 +8,7 @@ let reviewMove;
 let phoneReviewMove;
 let communityHeader = document.getElementById('dive')
 let teachingHeader = document.getElementById('teaching')
+let tabSize = window.matchMedia('(max-width:900px)')
 let phoneSize = window.matchMedia('(max-width:670px)')
 let phoneSize2 = window.matchMedia('(max-width:450px)')
 let phoneSize3 = window.matchMedia('(max-width:425px)')
@@ -23,6 +24,12 @@ let phoneReviewLeft = document.getElementById('reviewsSwipe2')
 let phoneReviewright = document.getElementById('reviewsSwipe')
 let phoneScroll;
 let forward;
+let preachImage = document.getElementById('preach')
+
+
+if(tabSize.matches){
+    preachImage.src = './images/aboutpics.jpeg'
+}
 
 function nextPhone(){
     if(reviewMoveNext === false){

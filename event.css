@@ -1,0 +1,163 @@
+@font-face {
+    font-family: Monument Extended;
+    src: url(./fonts/MonumentExtended-Ultrabold.otf);
+}
+@font-face {
+    font-family: Montserrat Bold;
+    src: url(./fonts/Montserrat/static/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(./fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    max-width: 1600px;
+    margin: auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.one{
+    padding-inline: 4rem;
+}
+#menu{
+    display: none;
+}
+#close{
+    display: none;
+}
+body::-webkit-scrollbar{
+    width: 6px;
+}
+body::-webkit-scrollbar-track{
+    background-color: #b4cfb5;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #31B219;
+    border-radius: 100vw;
+}
+#blogo{
+    width: 370px;
+    margin: -9rem 0rem;
+    transform: translateY(.5rem);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    margin-top: -1rem;
+    background-color: rgb(255, 255, 255);
+    margin-inline: 0rem;
+    padding-inline: 3rem;
+    z-index: 40;
+    position: fixed;
+    width: 1600px;
+    border-bottom: 5px solid gainsboro;
+}
+nav img{
+    margin-bottom: -3rem;
+    margin-top: 0rem;
+    margin-left: 0rem;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+nav li a{
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+    color: black;
+}
+nav li a:hover{
+    color: #388E3C;
+}
+.one{
+    padding-top: 13rem;
+    display: flex;
+    gap: 5rem;
+    position: relative;
+    padding-bottom: 2rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 61.98%, rgba(75, 75, 75, 0.7) 78.12%);
+
+}
+.one::before{
+    content: '';
+    background-image: url(./images/IMG-20221211-WA0002.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    filter: brightness(30%) opacity(.4);
+}
+.top_left{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+}
+.top_right{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    position: relative;
+}
+.countdown{
+    display: flex;
+    gap: 5rem;
+}
+.top_left h1{
+    font-family: Monument Extended;
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 46px;
+}
+.top_left h2{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 29px;
+}
+.countdown h1{
+    font-family: Monument Extended;
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 62px;
+}
+.countdown small{
+    font-family: Monument Extended;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+}
+#register{
+    font-family: Monument Extended;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 38px;
+    margin-top: 2rem;
+}
+.one h1{
+    color: white;
+}
+.one h2, .one small{
+    color: #388E3C;
+}

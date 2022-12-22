@@ -671,7 +671,6 @@ hr{
     height: 7px;
     background-color: #388E3C;
 }
-
 .testimonials{
     display: flex;
     flex-direction: column;
@@ -754,11 +753,8 @@ hr{
 #next{
     cursor: pointer;
     width: 80px;
-    /* border-radius: 55%; */
     padding: 10px;
     position: absolute;
-    /* background: #ffffff; */
-    /* box-shadow: 0px 0px 10px 1px #aeb8ac; */
     z-index: 2;
     right: -1rem;
     top: 40%;
@@ -766,11 +762,8 @@ hr{
 #prev{
     cursor: pointer;
     width: 80px;
-    /* border-radius: 55%; */
     padding: 10px;
     position: absolute;
-    /* background: #ffffff;
-    box-shadow: 0px 0px 10px 1px #aeb8ac; */
     z-index: 2;
     top: 40%;
     left: -1rem;
@@ -836,7 +829,7 @@ hr{
 .teaml p{
     font-family: Montserrat;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 900;
     line-height: 20px;
     color: #4a4a4a;
 }
@@ -1440,6 +1433,17 @@ footer hr {
     .featured{
         overflow-x: scroll;
     }
+    @keyframes slide_events {
+        /* 0%{
+            transform: translateX(-27.65%);
+        } */
+        0%{
+            transform: translateX(-6%);
+        }
+        100%{
+            transform: translateX(-110%);
+        }
+    }
     .featured::-webkit-scrollbar-button{
         background-color: #e5e5e5;
         color: #2E7D32;
@@ -1462,7 +1466,7 @@ footer hr {
         top: 50%;
         width: 40px;
         z-index: 2;
-        background-color: #f3f5f3;
+        background-color: #f7fff9;
         padding: 4px 4px;
         border-radius: 50%;
         /* visibility: hidden; */
@@ -1474,7 +1478,7 @@ footer hr {
         top: 50%;
         width: 40px;
         z-index: 2;
-        background-color: #f3f5f3;
+        background-color: #f7fff9;
         padding: 4px 4px;
         border-radius: 50%;
         visibility: hidden;
@@ -1778,12 +1782,71 @@ footer hr {
 
 }
 
-@media (max-width:1140px) and (min-width:760px){
-    .three main{
-        flex-direction: row;
+@media (max-width:1200px) and (min-width:670px){
+    html{
+        overflow-x: hidden;
     }
-    .three article{
+    .top main{
+        border: 1px solid;
+    }
+    .top main p{
+        width: 100%;
+    }
+    .videos iframe{
+        width: 750px;
+        height: 320px;
+    }
+    .patnership{
+        margin-inline: -6rem;
+        padding-inline: 6rem;
+    }
+    .patners{
         flex-direction: column;
+        padding-inline: 0rem;
+    }
+    .patners article{
+        gap: -0rem;
+        flex-direction: column;
+        width: 40%;
+        margin: auto;
+        margin-top: -3rem;
+    }
+    .patners h1{
+        font-size: 25px;
+    }
+    .patnertop{
+        margin-bottom: -6rem;
+    }
+    .patner3{
+        margin-top: -2rem;
+    }
+    .patners main{
+        justify-content: center;
+    }
+    #baf{
+        transform: translateX(6rem);
+    }
+    #ekolance{
+        margin-left: -5rem;
+    }
+    .why{
+        padding-inline: 3rem;
+        margin-inline: -6rem;
+    }
+    .why h1{
+        font-size: 25px;
+    }
+    .why p{
+        font-size: 16px;
+    }
+    .why main img{
+        width: 400px;
+    }
+    .one{
+        position: relative;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        padding-inline: 3rem;
     }
     .one>div{
         justify-content: center;
@@ -1797,7 +1860,6 @@ footer hr {
         margin: auto;
     }
     #logo{
-       
         height: 400px; 
     }
     .one article{
@@ -1807,8 +1869,38 @@ footer hr {
     .one article>div{
         margin-bottom: 2rem;
     }
+    .problem{
+        padding-inline: 3rem;
+    }
+    #teaching{
+        font-size: 25px;
+    }
+    .teaches main div p{
+        font-size: 18px;
+    }
+    .community{
+        padding-inline: -3rem;
+    }
+    .community header h1{
+        font-size: 25px;
+        line-height: 26px;
+    }
+    .community-breakdown {
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .community-breakdown li {
+        width: 100%;
+    }
+    .community-breakdown h4 {
+        font-family: 'Monument Extended', sans-serif;
+        font-size: 39px;
+        color: #2E7D32;
+    }
     .two{
         flex-direction: column;
+        margin-inline: -6rem;
+        padding-inline: 3rem;
     }
     .two article{
         flex-direction: column;
@@ -1821,6 +1913,21 @@ footer hr {
         font-family: Monument Extended;
         font-size: 22px;
         line-height: 26.4px;
+    }
+    #dive{
+        font-size: 25px;
+    }
+    #budv h1, #buds h1, #bucs h1{
+        font-size: 20px;
+    }
+    .achieve{
+        padding-inline: 3rem;
+    }
+    .achieve h1{
+        font-size: 25px;
+    }
+    .achieve h3{
+        font-size: 20px;
     }
     .testimonials{
         padding-inline: 1rem;
@@ -1842,45 +1949,50 @@ footer hr {
         font-size: 14px;
         padding: 7px 11px;
     }
-    /* .team-section{
-        padding-inline: 1rem;
+    .three{
+        padding-inline: 3rem;
+        margin-inline: -6rem;
     }
-   .team-section .main1,.team-section .main2{
-    flex-direction: column;
-   }
-   .team-section .main2 .otherTeam::before{
-    content: 'Other Team members';
-   }
-   .team-section .main2 .otherTeam{
-    justify-content: center;
-   }
-   .team-section .main1 article,.team-section .main2 article{
-    width: 100%;
-   } */
-   .community{
-    margin-inline: 0rem;
-    padding-inline: 1rem;
-    width: 100%;
-
-    }
-    .community header h1{
-        font-size: 28px;
-        line-height: 26px;
-    }
-    .community-breakdown {
+    .three main{
         flex-direction: row;
-        gap: 1rem;
     }
-    .community-breakdown li {
-        width: 100%;
+    .three article{
+        flex-direction: row;
     }
-    .community-breakdown h4 {
-        font-family: 'Monument Extended', sans-serif;
-        font-size: 39px;
-        color: #2E7D32;
+    .newevent h1{
+        font-size: 55px;
+    }
+    @keyframes slide_events {
+        100%{
+            transform: translateX(-139%);
+        }
+    }
+    .teamsec{
+        padding-inline: 3rem;
+        margin-inline: -6rem;
+    }
+    .teamsec header h1{
+        font-size: 25px;
+    }
+    .card1 {
+        background-color: #f7fff9;
+        z-index: 1;
+    }
+    .photo{
+        width: 300px;
+    }
+    .testimonials{
+        padding-inline: 3rem;
+        margin-inline: -6rem;
+    }
+    #next{
+        right: 4rem;
+    }
+    #prev{
+        left: 3rem;
     }
     footer{
-        margin-inline: 0rem;
+        margin-inline: -6rem;
         text-align: center;
     }
     .footer-div {
@@ -1896,8 +2008,182 @@ footer hr {
         width: 100%;
         align-items: center;
     }
+    .orgs{
+        margin-top: 0;
+        gap: 1rem;
+        float: initial;
+        margin: auto;
+        justify-content: center;
+        padding-bottom: 1rem;
+    }
+    .orgs h3{
+        display: none;
+    }
     .logo{
         margin-top: -6rem;
         margin-bottom: -8rem;
+    }
+}
+@media (max-width: 1000px)  and (min-width: 670px){
+        html{
+        overflow-x: hidden;
+    }
+    #menu{
+        display: block;
+        position: absolute;
+        z-index: 42;
+        width: 40px;
+        right: 1rem;
+        top: .7rem;
+    }
+    #close{
+        display: block;   
+        transform: translateX(300%);
+        position: absolute;
+        z-index: 100;
+        width: 20px;
+        right: 2rem;
+        top: 2rem;
+        transition: .55s linear;
+        z-index: 50;
+    }
+    body{
+        width: 100%;
+        padding-inline: 1rem;
+        overflow-x: hidden;
+    }
+    nav main{
+        width: 100%;
+        background-color: white;
+        position: relative;
+        padding-top: 18px;
+        padding-bottom: 14px;
+    }
+    #blogo{
+        width: 300px;
+        margin-left: -2.5rem;
+        transform: translateY(0);
+    }
+    nav{
+        width: 100%;
+        padding-inline: 1rem;
+        margin-inline: -1rem;
+    }
+    nav img{
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+        margin-left: -2rem;
+        padding-left: -10rem;
+    }
+    nav ul{
+        /* display: none; */
+        position:absolute;
+        inset: 0 0 0 30%;
+        flex-direction: column;
+        justify-content: initial;
+        background-color: white;
+        height: 100vh;
+        padding-left: 2rem;
+        padding-top: 5rem;
+        transition: .5s linear;
+        transform: translateX(100%);
+        z-index: 43;
+    }
+    .top,.patnership,.why,.one,.problem,.community,.two,.achieve,.three,.teamsec,.testimonials{
+        padding-inline: 2rem;
+        margin-inline: -1rem;
+    }
+    .top main{
+        padding-top: -2rem;
+    }
+    .top main h1{
+        width: 50%;
+        line-height: 60px;
+        margin: auto;
+        font-size: 350%;
+        text-align: center;
+    }
+    .top main p{
+        width: 80%;
+        font-size: 22px;
+    }
+    .rectangles{
+        width: 48px;
+    }
+    .top main button{
+        font-size: 20px;
+        width: 250px;
+        padding: 10px;
+        height: 50px;
+    }
+    .why header{
+        width: 100%;
+    }
+    .why h1{
+        width: 120%;
+        line-height: 30px;
+    }
+    .cfs{
+        flex-direction: column;
+    }
+    .teaml{
+        width: 100%;
+    }
+}
+@media (max-width: 670px) and (min-width: 450px){
+    .top main h1{
+        text-align: center;
+    }
+}
+@media (max-width: 900px) and (min-width: 670px){
+    .textarea{
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+    .why{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .why main img{
+        width: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+    .teaches{
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .activity{
+        margin-inline: -2rem;
+        padding-inline: 2rem;
+    }
+    .activity_top,.activity_bottom{
+        display: flex;
+        flex-direction: column;
+    }
+    .teaches main div{
+        width: 100%;
+    }
+    .teaches main div p{
+        width: 40vw;
+    }
+    .problem .activity h4{
+        position: relative;
+    }
+    .teaches main div::before{
+        width: 100%;
+    }
+    .card1, .card2 {
+        padding: 1.5rem 1rem;
+        box-shadow: 0px 0px 15px #fbf2f2;
+        font-size: 14px;
+        line-height: 22px;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-right: -2rem;
+    }
+    #yt2{
+        display: none;
     }
 }
