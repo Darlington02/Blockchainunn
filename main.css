@@ -38,6 +38,7 @@ body::-webkit-scrollbar-thumb{
 #blogo{
     width: 370px;
     margin: -9rem 0rem;
+    transform: translateY(.5rem);
 }
 nav{
     display: flex;
@@ -50,7 +51,7 @@ nav{
     z-index: 40;
     position: fixed;
     width: 1600px;
-    border-bottom: 5px solid gainsboro;
+    border-bottom: 3px solid gainsboro;
 }
 nav img{
     margin-bottom: -3rem;
@@ -1035,6 +1036,7 @@ footer hr {
     #blogo{
         width: 300px;
         margin-left: -2.5rem;
+        transform: translateY(0);
     }
     nav{
         width: 100%;
@@ -1453,9 +1455,6 @@ footer hr {
     .three hr{
         transform: translateY(0rem);
     }
-    /* .oldevents{
-        animation: none;
-    } */
     #reviewsSwipe{
         display: block;
         position: absolute;
@@ -1496,23 +1495,6 @@ footer hr {
         margin: auto;
         
     }
-    /* .card1{
-        animation: phoneR 30s linear infinite;
-    }
-    @keyframes phoneR {
-        0%{
-            transform: translateX(-100%);
-        }
-        25%{
-            transform: translateX(-200%);
-        }
-        50%{
-            transform: translateX(-300%);
-        }
-        75%,100%{
-            transform: translateX(-328%);
-        }
-    } */
     .testimonial-card::-webkit-scrollbar{
         border-radius: 20px;
         height: 2px;
