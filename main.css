@@ -1055,12 +1055,11 @@ footer hr {
         padding-left: -10rem;
     }
     nav ul{
-        /* display: none; */
         position:absolute;
         inset: 0 0 0 30%;
         flex-direction: column;
         justify-content: initial;
-        background-color: white;
+        background-color: #F5FFF3;
         height: 100vh;
         padding-left: 2rem;
         padding-top: 5rem;
@@ -1306,8 +1305,6 @@ footer hr {
     }
     .teaches main div p{
         font-size: 22px;
-        /* text-align: center; */
-        /* margin-left: -1rem; */
         margin-top: -2rem;
     }
     .two{
@@ -1439,18 +1436,15 @@ footer hr {
         margin-bottom: -2rem;
         padding-left: .5rem;
     }
-    .featured{
-        overflow-x: scroll;
+    .oldevents{
+        animation: slide_event 9s linear 1s infinite;
     }
-    @keyframes slide_events {
+    @keyframes slide_event {
         /* 0%{
             transform: translateX(-27.65%);
         } */
-        0%{
-            transform: translateX(-6%);
-        }
         100%{
-            transform: translateX(-110%);
+            transform: translateX(-416%);
         }
     }
     .featured::-webkit-scrollbar-button{
@@ -2103,7 +2097,7 @@ footer hr {
         inset: 0 0 0 30%;
         flex-direction: column;
         justify-content: initial;
-        background-color: white;
+        background-color: #F5FFF3;
         height: 100vh;
         padding-left: 2rem;
         padding-top: 5rem;

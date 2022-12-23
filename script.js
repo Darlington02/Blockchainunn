@@ -26,6 +26,7 @@ let phoneScroll;
 let forward;
 let preachImage = document.getElementById('preach')
 let allSections = document.querySelectorAll('section')
+let nlist = document.querySelectorAll('.nlist')
 
 
 if(tabSize.matches){
@@ -102,9 +103,9 @@ function menuOpen(){
     for(i=0; i<allSections.length; i++){
         allSections[i].style.filter = 'opacity(.5) blur(3px)'
     }
-    document.querySelector('footer').style.filter = 'opacity(.5) blur(3px)'
-    
+    document.querySelector('footer').style.filter = 'opacity(.5) blur(3px)' 
 }
+
 function menuClose(){
     navList.style.cssText = 'transform: translateX(100%)'
     closeBar.style.cssText = 'transform: translateX(300%)'
@@ -113,6 +114,12 @@ function menuClose(){
         allSections[i].style.filter = 'opacity(1) blur(0px)'
     }
     document.querySelector('footer').style.filter = 'opacity(1) blur(0px)'
+}
+
+for(i=0; i<nlist.length; i++){
+    nlist[i].addEventListener('click', ()=>{
+         menuClose();
+    })
 }
 
 function next(){

@@ -328,7 +328,7 @@ footer hr {
         inset: 0 0 0 30%;
         flex-direction: column;
         justify-content: initial;
-        background-color: white;
+        background-color: #F5FFF3;
         height: 100vh;
         padding-left: 2rem;
         padding-top: 5rem;
@@ -445,7 +445,7 @@ footer hr {
         inset: 0 0 0 30%;
         flex-direction: column;
         justify-content: initial;
-        background-color: white;
+        background-color: #F5FFF3;
         height: 100vh;
         padding-left: 2rem;
         padding-top: 5rem;
@@ -538,8 +538,8 @@ footer hr {
     .contact{
         margin-top: 0rem;
     }
-    .contacth3{
-        font-size: 20px;
+    .contact h3{
+        font-size: 14px;
     }
     .logo{
         margin-top: -6rem;
