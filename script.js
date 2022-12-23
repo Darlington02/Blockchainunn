@@ -33,6 +33,14 @@ if(tabSize.matches){
     preachImage.src = './images/aboutpics.jpeg'
 }
 
+if(phoneSize.matches){
+    for(i=0; i<nlist.length; i++){
+        nlist[i].addEventListener('click', ()=>{
+             menuClose();
+        })
+    }
+    }
+    
 function nextPhone(){
     if(reviewMoveNext === false){
         for(i = 0; i<reviews.length; i++){
@@ -116,11 +124,7 @@ function menuClose(){
     document.querySelector('footer').style.filter = 'opacity(1) blur(0px)'
 }
 
-for(i=0; i<nlist.length; i++){
-    nlist[i].addEventListener('click', ()=>{
-         menuClose();
-    })
-}
+
 
 function next(){
     if(reviewMoveNext === false){

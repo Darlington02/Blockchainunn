@@ -76,7 +76,7 @@ nav li a:hover{
     color: #388E3C;
 }
 .top main{
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 61.98%, rgba(75, 75, 75, 0.7) 78.12%), url(./images/aboutpics.jpeg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 61.98%, rgba(75, 75, 75, 0.7) 78.12%), url(images/aboutpics.jpeg);
     /* background-image: url(./images/aboutpics.jpeg); */
     background-repeat: no-repeat;
     background-size: cover;
