@@ -1,11 +1,11 @@
+@font-face {
+    font-family: Monument Extended;
+    src: url(./fonts/MonumentExtended-Ultrabold.otf);
+}
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-@font-face {
-    font-family: Monument Extended;
-    src: url(./fonts/MonumentExtended-Ultrabold.otf);
 }
 html{
     scroll-behavior: smooth;
@@ -24,6 +24,7 @@ body{
     gap: 8rem;
     Padding-inline: 6rem;
     overflow-x: hidden;
+    background-color: #fff;
 }
 body::-webkit-scrollbar{
     width: 6px;
@@ -955,6 +956,17 @@ footer h3{
     gap: 5rem;
     float: right;
     margin-top: -8rem;
+}
+.contact{
+    color: #fff;
+    margin-top: -3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: end;
+    font-family: 'Monument Extended', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+   
 }
 .footer-container a:hover {
     font-size: 20px;
@@ -2129,6 +2141,27 @@ footer hr {
     .teaml{
         width: 100%;
     }
+    .problem .pdiv h1{
+        font-size: 25px;
+    }
+    .problem .pdiv p{
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .community-breakdown h4{
+        font-size: 27px;
+    }
+    .community-breakdown p{
+        font-size: 18px;
+    }
+    .newevent h1{
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .neweventText{
+        font-size: 18px;
+        line-height: 28px;
+    }
 }
 @media (max-width: 670px) and (min-width: 450px){
     .top main h1{
@@ -2149,9 +2182,41 @@ footer hr {
         border-radius: 20px;
         object-fit: cover;
     }
+    .why h3{
+        font-size: 16px;
+    }
+    .why p{
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .one div h1{
+        font-size: 22px;
+    }
+    .problem .pdiv h1{
+        font-size: 22px;
+    }
+    .problem .pdiv p{
+        font-size: 16px;
+        line-height: 25px;
+    }
     .teaches{
         flex-direction: row;
         gap: 1rem;
+    }
+    #teaching{
+        font-size: 22px;
+    }
+    .community h1{
+        font-size: 22px;
+    }
+    .community-breakdown h4{
+        font-size: 25px;
+    }
+    .community-breakdown p{
+        font-size: 16px;
+    }
+    #dive{
+        font-size: 22px;
     }
     .activity{
         margin-inline: -2rem;
@@ -2172,6 +2237,21 @@ footer hr {
     }
     .teaches main div::before{
         width: 100%;
+    }
+    .achieve h3{
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .newevent h1{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .neweventText{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .teamsec{
+        margin-top: -3rem;
     }
     .card1, .card2 {
         padding: 1.5rem 1rem;
