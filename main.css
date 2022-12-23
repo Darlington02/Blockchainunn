@@ -1074,8 +1074,6 @@ footer hr {
         padding-top: 3rem;
         height: 700px;
         padding-inline: 1rem;
-        /* position: relative; */
-        /* padding-top: 5rem; */
     }
     .top main::before{
         content: '';
@@ -1157,7 +1155,6 @@ footer hr {
     .patners main{
         gap: 1rem;
         justify-content: space-between;
-        /* border: 1px solid; */
         width: 100%;
         display: flex;
         gap: 1rem;
@@ -1718,6 +1715,12 @@ footer hr {
     .orgs h3{
         display: none;
     }
+    .contact{
+        margin-top: 0rem;
+    }
+    .contact h3{
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width:1920px){
@@ -2034,6 +2037,13 @@ footer hr {
     .logo{
         margin-top: -6rem;
         margin-bottom: -8rem;
+    }
+    .contact{
+        margin-top: 0rem;
+        justify-content: center;
+    }
+    .contact h3{
+        font-size: 20px;
     }
 }
 @media (max-width: 1000px)  and (min-width: 670px){

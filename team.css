@@ -378,6 +378,13 @@ footer hr {
     .orgs h3{
         display: none;
     }
+    .contact{
+        margin-top: 0rem;
+        justify-content: center;
+    }
+    .contact h3{
+        font-size: 20px;
+    }
  
 }
 @media (max-width:760px){
@@ -527,6 +534,12 @@ footer hr {
     }
     .orgs h3{
         display: none;
+    }
+    .contact{
+        margin-top: 0rem;
+    }
+    .contacth3{
+        font-size: 20px;
     }
     .logo{
         margin-top: -6rem;
