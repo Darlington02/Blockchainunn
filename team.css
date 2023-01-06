@@ -54,7 +54,8 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     margin-top: -1rem;
     background-color: rgb(255, 255, 255);
     margin-inline: 0rem;

@@ -27,7 +27,16 @@ let forward;
 let preachImage = document.getElementById('preach')
 let allSections = document.querySelectorAll('section')
 let nlist = document.querySelectorAll('.nlist')
+let bd = document.getElementById('bd')
 
+
+
+bd.addEventListener('click', ()=>{
+    bd.style.cssText = 'text-align:left; font-size: 18px;'
+    document.getElementById('bdtext').style.cssText = 'transform:translateY(-20px); transition: .5s linear;'
+    document.getElementById('bdtext_1').textContent = 'Blockchain Education'
+    document.getElementById('bdtext_1').style.cssText = 'transform:translateY(-20px); transition: .5s linear;'
+})
 
 if(tabSize.matches){
     preachImage.src = './images/aboutpics.jpeg'
@@ -243,3 +252,5 @@ achieveList[i].addEventListener('ontouchstart', ()=>{
 // prevReview.addEventListener('click', ()=>{
 //     return prev()
 //  })
+
+

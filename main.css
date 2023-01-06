@@ -17,7 +17,7 @@ html{
     display: none;
 }
 body{
-    max-width: 1600px;
+    max-width: 1440px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -45,13 +45,14 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     background-color: rgb(255, 255, 255);
     margin-inline: -6rem;
     padding-inline: 3rem;
     z-index: 40;
     position: fixed;
-    width: 1600px;
+    width: 1440px;
     border-bottom: 3px solid gainsboro;
 }
 nav img{
@@ -157,17 +158,23 @@ nav li a:hover{
 }
 .patners{
     display: flex;
-    flex-direction: column;
     gap: .5rem;
     align-items: center;
     padding-inline: 8rem;
 }
 .patners header{
-    width: 100%;
+    width: 30%;
 }
 .patners article{
     display: flex;
     gap: 3rem;
+    width: 100%;
+    margin-bottom: -1rem;
+}
+.allpatners{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .patners main{
     display: flex;
@@ -218,13 +225,40 @@ nav li a:hover{
     line-height: 28px;
     margin-bottom: 3rem;
     text-align: justify;
+    color: #484848;
 }
 .why header{
     width: 60%;
 }
+#read{
+    text-decoration: none;
+    color: #388E3C;
+    font-weight: 900;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 29px;
+    border: 1px solid #388E3C;
+    padding: 10px;
+    border-radius: 15px;
+}
 .one>div img{
     width: 100%;
     height: 640px;  
+}
+.one>div img:hover{
+    /* transform: rotateX(180deg); */
+    animation: tot 3s linear;
+    animation-iteration-count: 1;
+    cursor: pointer;
+}
+@keyframes tot {
+    50%{
+        transform: rotateX(180deg);
+    }
+    100%{
+        transform: rotateX(0deg);
+    }
 }
 .one>div{
     width: 50%;
@@ -263,13 +297,35 @@ nav li a:hover{
 .one article{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
     width: 50%;
 }
 .one article h1{
     font-size: 25px;
 }
-.problem{
+.one article div{
+    border: 1px solid #e5e5e5;
+    padding: 30px;
+    border-radius: 10px;
+}
+.vision{
+    background-color: #388E3C;
+    color: white;
+}
+.vision hr{
+    opacity: .3;
+}
+.mission:hover{
+    background-color: #388E3C;
+    color: white;
+}
+.vision:hover{
+    background-color: white;
+    color: #484848;
+}
+/* .problem{
     margin-inline: -6rem;
     padding-inline: 6rem;
     margin-top: -8rem;
@@ -288,8 +344,8 @@ nav li a:hover{
 }
 .problem .prosol::before{
     content: '';
-    background-image: url(./images/IMG-20221211-WA0003.jpg);
-    background-color: rgb(255, 255, 255 0.5);
+    /* background-image: url(./images/IMG-20221211-WA0003.jpg); */
+    /* background-color: rgb(255, 255, 255 0.5);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -299,8 +355,8 @@ nav li a:hover{
     left: 0;
     opacity: .2;
     filter: blur(0px);
-}
-.problem .pdiv h1{
+} */
+/* .problem .pdiv h1{
     color: #2E7D32;
 }
 .problem .pdiv p{
@@ -310,12 +366,12 @@ nav li a:hover{
 }
 .problem .pdiv{
     padding: 2rem 3rem;
-    /* width: 50%; */
+    padding: 64px;
     background-color: #F5F2FF;
     border-radius: 5px;
     position: relative;
-}
-.problem .pdiv::before{
+} */
+/* .problem .pdiv::before{
     content: '';
     background-color: #F5FFF3;
     position: absolute;
@@ -330,7 +386,7 @@ nav li a:hover{
     font-size: 30px;
     font-weight: 800;
     line-height: 40px;
-    margin-bottom: 2rem;
+    margin-bottom: 24px;
 }
 .problem .activity header{
     margin-top: 7rem;
@@ -411,7 +467,7 @@ nav li a:hover{
 }
 .problem .activity #t8::before{
     background-image: url(./images/web3.jpg);
-}
+} */ 
 .two{
     flex-direction: column;
     gap: 2rem;
@@ -438,7 +494,12 @@ nav li a:hover{
     border-radius: 20px;
 }
 #budv h1, #buds h1, #bucs h1{
+    font-family: Montserrat;
     font-size: 22px;
+    font-weight: 900;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 .two button{
     font-family: 'Montserrat';
@@ -478,6 +539,21 @@ nav li a:hover{
 #bucs button, #buds button, #budv button :hover{
     cursor: pointer;
 }
+#budv button:hover{
+    background-color: #388E3C;
+    color: white;
+    transition: .5s linear;
+}
+#buds button:hover{
+    background-color: #342662;
+    color: white;
+    transition: .5s linear;
+}
+#bucs button:hover{
+    background-color: #5A4C1F;
+    color: white;
+    transition: .5s linear;
+}
 #teleb:hover{
     cursor: pointer;
 }
@@ -490,7 +566,7 @@ nav li a:hover{
     width: 50%;
     padding-right: 5rem;
 }
-.achieve{
+/* .achieve{
     margin-top: -7rem;
     padding-top: 4rem;
     padding-bottom: 3rem;
@@ -541,6 +617,74 @@ nav li a:hover{
     color: #31B219;
     font-weight: 700;
     transition: 1s ease-in-out;
+} */
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.skills h1{
+    font-family: Monument Extended;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 48px;
+}
+.skills article{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.skills ul{
+    display: flex;
+    gap: 3%;
+    list-style: none;
+}
+.skills ul li{
+    width: 30%;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 39px;
+    border: 1px solid;
+    padding: 80px 20px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.skills ul li small{
+    font-size: 14px;
+    font-weight: 400;
+}
+#bd{
+    background-image: url(./images/blockchain\ tech.png);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#fd{
+    background-image: url(./images/image\ 7.png);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ds{
+    background-image: url(./images/ui\ ux.jpg);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#hd{
+    background-image: url(./images/content.png);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ce{
+    background-image: url(./images/crypto.jpg);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .three{
     display: flex;
@@ -586,6 +730,7 @@ nav li a:hover{
     font-size: 23px;
     line-height: 30px;
     font-weight: 500;    
+    color: #484848;
 }
 #eventH{
     margin-top: -2rem;
@@ -911,7 +1056,7 @@ hr{
 
 footer {
     margin-inline: -6rem;
-    margin-top: -7rem;
+    margin-top: -8rem;
     padding: 0rem 4rem;
     background-color: #000000;
 }
@@ -1725,8 +1870,16 @@ footer hr {
         width: 100%;
     }
 }
+@media only screen and (max-width:1600px){
+    body{
+        max-width: 1920px;
+    }
+    nav{
+        width: 100%;
+    }
+}
 
-@media only screen and (max-width:1440px){
+/* @media only screen and (max-width:1440px){
 
     nav{
         width: 100%;
@@ -1774,9 +1927,6 @@ footer hr {
         gap: 4rem;
     }
     @keyframes slide_events {
-        /* 0%{
-            transform: translateX(-6%);
-        } */
     100%{
         transform: translateX(-128.5%);
     }
@@ -1789,7 +1939,7 @@ footer hr {
     transform: translateX(-3rem);
 }
 
-}
+} */
 
 @media (max-width:1200px) and (min-width:670px){
     html{
