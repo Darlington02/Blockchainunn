@@ -78,7 +78,6 @@ nav li a:hover{
 }
 .top main{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 61.98%, rgba(75, 75, 75, 0.7) 78.12%), url(images/aboutpics.jpeg);
-    /* background-image: url(./images/aboutpics.jpeg); */
     background-repeat: no-repeat;
     background-size: cover;
     margin-inline: -6rem;
@@ -158,29 +157,34 @@ nav li a:hover{
 }
 .patners{
     display: flex;
-    gap: .5rem;
+    gap: 2rem;
     align-items: center;
     padding-inline: 8rem;
 }
 .patners header{
-    width: 30%;
+    width: 35%;
 }
 .patners article{
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     width: 100%;
     margin-bottom: -1rem;
 }
 .allpatners{
     display: flex;
     flex-direction: column;
+    gap: 2rem;
     align-items: center;
+    width: 65%;
 }
-.patners main{
+.patner2,.patnertop,.patner3{
     display: flex;
     align-items: center;
-    gap: 3rem;
-    width: 100%;
+    gap: 2rem;
+    justify-content: center;
+}
+.patner3{
+    gap: 7rem;
 }
 .patners h1{
     font-family: Monument Extended;
@@ -194,6 +198,10 @@ nav li a:hover{
 }
 #ekolance{
     width: 120px;
+    margin-right: 7rem;
+}
+.patner3{
+    margin-top: -3rem;
 }
 #baf{
     width: 180px;
@@ -230,6 +238,17 @@ nav li a:hover{
 .why header{
     width: 60%;
 }
+.why main img{
+    animation: preach 2.3s linear infinite;
+}
+@keyframes preach {
+    50%{
+        transform: translate(-20px,-20px);
+    }
+    100%{
+        transform: translate(20px, 20px, 20px);
+    }
+}
 #read{
     text-decoration: none;
     color: #388E3C;
@@ -242,12 +261,15 @@ nav li a:hover{
     padding: 10px;
     border-radius: 15px;
 }
+#read:hover{
+    background-color: #388E3C;
+    color: white;
+}
 .one>div img{
     width: 100%;
     height: 640px;  
 }
 .one>div img:hover{
-    /* transform: rotateX(180deg); */
     animation: tot 3s linear;
     animation-iteration-count: 1;
     cursor: pointer;
@@ -271,7 +293,6 @@ nav li a:hover{
     margin-inline: -6rem;
     padding: 6rem;  
     background-color: #F5FFF3;
-    /* background-color: #daf7e5; */
     margin-top: -8rem;
 }
 .one h1, .two header h1, .three header h1,.problem h1, .why h3{
@@ -310,164 +331,20 @@ nav li a:hover{
     padding: 30px;
     border-radius: 10px;
 }
-.vision{
-    background-color: #388E3C;
-    color: white;
-}
-.vision hr{
-    opacity: .3;
-}
 .mission:hover{
     background-color: #388E3C;
     color: white;
+    box-shadow: 0px 0px 64px #388E3C;
+    border: none;
+    transition: .3s linear;
 }
 .vision:hover{
-    background-color: white;
-    color: #484848;
+    background-color: #388E3C;
+    color: white;
+    box-shadow: 0px 0px 64px #388E3C;
+    border: none;
+    transition: .3s linear;
 }
-/* .problem{
-    margin-inline: -6rem;
-    padding-inline: 6rem;
-    margin-top: -8rem;
-    padding-top: 4rem;
-}
-.problem .prosol{
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-    position: relative;
-    margin-inline: -6rem;
-    padding-inline: 6rem;
-    margin-top: -4rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;   
-}
-.problem .prosol::before{
-    content: '';
-    /* background-image: url(./images/IMG-20221211-WA0003.jpg); */
-    /* background-color: rgb(255, 255, 255 0.5);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: .2;
-    filter: blur(0px);
-} */
-/* .problem .pdiv h1{
-    color: #2E7D32;
-}
-.problem .pdiv p{
-    font-weight: 800;
-    font-size: 20px;
-    color: #000000;
-}
-.problem .pdiv{
-    padding: 2rem 3rem;
-    padding: 64px;
-    background-color: #F5F2FF;
-    border-radius: 5px;
-    position: relative;
-} */
-/* .problem .pdiv::before{
-    content: '';
-    background-color: #F5FFF3;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: .2;
-}
-.problem .activity h4{
-    font-family: Monument Extended;
-    font-size: 30px;
-    font-weight: 800;
-    line-height: 40px;
-    margin-bottom: 24px;
-}
-.problem .activity header{
-    margin-top: 7rem;
-}
-.activity{
-    background-color: #F5FFF3;
-    margin-top: -8rem;
-    padding-top: 5rem;
-    margin-inline: -6rem;
-    padding-inline: 6rem;
-    padding-bottom: 5rem;
-}
-.teaches{
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
-.teaches main{
-    display: flex;
-    width: 100%;
-    gap: 2rem;
-    justify-content: center;
-}
-.teaches main div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 25%;
-    padding: 9rem 1rem 2rem 1rem;
-    position: relative;
-}
-.teaches main div::before{
-    content: '';
-    background-image: url(./images/web3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    filter: blur(2.5px) brightness(70%) grayscale(10%);
-    border-radius: 15px;
-    
-}
-.teaches main div p{
-    position: absolute;
-    color:white;
-    font-family: Monument Extended;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 28px;
-    padding-bottom: 1.6rem;
-    filter: drop-shadow(70px 20px 20px #000000);
-    padding-left: 1rem;
-}
-
-.problem .activity #t1::before{
-    background-image: url(./images/image\ 6.png);
-}
-.problem .activity #t2::before{
-    background-image: url(./images/image\ 7.png);
-}
-.problem .activity #t3::before{
-    background-image: url(./images/community.jpg);
-}
-.problem .activity #t4::before{
-    background-image: url(./images/crypto.jpg);
-}
-.problem .activity #t5::before{
-    background-image: url(./images/image\ 9.png);
-}
-.problem .activity #t6::before{
-    background-image: url(./images/nft.jpg);
-}
-.problem .activity #t7::before{
-    background-image: url(./images/ui\ ux.jpg);
-}
-.problem .activity #t8::before{
-    background-image: url(./images/web3.jpg);
-} */ 
 .two{
     flex-direction: column;
     gap: 2rem;
@@ -566,58 +443,6 @@ nav li a:hover{
     width: 50%;
     padding-right: 5rem;
 }
-/* .achieve{
-    margin-top: -7rem;
-    padding-top: 4rem;
-    padding-bottom: 3rem;
-    position: relative;
-    margin-inline: -6rem;
-    padding-inline: 6rem;
-}
-.achieve::before{
-    content: '';
-    background-image: url(./images/IMG-20221213-WA0000.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    filter: blur(2px);
-    opacity: .3;
-}
-.achieve h1{
-    font-size: 35px;
-    font-family: Monument Extended;
-    font-weight: 500;
-    line-height: 48px;
-    position: relative;
-}
-.achieve h3{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 23px;
-    margin-top: 20px;
-    line-height: 40px;
-    font-weight: 400;
-    background-color: #f3f5f3;
-    padding: 5px 10px;
-    border-radius: 10px;
-    box-shadow: 5px 2.5px 5px #F5F2FF;
-    position: relative;
-}
-#achieve_null{
-    visibility: hidden;
-    background-color: none;
-}
-.achieve h3:hover{
-    cursor: pointer;
-    font-size: 25px;
-    margin-bottom: 15px;
-    color: #31B219;
-    font-weight: 700;
-    transition: 1s ease-in-out;
-} */
 
 .skills{
     display: flex;
@@ -638,6 +463,8 @@ nav li a:hover{
 .skills ul{
     display: flex;
     gap: 3%;
+    align-items: center;
+    justify-content: center;
     list-style: none;
 }
 .skills ul li{
@@ -647,14 +474,46 @@ nav li a:hover{
     font-weight: 800;
     line-height: 39px;
     border: 1px solid;
-    padding: 80px 20px;
-    text-align: center;
+    height: 200px;
     border-radius: 10px;
+    padding: 10px 20px;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
-.skills ul li small{
-    font-size: 14px;
+.skills ul li h2{
+    display: none;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 29px;
+    display: block;
+}
+.skills ul li span{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family:  Montserrat;
+    font-size: 24px;
     font-weight: 400;
+    text-align: left;
+    display: block;
+    margin-top: 3rem;
+}
+#bdtext_0,#fdtext_0,#dstext_0,#hdtext_0,#cetext_0{
+    display: none;
+}
+.skills ul li span p{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+}
+.skills ul li span p img{
+    padding-right: 10px;
+    transform: translateY(3px);
 }
 #bd{
     background-image: url(./images/blockchain\ tech.png);
@@ -691,37 +550,15 @@ nav li a:hover{
     flex-direction: column;
     gap: 2rem;
 }
-.newevent h1{
-    font-size: 85px;
+.countdown h1{
     font-family: Monument Extended;
-    font-weight: 500;
-    line-height: 108px;
-    color: white;
-    /* color: #2E7D32; */
-    position: relative;
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 62px;
 }
+
 .three a{
     text-decoration: none;
-}
-.newevent{
-    position: relative;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    padding-left: 4rem;
-    margin-bottom: 3rem;
-}
-.newevent::before{
-    content: '';
-    background-image: url(./images/conference\ 2.0.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    filter: blur(3px);
-    border-radius: 20px;
 }
 .neweventText{
     margin-top: -1rem;
@@ -738,15 +575,73 @@ nav li a:hover{
     font-size: 22px;
 
 }
-.neweventText a{
-    font-family: Monument Extended;
+#fulldet{
+    font-family: Montserrat;
     color: #31B219;
-    font-weight: 300;
+    font-weight: 600;
+    padding: 10px 20px;
+    background-color: white;
     font-size: 20px;
+    width: 100%;
+    text-align: right;
+    border-radius: 16px;
+}
+#evearr{
+    margin-right: .6rem;
+    border: 1px solid #388E3C;
+    padding: 10px 10px;
+    border-radius: 20px;
+    transform: translateY(10px);
 }
 .three main{
     display: flex;
     gap: 2rem;
+}
+.countdown{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    position: relative;
+    color: white;
+    padding: 50px 40px;
+    border-radius: 20px;
+}
+.countdown::before{
+    content: '';
+    background-image: url(./images/IMG-20230107-WA0006.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    filter: brightness(10%);
+    border-radius: 20px;
+    object-fit: contain;
+    object-position: 0px -40%;
+}
+.countdown article{
+    display: flex;
+    gap: 10rem;
+    position: relative;
+}
+.countdown h1{
+    font-size: 40px;
+    position: relative;
+}
+.countdown h3{
+    font-size: 24px;
+    font-family: Montserrat;
+    position: relative;
+    color: #388E3C;
+}
+.countdown small{
+    font-family: Monument Extended;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #388E3C;
 }
 .oldevents{
     display: flex;
@@ -790,9 +685,6 @@ nav li a:hover{
     width: 120px;
 }
 @keyframes slide_events {
-    /* 0%{
-        transform: translateX(-27.65%);
-    } */
     0%{
         transform: translateX(-6%);
     }
@@ -823,7 +715,7 @@ hr{
     position: relative;
  }       
  .testimonial-card{
-    width: 80%;
+    width: 100%;
     overflow-x: hidden;
     margin: auto;
  }
@@ -844,7 +736,7 @@ hr{
     font-size: 16px;
     line-height: 28px;   
     position: relative;
-    width: 95%;
+    width: 100%;
 }
 #reviewsSwipe{
     display: none;
@@ -868,7 +760,6 @@ hr{
     font-size: 20px;
     font-weight: 600;
     line-height: 40px;
-    /* margin-right: 15rem; */
     width: 100%;
 }
 .reviewidentity p{
@@ -884,8 +775,17 @@ hr{
 .card1 {
     background-color: #f7fff9;
     z-index: 1;
+    animation: reviews 7s linear infinite;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 64px;
 }
 
+@keyframes reviews {
+    100%{
+        transform: translateX(-225%);
+    }
+}
 .card2 {
     background-color: #f7fff9;
 }
@@ -896,34 +796,9 @@ hr{
     color: #388E3C;
     padding-top: 2rem;
 }
-#next{
-    cursor: pointer;
-    width: 80px;
-    padding: 10px;
-    position: absolute;
-    z-index: 2;
-    right: -1rem;
-    top: 40%;
-}
-#prev{
-    cursor: pointer;
-    width: 80px;
-    padding: 10px;
-    position: absolute;
-    z-index: 2;
-    top: 40%;
-    left: -1rem;
-    visibility: hidden;
-}
-#reviewsSwipe2{
-    display: none;
-}
-.reviewidentity{
-    display: flex;
-    align-items: center;
-}
 .reviewimg{
-    width: 100px;
+    width: 80px;
+    border-radius: 50%;
 }
 .teamsec{
     display: flex;
@@ -1235,7 +1110,7 @@ footer hr {
     }
     .top main h1{
         position:relative;
-        width: 80%;
+        width: 100%;
         font-size: 45px;
         line-height: 45px;
         /* margin-top: 18rem; */
@@ -1272,7 +1147,7 @@ footer hr {
     }
     .patnership{
         margin-inline: -1rem;
-        margin-bottom: -4rem;
+        margin-bottom: -1rem;
     }
     .patners h1{
         font-size: 22px;
@@ -1283,25 +1158,42 @@ footer hr {
     .patners{
         margin-top: -3rem;
         padding-inline: 2rem;
-        gap: 1rem;
+        flex-direction: column;
+        gap: 2rem;
     }
-    #meet{
-        display: none;
+    .patners header{
+        width: 100%;
     }
     .patners article{
-        flex-direction: column;
-        gap: 8rem;
         align-items: center;
         justify-content: center;
         width: 100%;
         margin: auto;
+        gap: 0;
     }
-    .patners main{
-        gap: 1rem;
-        justify-content: space-between;
-        width: 100%;
+    .allpatners{
         display: flex;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .patner1_con{
+        display: flex;
+        flex-direction: column;
+    }
+    .patner2,.patnertop,.patner3{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
         gap: 1rem;
+    }
+    .patner2{
+        gap: 2rem;
+    }
+    .patner3{
+        gap: 5rem;
+    }
+    .patnertop{
+        margin-bottom: -5rem;
     }
     #webbridge{
         width: 100px;
@@ -1312,14 +1204,9 @@ footer hr {
     .patners img{
         width: 150px;
     }
-    .patner3{
-        display: flex;
-        justify-content: space-between;
-        margin-top: -9rem;
-    }
-    .patnertop{
-        margin-bottom: -12rem;
-        margin-top: -2rem;
+    #ekolance{
+        width: 120px;
+        margin-right: 0rem;
     }
     hr{
         margin-bottom: -10px;
@@ -1329,12 +1216,12 @@ footer hr {
     }
     .why{
         flex-direction: column;
-        gap: 1rem;
+        gap: 3rem;
         margin-inline: -1rem;
         padding-inline: 1.5rem;
     }
     .why h1{
-        font-size: 22px;
+        font-size: 20px;
         line-height: 25px;
         margin-top: 10px;
     }
@@ -1342,10 +1229,10 @@ footer hr {
         width: 100%;
     }
     .why h3{
-        font-size: 18px;
+        font-size: 16px;
     }
     .why p{
-        font-size: 16px;
+        font-size: 12px;
     }
     .why main{
         width: 100%;
@@ -1359,22 +1246,27 @@ footer hr {
     .one{
         flex-direction: column;
         padding-top: 1rem;
+        position: relative;
     }
     .one>div{
         width: 100%;
+        position: relative;
     }
     #logo{
         opacity: .1;
         position: absolute;
-        top: 3rem;
+        top: 0rem;
         left: 0rem;
         bottom: 0rem;
         right: 0rem;
+        width: 100%;
+        height: 450px;
     }
     .one article{
         width: 100%;
         gap: 2.5rem;
         justify-content: center;
+        position: relative;
     }
     .one{
         gap: 3rem;
@@ -1386,12 +1278,12 @@ footer hr {
         padding-inline: 1.5rem;
     }
     .one h1{
-        font-size: 22px;
+        font-size: 20px;
         margin-top: -.7rem;
     }
     .one p, .three article p{
         font-family: Montserrat;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 600;
         line-height: 25px;
         letter-spacing: 0em;
@@ -1400,57 +1292,13 @@ footer hr {
         text-align: justify;
     }
     .one article h1{
-        font-size: 24px;
+        font-size: 20px;
     }
     .one article{
         margin-top: -2rem;
     }
     hr{
         width: 50px;
-    }
-    .problem{
-        margin-inline: -1rem;
-        padding-inline: 1rem; 
-    }
-    .problem .prosol{
-        margin-inline: -1rem;
-        padding-inline: 1rem; 
-        gap: 1rem;
-    }
-    .problem .pdiv{
-        padding: 1rem;
-    }
-    .problem .pdiv h1{
-        font-size: 22px;
-    }
-    .problem .pdiv p{
-        font-size: 16px;
-        line-height: 25px;
-        text-align: justify;
-    }
-    .activity{
-        margin-top: -7.5rem;
-        margin-inline: -1rem;
-        padding-inline: 1.5rem;
-    }
-    .problem .activity h4{
-        font-size: 22px;
-        line-height: 25px;
-        margin-top: 1rem;
-    }
-    .teaches main{
-        flex-direction: column;
-    }
-    #teaching{
-        margin-top: 10px;
-    }
-    .teaches main div{
-        width: 100%;
-        padding-bottom: 1rem;
-    }
-    .teaches main div p{
-        font-size: 22px;
-        margin-top: -2rem;
     }
     .two{
         flex-direction: column;
@@ -1460,7 +1308,7 @@ footer hr {
         margin-top: -10rem;
     }
     .two header h1{
-        font-size: 22px;
+        font-size: 20px;
         line-height: 25px;
         padding-top: 10px;
     }
@@ -1514,27 +1362,24 @@ footer hr {
         font-size: 14px;
         padding: 7px 11px;
     }
-    .achieve{
-        margin-inline: -1rem;
-        padding-inline: 1.5rem;
-        padding-top: 2rem;
-        padding-bottom: .5rem;
+    .skills h1{
+        font-size: 20px;
     }
-    .achieve h1{
+    .skills ul{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .skills ul li{
+        width: 100%;
+    }
+    .skills ul li h2{
         font-size: 22px;
-        line-height: 30p;
     }
-    .achieve h3{
-        font-size: 16px;
-        line-height: 25px;
-        margin-top: 15px;
+    .skills ul li span{
+        font-size: 20px;
     }
-    .achieve h3:hover{
-        font-size: 16px;
-    }
-    .achieve h3:active{
-        color: #31B219;
-        transition: .2s linear;
+    .skills ul li span p{
+        font-size: 14px;
     }
     .newevent h1{
         font-size: 30px;
@@ -1550,44 +1395,51 @@ footer hr {
         line-height: 28px;
         padding-inline: .5rem;
     }
-    .neweventText{
-        margin-top: -1rem;
-        margin-bottom: 2rem;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 17px;
-        line-height: 25px;
-        font-weight: 500;    
-        text-align: justify;
-        padding-inline: .5rem;
-    }
-    .neweventText a{
-        font-family: Monument Extended;
-        color: #31B219;
-        font-weight: 300;
-        font-size: 14px;
-    }
-    .newevent::before{
-        padding-inline: 1.5rem;
-        left: .5rem;
-        right: .5rem;
-    }
     .three{
-        margin-top: -3rem;
+        margin-top: -1rem;
         margin-inline: -1rem;
+        padding-inline: 1rem;
         margin-bottom: -3rem;
-        /* padding-inline: 7rem; */
     }
     .three header{
-        margin-bottom: -2rem;
+        margin-bottom: -1.5rem;
         padding-left: .5rem;
+    }
+    .three header h1{
+        font-size: 22px;
+    }
+    .countdown h1{
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .countdown h3{
+        font-size: 20px;
+    }
+    .countdown article{
+        gap: 1.5rem;
+    }
+    .att{
+        display: none;
+    }
+    .countdown small{
+        font-size: 12px;
+    }
+    .countdown::before{
+        border-radius: 0px;
+    }
+    #fulldet{
+        font-size: 12px;
+        transform: translateY(-3.5rem);
+    }
+    #evearr{
+        padding: 5px;
+        width: 20px;
+        transform: translateY(4px);
     }
     .oldevents{
         animation: slide_event 9s linear 1s infinite;
     }
     @keyframes slide_event {
-        /* 0%{
-            transform: translateX(-27.65%);
-        } */
         100%{
             transform: translateX(-416%);
         }
@@ -1607,30 +1459,6 @@ footer hr {
     .three hr{
         transform: translateY(0rem);
     }
-    #reviewsSwipe{
-        display: block;
-        position: absolute;
-        right: .5rem;
-        top: 50%;
-        width: 40px;
-        z-index: 2;
-        background-color: #f7fff9;
-        padding: 4px 4px;
-        border-radius: 50%;
-        /* visibility: hidden; */
-    }
-    #reviewsSwipe2{
-        display: block;
-        position: absolute;
-        left: .5rem;
-        top: 50%;
-        width: 40px;
-        z-index: 2;
-        background-color: #f7fff9;
-        padding: 4px 4px;
-        border-radius: 50%;
-        visibility: hidden;
-    }
     .testimonials{
         padding-inline: 1.5rem;
         margin-inline: -1rem;
@@ -1646,25 +1474,6 @@ footer hr {
         width: 100%;
         margin: auto;
         
-    }
-    .testimonial-card::-webkit-scrollbar{
-        border-radius: 20px;
-        height: 2px;
-        opacity: .7;
-        scrollbar-width: thin;
-    }
-    .testimonial-card::-webkit-scrollbar-thumb{
-        background-color: #6f9971;
-        height: 1px;
-        border-radius: 200vw;
-    }
-    .testimonial-card::-webkit-scrollbar-track{
-        height: 2px;
-        width: 1em;
-        background-color: #eeeeee;
-    }
-    .testimonial-card::-webkit-scrollbar-track-piece{
-        height: 2px;
     }
     .reviewidentity h2{
         font-size: 16px;
@@ -1684,17 +1493,18 @@ footer hr {
     }
     .reviewimg{
         width: 70px;
+        margin-right: -3rem;
     }
     #next,#prev{
         display: none;
     }
     .card1, .card2 {
-        padding: 1.5rem 1rem;
+        padding: 2rem 1.5rem;
         box-shadow: 0px 0px 15px #fbf2f2;
         font-size: 14px;
         line-height: 22px;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         width: 100vw;
         margin-right: -2rem;
     }
@@ -1862,6 +1672,12 @@ footer hr {
     }
 }
 
+/* @media only screen and (max-width: 450px){
+    body{
+        max-width: 450px;
+    }
+} */
+
 @media only screen and (max-width:1920px){
     body{
         max-width: 1920px;
@@ -1879,67 +1695,7 @@ footer hr {
     }
 }
 
-/* @media only screen and (max-width:1440px){
 
-    nav{
-        width: 100%;
-    }
-    .one h1, .two header, .three header h1{
-        font-size: 22px;
-        margin-top: -.7rem;
-    }
-    #logo{
-        width: 470px;
-        height: 470px; 
-    }
-    .one p, .three article p{
-        font-size: 16px;
-        line-height: 25px;
-    }
-    .two div h1, .three article h1{
-        font-size: 18px;
-    }
-    .sold-out{
-        color:#31B219;
-        margin-top: 1rem;
-    }
-    .three{
-        padding-inline: 1rem;
-    }
-    .three main{
-        padding-inline: 1rem;
-    }
-    .three div{
-        padding: min(1rem,1rem);
-    }
-    .two button{
-        font-size: 14px;
-    }
-    .two div{
-        padding: 2rem 3rem;
-    }
-    .reviewidentity header{
-        margin-left: -3rem;
-        width: 25vw;
-    }
-    .testimonials main{
-        width: 100%;
-        gap: 4rem;
-    }
-    @keyframes slide_events {
-    100%{
-        transform: translateX(-128.5%);
-    }
-}
-#next{
-    padding-left: 1rem;
-    transform: translateX(3rem);
-}
-#prev{
-    transform: translateX(-3rem);
-}
-
-} */
 
 @media (max-width:1200px) and (min-width:670px){
     html{

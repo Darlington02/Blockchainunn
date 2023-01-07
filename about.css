@@ -117,13 +117,13 @@ nav li a:hover{
     width: 110%;
     filter: brightness(70%);
 }
-.one h1,.two h1,.three h1,.four h1,.six h1{
+.one h1,.two h1,.four h1,.six h1{
     font-size: var(--headerFontSize);
     font-family: var(--headerFontFam);
     line-height: var(--headerLineHeight);
     color: var(--headercolor);
 }
-.one p,.two p,.three p,.four p{
+.one p,.two p,.four p{
     font-size: var(--pfontSize);
     font-family: var(--pfontFam);
     color: var(--textColor);
@@ -162,15 +162,36 @@ nav li a:hover{
 .three main h1{
     margin-bottom: 1rem;
 }
-.vision{
-    background-color: #388E3C;
-    border: none;
+.three h1{
+    font-size: var(--headerFontSize);
+    font-family: var(--headerFontFam);
+    line-height: var(--headerLineHeight);
 }
-.vision h1, .vision p{
-    color: #F5FFF3;
+.three p{
+    font-size: var(--pfontSize);
+    font-family: var(--pfontFam);
+    line-height: var(--plineHeight);
+    font-weight: var(--pweight);
+}
+.vision{
+    border: 1px solid #484848;
 }
 .mission{
     border: 1px solid #484848;
+}
+.vision:hover{
+    background-color: #388E3C;
+    color: white;
+    box-shadow: 0px 0px 64px #388E3C;
+    border: none;
+    transition: .5s linear;
+}
+.mission:hover{
+    background-color: #388E3C;
+    color: white;
+    box-shadow: 0px 0px 64px #388E3C;
+    border: none;
+    transition: .5s linear;
 }
 .four{
     display: flex;

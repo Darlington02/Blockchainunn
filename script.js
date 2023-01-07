@@ -28,15 +28,55 @@ let preachImage = document.getElementById('preach')
 let allSections = document.querySelectorAll('section')
 let nlist = document.querySelectorAll('.nlist')
 let bd = document.getElementById('bd')
+let fd = document.getElementById('fd')
+let ds = document.getElementById('ds')
+let hd = document.getElementById('hd')
+let ce = document.getElementById('ce')
+
+console.log(al)
 
 
+function bds(){
+    document.getElementById('bdtext').style.cssText = 'display:none;'
+    document.getElementById('bdtext_0').style.cssText = 'display:flex;'
+}
+function bdsc(){
+    document.getElementById('bdtext').style.cssText = 'display:block;'
+    document.getElementById('bdtext_0').style.cssText = 'display:none'
+}
+function fds(){
+    document.getElementById('fdtext').style.cssText = 'display:none;'
+    document.getElementById('fdtext_0').style.cssText = 'display:flex'
+}
+function fdsc(){
+    document.getElementById('fdtext').style.cssText = 'display:block;'
+    document.getElementById('fdtext_0').style.cssText = 'display:none'
+}
+function dss(){
+    document.getElementById('dstext').style.cssText = 'display:none;'
+    document.getElementById('dstext_0').style.cssText = 'display:flex'
+}
+function dssc(){
+    document.getElementById('dstext').style.cssText = 'display:block;'
+    document.getElementById('dstext_0').style.cssText = 'display:none'
+}
+function hds(){
+    document.getElementById('hdtext').style.cssText = 'display:none;'
+    document.getElementById('hdtext_0').style.cssText = 'display:flex'
+}
+function hdsc(){
+    document.getElementById('hdtext').style.cssText = 'display:block;'
+    document.getElementById('hdtext_0').style.cssText = 'display:none'
+}
+function ces(){
+    document.getElementById('cetext').style.cssText = 'display:none;'
+    document.getElementById('cetext_0').style.cssText = 'display:flex'
+}
+function cesc(){
+    document.getElementById('cetext').style.cssText = 'display:block;'
+    document.getElementById('cetext_0').style.cssText = 'display:none'
+}
 
-bd.addEventListener('click', ()=>{
-    bd.style.cssText = 'text-align:left; font-size: 18px;'
-    document.getElementById('bdtext').style.cssText = 'transform:translateY(-20px); transition: .5s linear;'
-    document.getElementById('bdtext_1').textContent = 'Blockchain Education'
-    document.getElementById('bdtext_1').style.cssText = 'transform:translateY(-20px); transition: .5s linear;'
-})
 
 if(tabSize.matches){
     preachImage.src = './images/aboutpics.jpeg'
@@ -135,51 +175,51 @@ function menuClose(){
 
 
 
-function next(){
-    if(reviewMoveNext === false){
-    for(let i=0; i<reviews.length; i++){
-        reviews[i].style.cssText = 'transform: translateX(-110%); transition: 1s linear'
-    }
-    prevReview.style.visibility = 'visible'
-    phoneReviewLeft.style.visibility = 'visible'
-    prevReview.style.transition = '.5s linear'
-    reviewMoveNext = true
-    reviewMove = 1;
-}
+// function next(){
+//     if(reviewMoveNext === false){
+//     for(let i=0; i<reviews.length; i++){
+//         reviews[i].style.cssText = 'transform: translateX(-110%); transition: 1s linear'
+//     }
+//     prevReview.style.visibility = 'visible'
+//     phoneReviewLeft.style.visibility = 'visible'
+//     prevReview.style.transition = '.5s linear'
+//     reviewMoveNext = true
+//     reviewMove = 1;
+// }
 
-else if(reviewMoveNext === true){
-    for(let i=0; i<reviews.length; i++){
-        reviews[i].style.cssText = 'transform: translateX(-220%); transition: 1s linear'
-    }
-    reviewMoveNext = true
-    nextReview.style.visibility = 'hidden'
+// else if(reviewMoveNext === true){
+//     for(let i=0; i<reviews.length; i++){
+//         reviews[i].style.cssText = 'transform: translateX(-220%); transition: 1s linear'
+//     }
+//     reviewMoveNext = true
+//     nextReview.style.visibility = 'hidden'
     
-}
-}
+// }
+// }
 
 
 
-function prev(){
-    if(reviewMovePrev === false && reviewMove === 1){
-        for(let i=0; i<reviews.length; i++){
-            reviews[i].style.cssText = 'transform: translateX(-110%); transition: 1s linear'
-        }
-        nextReview.style.visibility = 'visible'
-        reviewMovePrev = true
-        reviewMoveNext = false
+// function prev(){
+//     if(reviewMovePrev === false && reviewMove === 1){
+//         for(let i=0; i<reviews.length; i++){
+//             reviews[i].style.cssText = 'transform: translateX(-110%); transition: 1s linear'
+//         }
+//         nextReview.style.visibility = 'visible'
+//         reviewMovePrev = true
+//         reviewMoveNext = false
         
-    }
-    else if(reviewMovePrev === true){
-        for(let i=0; i<reviews.length; i++){
-            reviews[i].style.cssText = 'transform: translateX(0%); transition: 1s linear'
+//     }
+//     else if(reviewMovePrev === true){
+//         for(let i=0; i<reviews.length; i++){
+//             reviews[i].style.cssText = 'transform: translateX(0%); transition: 1s linear'
 
-        }
-        reviewMovePrev = false
-        reviewMoveNext = false
-        prevReview.style.visibility = 'hidden'
-        nextReview.style.visibility = 'visible'
-    }
-}
+//         }
+//         reviewMovePrev = false
+//         reviewMoveNext = false
+//         prevReview.style.visibility = 'hidden'
+//         nextReview.style.visibility = 'visible'
+//     }
+// }
 
 
 
@@ -229,12 +269,6 @@ document.getElementById('b1_0').style.width = '140px'
 document.getElementById('b1_1').style.width = '140px'
 
 
-// for(i=0; i<achieveList.length; i++){
-//     achieveList[i].addEventListener('touch', ()=>{
-//         achieveList[i].style.cssText = '#31B219'
-//     })
-// }
-
 function achieveL (){
     for(i=0; i<achieveList.length; i++){
         achieveList[i].style.cssText = '#31B219'
@@ -244,13 +278,8 @@ function achieveL (){
 achieveList[i].addEventListener('ontouchstart', ()=>{
     return achieveL()
 })
-// nextReview.addEventListener('click', ()=>{
-//     console.log('food')
-//         return next()
-// })
 
-// prevReview.addEventListener('click', ()=>{
-//     return prev()
-//  })
+
+
 
 
