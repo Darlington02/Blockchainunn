@@ -6,6 +6,7 @@ let navList = document.getElementById('navList')
 
 if(phoneSize.matches){
     header.textContent = 'LEADERSHIP AND TEAM'
+    header.style.fontSize = '22px'
 }
 
 function menuOpen(){

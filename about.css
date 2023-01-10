@@ -338,9 +338,19 @@ nav li a:hover{
     color: white;
     transition: .5s linear;
 }
+.ac2:active{
+    background-color: #388E3C;
+    color: white;
+    transition: .5s linear;
+}
 .ac1:hover{
     background: none;
     color: var(--textColor);
+}
+.ac1:active{
+    background: none;
+    color: var(--textColor);
+    transition: .5s linear;
 }
 .seven{
     display: flex;

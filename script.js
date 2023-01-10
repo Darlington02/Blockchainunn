@@ -1,16 +1,10 @@
 let communityHeader = document.getElementById('dive')
 let tabSize = window.matchMedia('(max-width:900px)')
 let phoneSize = window.matchMedia('(max-width:670px)')
-// let phoneSize2 = window.matchMedia('(max-width:450px)')
-// let phoneSize3 = window.matchMedia('(max-width:425px)')
-// let phoneSize4 = window.matchMedia('(max-width:400px)')
-// let phoneSize5 = window.matchMedia('(max-width:375px)')
-// let phoneSize6 = window.matchMedia('(max-width:350px)')
 let menubar = document.getElementById('menu')
 let closeBar = document.getElementById('close')
 let navList = document.getElementById('navList')
 let reviewH = document.querySelectorAll('.reviewH')
-let achieveList = document.querySelectorAll('.achieveList')
 let phoneReviewLeft = document.getElementById('reviewsSwipe2')
 let phoneReviewright = document.getElementById('reviewsSwipe')
 let phoneScroll;
@@ -18,10 +12,6 @@ let forward;
 let preachImage = document.getElementById('preach')
 let allSections = document.querySelectorAll('section')
 let nlist = document.querySelectorAll('.nlist')
-// let bd = document.getElementById('bd')
-// let fd = document.getElementById('fd')
-// let ds = document.getElementById('ds')
-// let hd = document.getElementById('hd')
 let ce = document.getElementById('ce')
 document.getElementById('b1_0').style.width = '140px'
 document.getElementById('b1_1').style.width = '140px'
@@ -152,24 +142,18 @@ if(phoneSize.matches){
 
 
 
-function achieveL (){
-    for(i=0; i<achieveList.length; i++){
-        achieveList[i].style.cssText = '#31B219'
-    }
+
+
+function phv(){
+    document.querySelector('.vision').style.cssText = 'background-color: #388E3C; color: white; box-shadow: 0px 0px 64px #388E3C; border: none; transition: .3s linear;'
+}
+   
+
+function phm(){
+    document.querySelector('.mission').style.cssText = 'background-color: #388E3C; color: white; box-shadow: 0px 0px 64px #388E3C; border: none; transition: .3s linear;'
 }
 
-achieveList[i].addEventListener('ontouchstart', ()=>{
-    return achieveL()
-})
 
-document.querySelector('.vision').addEventListener('touchstart', ()=>{
-    document.querySelector('.vision').style.cssText = 'background-color: #388E3C; color: white; box-shadow: 0px 0px 64px #388E3C; border: none; transition: .3s linear;'
-})
-
-
-document.querySelector('mission').addEventListener('touchstart', ()=>{
-    document.querySelector('mission').style.cssText = 'background-color: #388E3C; color: white; box-shadow: 0px 0px 64px #388E3C; border: none; transition: .3s linear;'
-})
 
 
 

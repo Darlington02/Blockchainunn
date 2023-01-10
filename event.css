@@ -54,11 +54,6 @@ body::-webkit-scrollbar-thumb{
     background-color: #31B219;
     border-radius: 100vw;
 }
-#blogo{
-    width: 370px;
-    margin: -9rem 0rem;
-    transform: translateY(.5rem);
-}
 nav{
     display: flex;
     justify-content: space-between;
@@ -72,7 +67,7 @@ nav{
     z-index: 40;
     position: fixed;
     width: 1440px;
-    border-bottom: 5px solid gainsboro;
+    border-bottom: 3px solid gainsboro;
 }
 /* nav img{
     margin-bottom: -3rem;
@@ -236,6 +231,9 @@ nav li a:hover{
     color: #484848;
     text-align: justify;
 }
+#phreg{
+    display: none;
+}
 .two form{
     display: flex;
     flex-direction: column;
@@ -255,6 +253,12 @@ nav li a:hover{
     font-weight: 600;
     line-height: 20px;
     letter-spacing: 0.02em;
+}
+#reg{
+    background-color: #388E3C;
+    color: white;
+    font-size: 22px;
+    border-radius: 15px;
 }
 
 
@@ -366,28 +370,41 @@ p{
     color: #388E3C;
     border: 1px dotted #388E3C;
 }
+.outline a:hover{
+    background-color: #388E3C;
+    color: white;
+    border: none;
+    transition: .5S linear ;
+}
+.outline P:hover{
+    background-color: #F5FFF3;
+}
 .outline p{
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     font-family: Montserrat;
     font-size: 24px;
     font-weight: 600;
     line-height: 35px;
+    padding: .5rem 1rem;
 }
-.outline span{
+.outline .evename{
     color: #388E3C;
 }
+
+
 footer {
     margin-inline: 0rem;
-    margin-top: 25rem;
-    padding: 0rem 2rem;
+    margin-top: 0rem;
+    padding: 0rem 4rem;
     background-color: #000000;
 }
 
 .logo {
     width: 350px;
+    /* margin-right: 18rem; */
     height: 350px;
 }
 
@@ -399,8 +416,10 @@ footer {
 }
 
 .footer-container {
-    display: flex;
-    
+    display: flex;  
+}
+.footer-container span{
+    display: flex;  
 }
 
 .footer-container p {
@@ -415,7 +434,7 @@ footer {
     font-size: 20px;
 }
 footer h3{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat',;
     text-decoration: none;
     color: white;
     font-size: 25px;
@@ -468,63 +487,53 @@ footer hr {
     font-size: 14px;
     padding-top: 12px;
     padding-bottom: 12px;
-    
 }
 
 @media (max-width: 670px){
     html{
         overflow-x: hidden;
     }
-    body{
-        overflow-x: hidden;
-    }
     #menu{
         display: block;
         position: absolute;
         z-index: 42;
+        left: 85vw;
         width: 40px;
-        right: 1rem;
-        top: .8rem;
+        top: .7rem;
     }
     #close{
         display: block;   
-        transform: translateX(400%);
+        transform: translateX(300%);
         position: absolute;
         z-index: 100;
         width: 20px;
-        right: 2rem;
+        /* right: 2rem; */
+        left: 85vw;
         top: 2rem;
-        transition: .55s linear;
+        transition: 0s linear;
         z-index: 50;
+    }
+    body{
+        width: 100%;
+        padding-inline: 1rem;
+        overflow-x: hidden;
     }
     nav main{
         width: 100%;
         background-color: white;
         position: relative;
-        padding-top: 18px;
-        padding-bottom: 14px;
     }
-    #blogo{
-        width: 300px;
-        margin-left: -2.5rem;
+    #navlogo{
+        width: 290px;
+        top: -8.5rem;
+        left: -2.5rem;
     }
     nav{
         width: 100%;
-        padding-inline: 0rem;
-        margin-inline: 0rem;
-        padding-top: .5rem;
-        padding-bottom: .5rem;
-        margin-top: 0;
-        border-bottom: 2px solid gainsboro;
-    }
-    nav img{
-        margin-bottom: 0rem;
-        margin-top: 0rem;
-        margin-left: -2rem;
-        padding-left: -10rem;
+        padding-inline: 1rem;
+        margin-inline: -1rem;
     }
     nav ul{
-        /* display: none; */
         position:absolute;
         inset: 0 0 0 30%;
         flex-direction: column;
@@ -533,10 +542,239 @@ footer hr {
         height: 100vh;
         padding-left: 2rem;
         padding-top: 5rem;
-        transition: .5s linear;
-        transform: translateX(100%);
+        transition: 0s linear;
+        transform: translateX(0%);
         z-index: 43;
     }
+    /* padding inline */
+    .one,.two, .speakers, .instructors,.outline{
+        padding-inline: 1.5rem;
+    }
+
+/* padding inline */
+    .one{
+        padding-top: 11rem;
+        flex-direction: column;
+        margin-inline: -1rem;
+        gap: 2rem;
+        padding-bottom: 16rem;
+        margin-bottom: 25rem;
+    }
+    .top_left,.top_right{
+        width: 100%;
+    }
+    .top_left h1{
+        font-size: 24px;
+        line-height: 28.8px;
+    }
+    .top_left h2{
+        font-size: 18px;
+    }
+    .countdown{
+        gap: 1.8rem;
+   }
+    .countdown h1{
+        font-size: 40px;
+    }
+    .countdown small{
+        font-size: 12px;
+    }
+    #register{
+        display: none;
+    }
+    .two{
+        flex-direction: column-reverse;
+        gap: 2rem;
+        margin-inline: -1rem;
+    }
+    .two input{
+        width: 100%;
+    }
+    .eventdetails{
+        width: 100%;
+    }
+    .eveinfo{
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        gap: 2rem;
+    }
+    .eventinfo{
+        width: 90%;
+        /* transform: translateY(-50%); */
+        position: absolute;
+        top: 85%;
+        right: 0;
+        left: 5%;
+    }
+    .eventinfo p{
+        width: 100%;
+    }
+    #phreg{
+        display: block;
+        width: 70vw;
+        background-color: #388E3C;
+        color: white;
+    }
+    .eventinfo input{
+        width: 100%;
+        font-size: 16px;
+        background-color: #388E3C;
+        color: white;
+    }
+    .form::before{
+        content: 'Register Now';
+        font-family: Monument Extended;
+        font-size: 22px;
+        font-weight: 800;
+        line-height: 26px;
+        transform: translateY(-2rem);
+    }
+    .form{
+        padding-top: 2rem;
+    }
+    #reg{
+        height: 50px;
+        text-align: center;
+        margin: auto;
+        padding-bottom: 55px;
+    }
+    .eventdetails .wte h1{
+        font-size: 20px;
+        line-height: 25px;
+        margin-top: 1rem;
+        margin-bottom: -1rem;
+    }
+    .speakers h1,.instructors h1{
+        font-size: 20px;
+        margin-bottom: -1rem;
+    }
+    .speakers,.instructors{
+        margin-inline: -1rem;
+    }
+    .threeG{
+        flex-direction: column;
+    }
+    .three{
+        width: 100%;
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+    .photo{
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        object-position: 10% 0%;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 50px;
+    }
+    .outline{
+        margin-inline: -1rem;
+        margin-bottom: 7rem;
+    }
+    .outline h1{
+        font-size: 20px;
+        margin-bottom: -1rem;
+    }
+    .outline article{
+        gap: 1rem;
+        background-color: #EDF8EB;
+        padding: 14px;
+    }
+    .outline a{
+        width: 150px;
+        height: initial;
+        font-size: 16px;
+        padding: 10px;
+        text-align: center;
+    }
+    .outline p{
+        font-size: 12px;
+        line-height: 20px;
+        gap: 1rem;
+        margin-inline: -1rem;
+    }
+    .eve{
+        width: 90vw;
+    }
+
+    /* footer */
+    footer{
+        margin-inline: -1rem;
+        text-align: center;
+        position: relative;
+        padding-top: 3rem;
+    }
+    .footer-div {
+        flex-direction: column;
+        gap: 2rem;
+        padding-top: 3rem;
+    }
+    .footer hr{
+        width: 100%;
+    }
+    .footer-container {
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100vw;
+        padding-top: 1rem;
+    }
+    .footer-container span{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+    .footer-container a{
+        font-size: 16px;
+    }
+    .logo{
+        margin-top: -6rem;
+        margin-bottom: -8rem;
+        position: absolute;
+        top: -15px;
+        left: -20px;
+    }
+    .orgs{
+        margin-top: 0;
+        gap: 1.5rem;
+        float: none;
+        margin-left: -2rem;
+        width: 100vw;
+        padding-bottom: 3rem;
+        align-items: center;
+    }
+    .orgs img{
+        width: 20px;
+    }
+    #footerfb{
+        width: 20px;
+        margin-top: 0x;
+    }
+    #footerig{
+        width: 20px;
+        margin-top: 0px;
+    } 
+    .orgs h3{
+        display: none;
+    }
+    .contact{
+        margin-top: -1rem;
+        justify-content: flex-start;
+        width: 100vw;
+        margin-bottom: 1rem;
+        margin-left: -2rem;
+    }
+    .contact h3{
+        font-size: 15px;
+        width: 100vw;
+        text-align: left;
+    }
+
 }
 
 @media (max-width:1600px){
