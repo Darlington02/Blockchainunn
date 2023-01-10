@@ -1,20 +1,11 @@
-let nextReview = document.getElementById('next')
-let prevReview = document.getElementById('prev')
-let reviews = document.querySelectorAll('.card1')
-let reviewMoveNext = false
-let reviewMovePrev = false
-let phoneReviewMoveNext = false
-let reviewMove;
-let phoneReviewMove;
 let communityHeader = document.getElementById('dive')
-let teachingHeader = document.getElementById('teaching')
 let tabSize = window.matchMedia('(max-width:900px)')
 let phoneSize = window.matchMedia('(max-width:670px)')
-let phoneSize2 = window.matchMedia('(max-width:450px)')
-let phoneSize3 = window.matchMedia('(max-width:425px)')
-let phoneSize4 = window.matchMedia('(max-width:400px)')
-let phoneSize5 = window.matchMedia('(max-width:375px)')
-let phoneSize6 = window.matchMedia('(max-width:350px)')
+// let phoneSize2 = window.matchMedia('(max-width:450px)')
+// let phoneSize3 = window.matchMedia('(max-width:425px)')
+// let phoneSize4 = window.matchMedia('(max-width:400px)')
+// let phoneSize5 = window.matchMedia('(max-width:375px)')
+// let phoneSize6 = window.matchMedia('(max-width:350px)')
 let menubar = document.getElementById('menu')
 let closeBar = document.getElementById('close')
 let navList = document.getElementById('navList')
@@ -27,13 +18,16 @@ let forward;
 let preachImage = document.getElementById('preach')
 let allSections = document.querySelectorAll('section')
 let nlist = document.querySelectorAll('.nlist')
-let bd = document.getElementById('bd')
-let fd = document.getElementById('fd')
-let ds = document.getElementById('ds')
-let hd = document.getElementById('hd')
+// let bd = document.getElementById('bd')
+// let fd = document.getElementById('fd')
+// let ds = document.getElementById('ds')
+// let hd = document.getElementById('hd')
 let ce = document.getElementById('ce')
+document.getElementById('b1_0').style.width = '140px'
+document.getElementById('b1_1').style.width = '140px'
+let rectangles = document.querySelectorAll('.rectangles')
 
-console.log(al)
+
 
 
 function bds(){
@@ -82,75 +76,6 @@ if(tabSize.matches){
     preachImage.src = './images/aboutpics.jpeg'
 }
 
-if(phoneSize.matches){
-    for(i=0; i<nlist.length; i++){
-        nlist[i].addEventListener('click', ()=>{
-             menuClose();
-        })
-    }
-    }
-    
-function nextPhone(){
-    if(reviewMoveNext === false){
-        for(i = 0; i<reviews.length; i++){
-            reviews[i].style.cssText = 'transform: translateX(-110%); transition: 1s linear'
-        }
-        reviewMoveNext = true 
-        phoneScroll = false
-        phoneReviewMove = 1
-        phoneReviewLeft.style.visibility = 'visible'
-    }
-    else if(reviewMoveNext === true && phoneScroll === false){
-        for(i = 0; i<reviews.length; i++){
-            reviews[i].style.cssText = 'transform: translateX(-220%); transition: 1s linear'
-        }
-        reviewMoveNext = true
-        phoneScroll = true
-        phoneReviewMove = 2
-        phoneReviewLeft.style.visibility = 'visible'
-    }
-    else if(phoneScroll === true){
-        for(i = 0; i<reviews.length; i++){
-            reviews[i].style.cssText = 'transform: translateX(-330%); transition: 1s linear'
-        }
-        phoneScroll == true
-        phoneReviewMove = 3
-        phoneReviewright.style.visibility = 'hidden'
-    }
-}
-
-
-// prev phone review
-function prevPhone(){
-    if(reviewMovePrev === false && phoneReviewMove === 1){
-        for(i = 0; i<reviews.length; i++){
-            reviews[i].style.cssText = 'transform: translateX(0%); transition: 1s linear'
-        }
-        reviewMoveNext = false
-        phoneReviewright.style.visibility = 'visible'
-        phoneReviewLeft.style.visibility = 'hidden'
-
-    }
-    else if(phoneReviewMove === 2){
-        for(i = 0; i<reviews.length; i++){
-            reviews[i].style.cssText = 'transform: translateX(-110%); transition: 1s linear'
-        }
-        reviewMovePrev = false
-        phoneReviewMove = 1
-        reviewMoveNext = false
-        phoneReviewright.style.visibility = 'visible'
-    }
-    else if(phoneReviewMove === 3){
-        for(i = 0; i<reviews.length; i++){
-            reviews[i].style.cssText = 'transform: translateX(-220%); transition: 1s linear'
-        }
-        phoneReviewMove = 2
-        reviewMoveNext = false
-        phoneScroll = true
-        forward = true
-        phoneReviewLeft.style.visibility = 'visible'
-    }
-}
 
 
 function menuOpen(){
@@ -172,101 +97,59 @@ function menuClose(){
     }
     document.querySelector('footer').style.filter = 'opacity(1) blur(0px)'
 }
-
-
-
-// function next(){
-//     if(reviewMoveNext === false){
-//     for(let i=0; i<reviews.length; i++){
-//         reviews[i].style.cssText = 'transform: translateX(-110%); transition: 1s linear'
-//     }
-//     prevReview.style.visibility = 'visible'
-//     phoneReviewLeft.style.visibility = 'visible'
-//     prevReview.style.transition = '.5s linear'
-//     reviewMoveNext = true
-//     reviewMove = 1;
-// }
-
-// else if(reviewMoveNext === true){
-//     for(let i=0; i<reviews.length; i++){
-//         reviews[i].style.cssText = 'transform: translateX(-220%); transition: 1s linear'
-//     }
-//     reviewMoveNext = true
-//     nextReview.style.visibility = 'hidden'
-    
-// }
-// }
-
-
-
-// function prev(){
-//     if(reviewMovePrev === false && reviewMove === 1){
-//         for(let i=0; i<reviews.length; i++){
-//             reviews[i].style.cssText = 'transform: translateX(-110%); transition: 1s linear'
-//         }
-//         nextReview.style.visibility = 'visible'
-//         reviewMovePrev = true
-//         reviewMoveNext = false
-        
-//     }
-//     else if(reviewMovePrev === true){
-//         for(let i=0; i<reviews.length; i++){
-//             reviews[i].style.cssText = 'transform: translateX(0%); transition: 1s linear'
-
-//         }
-//         reviewMovePrev = false
-//         reviewMoveNext = false
-//         prevReview.style.visibility = 'hidden'
-//         nextReview.style.visibility = 'visible'
-//     }
-// }
-
-
+   
 
 
 if(phoneSize.matches){
     communityHeader.textContent = 'OUR COMMUNITIES'
-}
-
-if(phoneSize.matches){
-    teachingHeader.textContent = 'WHAT WE TEACH'
-    document.getElementById('logo').style.cssText = 'width: 100%; height: 400px; object-fit:cover';
+    for(i=0; i<nlist.length; i++){
+        nlist[i].addEventListener('click', ()=>{
+             menuClose();
+        })
+    }
+    document.getElementById('logo').style.cssText = 'width: 100%; height: 500px; object-fit:cover';
     document.getElementById('webbrigde').style.width = '150px'
+    document.getElementById('skilh').textContent = 'Skillsets We Offer...'
 }
 
-let rectangles = document.querySelectorAll('.rectangles')
+// if(phoneSize.matches){
+//     teachingHeader.textContent = 'WHAT WE TEACH'
+//     document.getElementById('logo').style.cssText = 'width: 100%; height: 400px; object-fit:cover';
+//     document.getElementById('webbrigde').style.width = '350px'
+// }
 
 
-if(phoneSize2.matches){
-    document.getElementById('teamHead').style.fontSize = '22px'
-    document.getElementById('bunn').style.fontSize = '37px'
-    document.getElementById('bunn').style.width = '80%'
-    document.getElementById('bunn').style.margin = 'auto'
-    document.getElementById('whyH').style.fontSize = '21px'
-    communityHeader.style.cssText = 'font-size:20.6px;'
-    for(i=0; i<rectangles.length; i++){
-        rectangles[i].style.width = '25px'
-    }
-    document.getElementById('patnersHeaders').style.cssText = 'font-size:20px; line-height:25px'
-    for(i=0; i<rectangles.length; i++){
-        reviewH[i].style.width = '40vw'
-    }
-}
-if(phoneSize3.matches){
-    document.getElementById('bunn').style.fontSize = '35px'
-}
-if(phoneSize4.matches){
-    document.getElementById('bunn').style.fontSize = '33px'
-}
-if(phoneSize5.matches){
-    document.getElementById('bunn').style.fontSize = '31px'
-}
-if(phoneSize6.matches){
-    document.getElementById('bunn').style.fontSize = '29px'
-}
 
-document.getElementById('b1_0').style.width = '140px'
-document.getElementById('b1_1').style.width = '140px'
+
+// if(phoneSize2.matches){
+//     document.getElementById('teamHead').style.fontSize = '22px'
+//     document.getElementById('bunn').style.fontSize = '37px'
+//     document.getElementById('bunn').style.width = '80%'
+//     document.getElementById('bunn').style.margin = 'auto'
+//     document.getElementById('whyH').style.fontSize = '21px'
+//     communityHeader.style.cssText = 'font-size:20.6px;'
+//     for(i=0; i<rectangles.length; i++){
+//         rectangles[i].style.width = '25px'
+//     }
+//     document.getElementById('patnersHeaders').style.cssText = 'font-size:20px; line-height:25px'
+//     for(i=0; i<rectangles.length; i++){
+//         reviewH[i].style.width = '40vw'
+//     }
+// }
+// if(phoneSize3.matches){
+//     document.getElementById('bunn').style.fontSize = '35px'
+// }
+// if(phoneSize4.matches){
+//     document.getElementById('bunn').style.fontSize = '33px'
+// }
+// if(phoneSize5.matches){
+//     document.getElementById('bunn').style.fontSize = '31px'
+// }
+// if(phoneSize6.matches){
+//     document.getElementById('bunn').style.fontSize = '29px'
+// }
+
+
 
 
 function achieveL (){
@@ -279,6 +162,14 @@ achieveList[i].addEventListener('ontouchstart', ()=>{
     return achieveL()
 })
 
+document.querySelector('.vision').addEventListener('touchstart', ()=>{
+    document.querySelector('.vision').style.cssText = 'background-color: #388E3C; color: white; box-shadow: 0px 0px 64px #388E3C; border: none; transition: .3s linear;'
+})
+
+
+document.querySelector('mission').addEventListener('touchstart', ()=>{
+    document.querySelector('mission').style.cssText = 'background-color: #388E3C; color: white; box-shadow: 0px 0px 64px #388E3C; border: none; transition: .3s linear;'
+})
 
 
 

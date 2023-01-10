@@ -34,6 +34,16 @@ body{
     margin: auto;
     overflow-x: hidden;
 }
+body::-webkit-scrollbar{
+    width: 6px;
+}
+body::-webkit-scrollbar-track{
+    background-color: #b4cfb5;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #31B219;
+    border-radius: 100vw;
+}
 #blogo{
     width: 350px;
 }
@@ -52,10 +62,21 @@ nav{
     width: 1440px;
     border-bottom: 5px solid gainsboro;
 }
-nav img{
+/* nav img{
     margin-bottom: -3rem;
     margin-top: 0rem;
     margin-left: 0rem;
+} */
+#navlogo{
+    width: 400px;
+    position: absolute;
+    top: -9rem;
+}
+#menu{
+    display: none;
+}
+#close{
+    display: none;
 }
 nav ul{
     list-style: none;
@@ -207,7 +228,7 @@ nav li a:hover{
     gap: 2rem;
     width: 50%;
     padding: 2rem;
-    box-shadow: 2PX 5PX 2PX #F5FFF3;
+    box-shadow: 0px 0px 14px #F5FFF3;
 }
 .four main{
     display: flex;
@@ -364,6 +385,20 @@ nav li a:hover{
     animation-delay: 3s;
     object-fit: cover;
 }
+.seven span{
+    display: flex;
+    flex-direction: row;
+    gap: 6%;
+}
+.seven span div{
+    width: 100%;
+}
+.seven span div img{
+    width: 460px;
+}
+.pheve{
+    display: none;
+}
 
 @keyframes eveslide {
     0%,5%{
@@ -376,7 +411,7 @@ nav li a:hover{
         transform: translateX(-200%);
     }
     50%,60%{
-        transform: translateX(-330%);
+        transform: translateX(-370%);
     }
     70%,80%{
         transform: translateX(-200%);
@@ -407,8 +442,10 @@ footer {
 }
 
 .footer-container {
-    display: flex;
-    
+    display: flex;  
+}
+.footer-container span{
+    display: flex;  
 }
 
 .footer-container p {
@@ -484,5 +521,365 @@ footer hr {
     }
     nav{
         width: 1600px;
+    }
+}
+
+
+@media only screen and (max-width: 670px){
+    html{
+        overflow-x: hidden;
+    }
+    :root{
+        --headerFontSize: 24px;
+        --headerFontFam: Monument Extended;
+        --headerLineHeight: 29px;
+        --headercolor:#212121;
+        --pfontSize: 12px;
+        --pfontFam: Montserrat;
+        --textColor: #484848;
+        --pweight: 500;
+        --plineHeight: 25px;
+    }
+    #menu{
+        display: block;
+        position: absolute;
+        z-index: 42;
+        width: 40px;
+        right: 1rem;
+        top: .7rem;
+    }
+    #close{
+        display: block;   
+        transform: translateX(300%);
+        position: absolute;
+        z-index: 100;
+        width: 20px;
+        right: 2rem;
+        top: 2rem;
+        transition: .55s linear;
+        z-index: 50;
+    }
+    body{
+        width: 100%;
+        padding-inline: 1rem;
+        overflow-x: hidden;
+    }
+    nav main{
+        width: 100%;
+        background-color: white;
+        position: relative;
+    }
+    #navlogo{
+        width: 290px;
+        top: -8.5rem;
+        left: -2.5rem;
+    }
+    nav{
+        width: 100%;
+        padding-inline: 1rem;
+        margin-inline: -1rem;
+    }
+    nav ul{
+        position:absolute;
+        inset: 0 0 0 30%;
+        flex-direction: column;
+        justify-content: initial;
+        background-color: #F5FFF3;
+        height: 100vh;
+        padding-left: 2rem;
+        padding-top: 5rem;
+        transition: .5s linear;
+        transform: translateX(100%);
+        z-index: 43;
+    }
+
+    /* padding inline section */
+    .one,.two,.three,.four,.five,.six,.seven{
+        padding-inline: 1rem;
+    }
+    /* padding end */
+
+    /* margin inline */
+    .one,.three,.four,.six{
+        margin-inline: -1rem;
+    }
+    /* margin inline ends */
+
+    /* aligning gap */
+    .one{
+        padding-bottom: 4rem;
+        padding-top: 0rem;
+        margin-top: -3rem;
+        position: relative;
+        background: none;
+    }
+    .one h1,.one p{
+        position: relative;
+        color: #F5FFF3;
+    }
+    .one h1::first-letter{
+        color: #388E3C;
+        font-size: 28px;
+        font-weight: 300;
+    }
+    .one::before{
+        content: '';
+        background-image: url(./images/aboutme1.png);
+        position: absolute;
+        top: 0;
+        left: -.1rem;
+        right: 0;
+        bottom: 0;
+        filter: brightness(20%);
+    }
+    .one main{
+        display: none;
+    }
+    .two{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    .three,.four,.six,.seven{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .five{
+        padding-bottom: 4rem;
+    }
+    /* aligning ends */
+
+    .one{
+        flex-direction: column;
+    }
+    .one header{
+        width: 100%;
+    }
+    .one main{
+        width: 100%;
+    }
+    .one main img{
+        width: 100%;
+    }
+    .two{
+        flex-direction: column;
+    }
+    .two header{
+        width: 100%;
+    }
+    .two main{
+        width: 100%;
+    }
+    .three{
+        flex-direction: column;
+    }
+    .four{
+        gap: 4rem;
+        position: relative;
+        overflow-y: hidden;
+        margin-bottom: 4rem;
+    }
+    .four header article h1{
+        position: relative;
+    }
+    .four::before{
+        content: '';
+        background: url(./images/IMG-20221211-WA0001.jpg), url(./images/IMG-20221212-WA0000.jpg), url(./images/IMG-20221211-WA0001.jpg), url(./images/IMG-20221212-WA0000.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 0%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        filter: brightness(20%) contrast(100%);
+        animation-delay: 2s;
+    }
+    .four header{
+        flex-direction: column;
+        position: relative;
+    }
+    .four main{
+        flex-direction: column;
+        position: relative;
+    }
+    .four article{
+        width: 100%;
+        padding: 2rem 1rem;
+        text-align: justify;
+        position: relative;
+    }
+    .four header .slide1,.four main .slide2{
+        display: none;
+    }
+    .four h1, .four p{
+        position: relative;
+        color: white;
+    }
+    .five div{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .five h2{
+        transform: translateX(-1rem);
+    }
+    .six h1{
+        font-size: 20px;
+    }
+    .six main{
+        gap: 10px;
+    }
+    .six ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .six li{
+        width: 100%;
+    }
+    .seven main{
+        flex-direction: column;
+    }
+    .seven div img{
+        width: 350px;
+        height: 200px;
+        object-fit: contain;
+    }
+    .seven article{
+        width: 100%;
+    }
+    .seven div{
+        width: 100%;
+        overflow: visible;
+    }
+    .seven span{
+        display: flex;
+        display: none;
+    }
+    .evesli img{
+        width:100%;
+        height: inherit;
+        animation: eveslide 20s linear infinite;
+        animation-delay: 3s;
+        object-fit: cover;
+    }
+    #vibes{
+        display: none;
+    }
+    @keyframes eveslide {
+        0%{
+            transform: translateX(0%);
+        }
+        14%{
+            transform: translateX(-120%);
+        }
+        28%{
+            transform: translateX(-240%);
+        }
+        42%{
+            transform: translateX(-360%);
+        }
+        66%{
+            transform: translateX(-480%);
+        }
+        80%{
+            transform: translateX(-600%);
+        }
+        100%{
+            transform: translateX(-770%);
+        }
+    }
+
+    .seven .psteventsLower .dseve1{
+        flex-direction: row;
+        display: none;
+    }
+    .seven .psteventsLower .evesli{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        overflow: hidden;
+    }
+    .dseve{
+        display: none;
+    }
+    .pheve{
+        display: block;
+        margin-right: 1rem;
+    }
+
+
+    /* footer */
+    footer{
+        margin-inline: -1rem;
+        text-align: center;
+        position: relative;
+        padding-top: 3rem;
+    }
+    .footer-div {
+        flex-direction: column;
+        gap: 2rem;
+        padding-top: 3rem;
+    }
+    .footer hr{
+        width: 100%;
+    }
+    .footer-container {
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100vw;
+        padding-top: 1rem;
+    }
+    .footer-container span{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+    .footer-container a{
+        font-size: 16px;
+    }
+    .logo{
+        margin-top: -6rem;
+        margin-bottom: -8rem;
+        position: absolute;
+        top: -15px;
+        left: -20px;
+    }
+    .orgs{
+        margin-top: 0;
+        gap: 1.5rem;
+        float: none;
+        margin-left: -2rem;
+        width: 100vw;
+        padding-bottom: 3rem;
+        align-items: center;
+    }
+    .orgs img{
+        width: 20px;
+    }
+    #footerfb{
+        width: 20px;
+        margin-top: 0x;
+    }
+    #footerig{
+        width: 20px;
+        margin-top: 0px;
+    } 
+    .orgs h3{
+        display: none;
+    }
+    .contact{
+        margin-top: -1rem;
+        justify-content: flex-start;
+        width: 100vw;
+        margin-bottom: 1rem;
+        margin-left: -2rem;
+    }
+    .contact h3{
+        font-size: 15px;
+        width: 100vw;
+        text-align: left;
     }
 }

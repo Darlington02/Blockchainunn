@@ -9,31 +9,20 @@
   </head>
   <body>
     <nav>
-      <img
-        src="./images/icons8-menu-rounded-50.png"
-        alt=""
-        id="menu"
-        onclick="menuOpen()"
-      />
-      <img
-        src="./images/icon-close.svg"
-        alt=""
-        id="close"
-        onclick="menuClose()"
-      />
+      <img src="./images/icons8-menu-rounded-50.png" alt="" id="menu" onclick="menuOpen()">
+      <img src="./images/icon-close.svg" alt="" id="close" onclick="menuClose()">
       <main>
-        <!-- <img src="./images/bunn logo (2).png" alt="" id="blogo" /> -->
-      </main>
+      <img src="./images/navLogo.png" alt="" id="navlogo">
+  </main>
       <ul id="navList">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./about.html">About Us</a></li>
-        <li><a href="./index.html">Community</a></li>
-        <li><a href="./event.html">Events</a></li>
-        <li><a href="./team.html">Team</a></li>
-        <li><a href="">Gallery</a></li>
-        <li><a href="#foot">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="#comm">Community</a></li>
+          <li><a href="./event.html">Events</a></li>
+          <li><a href="./team.html">Team</a></li>
+          <li><a href="#foot">Contact</a></li>
       </ul>
-    </nav>
+  </nav>
     <section class="one">
       <article class="top_left">
         <h2>Blockchain UNN 2.0</h2>
@@ -42,19 +31,19 @@
       <article class="top_right">
         <main class="countdown">
           <div>
-            <h1>72</h1>
+            <h1 id="days">72</h1>
             <small>Days</small>
           </div>
           <div>
-            <h1>09</h1>
+            <h1 id="hours">09</h1>
             <small>Hours </small>
           </div>
           <div>
-            <h1>45</h1>
+            <h1 id="minutes">45</h1>
             <small>Mins</small>
           </div>
           <div>
-            <h1>34</h1>
+            <h1 id="seconds">34</h1>
             <small>Seconds</small>
           </div>
         </main>
@@ -229,6 +218,40 @@
 </article>
 </section>
 
+<section class="outline">
+  <header>
+    <h1>
+      Outline of Events
+    </h1>
+  </header>
+  <main>
+  <article>
+    <a href="">Day 1</a>
+    <a href="">Day 2</a>
+  </article>
+  <p>
+    9:00-10:00 AM <img src="./images/Line 8.png" alt=""> Arrival of all participants, guests and other dignitaries. By: <span> Ogbonna Shedrack </span>
+  </p>
+  <p>
+    9:00-10:00 AM <img src="./images/Line 8.png" alt=""> Arrival of all participants, guests and other dignitaries. By: <span> Ogbonna Shedrack </span>
+  </p>
+  <p>
+    9:00-10:00 AM <img src="./images/Line 8.png" alt=""> Arrival of all participants, guests and other dignitaries. By: <span> Ogbonna Shedrack </span>
+  </p>
+  <p>
+    9:00-10:00 AM <img src="./images/Line 8.png" alt=""> Arrival of all participants, guests and other dignitaries. By: <span> Ogbonna Shedrack </span>
+  </p>
+  <p>
+    9:00-10:00 AM <img src="./images/Line 8.png" alt=""> Arrival of all participants, guests and other dignitaries. By: <span> Ogbonna Shedrack </span>
+  </p>
+  <p>
+    9:00-10:00 AM <img src="./images/Line 8.png" alt=""> Arrival of all participants, guests and other dignitaries. By: <span> Ogbonna Shedrack </span>
+  </p>
+  <p>
+    9:00-10:00 AM <img src="./images/Line 8.png" alt=""> Arrival of all participants, guests and other dignitaries. By: <span> Ogbonna Shedrack </span>
+  </p>
+</main>
+</section>
 <footer id="foot">
   <div class="footer-div">
       <img src="./images/BcUnnLogoWHITE.png" class="logo" alt="">
@@ -262,4 +285,5 @@
   </div>
 </footer>
   </body>
+  <script src="timer.js"></script>
 </html>

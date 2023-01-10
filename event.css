@@ -19,21 +19,30 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    max-width: 1600px;
+    max-width: 1440px;
     margin: auto;
     box-sizing: border-box;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
 }
-.one,.two, .speakers, .instructors{
+
+/* padding inline */
+.one,.two, .speakers, .instructors,.outline{
     padding-inline: 4rem;
 }
+
+/* padding inline */
 #menu{
     display: none;
 }
 #close{
     display: none;
+}
+#navlogo{
+    width: 400px;
+    position: absolute;
+    top: -9rem;
 }
 body::-webkit-scrollbar{
     width: 6px;
@@ -62,14 +71,14 @@ nav{
     padding-inline: 3rem;
     z-index: 40;
     position: fixed;
-    width: 1600px;
+    width: 1440px;
     border-bottom: 5px solid gainsboro;
 }
-nav img{
+/* nav img{
     margin-bottom: -3rem;
     margin-top: 0rem;
     margin-left: 0rem;
-}
+} */
 nav ul{
     list-style: none;
     display: flex;
@@ -118,7 +127,7 @@ nav li a:hover{
     width: 45%;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
     position: relative;
 }
 .countdown{
@@ -155,6 +164,7 @@ nav li a:hover{
     font-weight: 800;
     line-height: 38px;
     margin-top: 2rem;
+    transform: translateY(2rem);
 }
 .one h1{
     color: white;
@@ -164,7 +174,7 @@ nav li a:hover{
 }
 .two{
     display: flex;
-    gap: 2rem;
+    gap: 5rem;
     margin-top: 1rem;
 }
 .eventdetails{
@@ -235,6 +245,7 @@ nav li a:hover{
     width: 650px;
     padding: 30px 15px;
     background-color: #EEEEEE;
+    border: none;
     font-family: Montserrat;
     font-weight: 600;
 }
@@ -251,7 +262,7 @@ nav li a:hover{
 .speakers, .instructors{
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1rem;
 }
 .speakers h1,.instructors h1{
     font-family: Monument Extended;
@@ -323,6 +334,51 @@ p{
     margin-top: 3rem;
 }
 
+.outline{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 8rem;
+}
+.outline h1{
+    font-family: Monument Extended;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 38px;
+    color: #212121;
+}
+.outline article{
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+.outline a{
+    text-decoration: none;
+    height: 75px;
+    width: 376px;
+    background-color: #F5FFF3;
+    border-radius: 5px;
+    padding: 18px 124px;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 39px;
+    color: #388E3C;
+    border: 1px dotted #388E3C;
+}
+.outline p{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 35px;
+}
+.outline span{
+    color: #388E3C;
+}
 footer {
     margin-inline: 0rem;
     margin-top: 25rem;
@@ -480,5 +536,14 @@ footer hr {
         transition: .5s linear;
         transform: translateX(100%);
         z-index: 43;
+    }
+}
+
+@media (max-width:1600px){
+    body{
+        max-width: 1600px;
+    }
+    nav{
+        width: 1600px;
     }
 }
