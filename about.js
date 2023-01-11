@@ -41,11 +41,6 @@ function phm(){
     document.querySelector('.mission').style.cssText = 'background-color: #388E3C; color: white; box-shadow: 0px 0px 64px #388E3C; border: none; transition: .3s linear;'
     document.querySelector('.vision').style.cssText = 'background:none; color: black; box-shadow: none; border:1px solid; transition: .3s linear;'
 }
-
-
-document.querySelector('.vision').addEventListener('touchstart', phv)
-document.querySelector('.mission').addEventListener('touchstart', phm)
-
 function teachphn(){
     for(i=0; i<teaches.length; i++){
         teaches[i].style.cssText = 'background-color: #388E3C; color: white; transition: .5s linear;'
@@ -53,5 +48,8 @@ function teachphn(){
     }
 }
 
+
+document.querySelector('.vision').addEventListener('touchstart', phv)
+document.querySelector('.mission').addEventListener('touchstart', phm)
 teaches[i].addEventListener('touchstart', teachphn)
 
