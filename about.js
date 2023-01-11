@@ -51,5 +51,4 @@ function teachphn(){
 
 document.querySelector('.vision').addEventListener('touchstart', phv)
 document.querySelector('.mission').addEventListener('touchstart', phm)
-teaches[i].addEventListener('touchstart', teachphn)
 
