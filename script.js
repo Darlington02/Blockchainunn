@@ -153,7 +153,7 @@ function phm(){
     document.querySelector('.mission').style.cssText = 'background-color: #388E3C; color: white; box-shadow: 0px 0px 64px #388E3C; border: none; transition: .3s linear;'
 }
 
-
+document.querySelector('.vision').addEventListener('touchstart', phv)
 
 
 
