@@ -5,8 +5,9 @@ let closeBar = document.getElementById('close')
 let navList = document.getElementById('navList')
 
 if(phoneSize.matches){
-    header.textContent = 'LEADERSHIP AND TEAM'
-    header.style.fontSize = '22px'
+    header.textContent = 'OUR TEAM'
+    header.style.fontSize = '25px'
+    document.getElementById('fuwu').textContent = 'The Brains Behind'
 }
 
 function menuOpen(){

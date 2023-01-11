@@ -8,7 +8,7 @@ let achieve1 = document.querySelectorAll('.ac2')
 let achieve2 = document.querySelectorAll('.ac1')
 
 if(phoneSize.matches){
-    document.getElementById('skills').textContent = 'Our Skillsets'
+    document.getElementById('skills').textContent = 'What we teach'
 }
 
 function menuOpen(){
@@ -51,4 +51,28 @@ function teachphn(){
 
 document.querySelector('.vision').addEventListener('touchstart', phv)
 document.querySelector('.mission').addEventListener('touchstart', phm)
+
+let ani= document.querySelectorAll('.ani')
+let ani2= document.querySelectorAll('.evesli')
+
+
+function aa(){
+    for(i=0; i<ani.length; i++){
+        ani[i].style.cssText = 'animation-play-state: paused'
+}
+}
+function ab(){
+    for(i=0; i<ani.length; i++){
+        ani[i].style.cssText = 'animation-play-state: running'
+}
+}
+
+for(i=0; i<ani.length; i++){
+    ani[i].addEventListener('touchstart', aa)
+}
+
+for(i=0; i<ani.length; i++){
+    ani[i].addEventListener('touchend', ab)
+}
+
 

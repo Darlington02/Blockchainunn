@@ -54,7 +54,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 2rem;
+    padding-top: 3rem;
     padding-bottom: 2rem;
     margin-top: -1rem;
     background-color: rgb(255, 255, 255);
@@ -68,7 +68,7 @@ nav{
 #navlogo{
     width: 400px;
     position: absolute;
-    top: -9rem;
+    top: -8.4rem;
 }
 /* nav img{
     margin-bottom: -3rem;
@@ -94,13 +94,64 @@ nav li a:hover{
 
 /* nav bar ends  */
 
-.header,.section{
+.teamwu,.section{
     padding-left: 3rem;
     padding-right: 3rem;
 }
+.teamwu{
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 8rem;
+}
+.teamwu::before{
+    content: '';
+    background-image: url(./images/aboutpics.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    filter: brightness(10%);
+}
+#hlogo{
+    width: 500px;
+    animation: turn 8s linear infinite;
+}
+@keyframes turn {
+    30%,50%{
+        transform: rotateX(180deg) rotateY(180deg);
+    }
+    80%,100%{
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+}
 .header{
-    margin-top: 1rem;
     margin-bottom: 2rem;
+    position: relative;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.teamwu p{
+    position: relative;
+    font-size: 22px;
+    font-family: Montserrat;
+    line-height: 30px;
+    text-align: justify;
+    color: white;
+}
+.teamwu main{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    position: relative;
 }
 .header h1{
     font-family: Monument Extended;
@@ -109,12 +160,22 @@ nav li a:hover{
     line-height: 48px;
     letter-spacing: 0em;
     text-align: left;
-    margin-top: 7rem;
+    margin-top: 0rem;
+    color: #4a4a4a;
+    position: relative;
+    color: white;
 }
 .section{
     display: flex;
     flex-direction: column;
     gap: 4rem;
+}
+.section h1{
+    font-family: Monument Extended;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 48px;
+    position: relative;
 }
 article{
     display: flex;
@@ -233,6 +294,10 @@ footer h3{
     font-size: 30px;
     font-weight: 800;
 }
+.contact a{
+    text-decoration: none;
+    color: white;
+}
 .footer-container a:hover {
     font-size: 20px;
     font-weight: 600;
@@ -252,6 +317,9 @@ footer hr {
 #footerig{
     width: 40px;
     margin-top: -8px;
+}
+#ln{
+    background-color: white;
 }
 .copyright {
     display: flex;
@@ -466,15 +534,39 @@ footer hr {
         flex-direction: column;
     }
     .header{
-        margin-top: 7rem;
+        margin-top: 0rem;
+        width: 100%;
+        gap: 1rem;
+    }
+    .teamwu main{
+        width: 100%;
+        justify-content: center;
+    }
+    #hlogo{
+        width: 300px;
+    }
+    #wu{
+        width: 100%;
     }
     .header h1{
-        font-size: 22px;
+        font-size: 25px;
         margin-top: 0rem;
     }
-    .header,.section{
+    .teamwu p{
+        font-size: 14px;
+    }
+    .teamwu,.section{
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+    .teamwu{
+        flex-direction: column-reverse;
+        padding-top: 7rem;
+        padding-bottom: 3rem;
+        gap: 1rem;
+    }
+    .section h1{
+        font-size: 25px;
     }
     .one{
         justify-content: left;
@@ -583,11 +675,15 @@ footer hr {
         width: 100vw;
         margin-bottom: 1rem;
         margin-left: -2rem;
+        text-align: left;
     }
     .contact h3{
         font-size: 15px;
         width: 100vw;
         text-align: left;
+    }
+    .contact a{
+        font-size: 18px;
     }
 }
 @media (max-width:760px) and (min-width: 600px){

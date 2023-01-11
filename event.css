@@ -21,14 +21,13 @@ html{
 body{
     max-width: 1440px;
     margin: auto;
-    box-sizing: border-box;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
 }
 
 /* padding inline */
-.one,.two, .speakers, .instructors,.outline{
+.one,.two, .speakers, .instructors,.outline,.sponsors,footer{
     padding-inline: 4rem;
 }
 
@@ -343,6 +342,7 @@ p{
     flex-direction: column;
     gap: 2rem;
     margin-top: 8rem;
+    margin-bottom: 8rem;
 }
 .outline h1{
     font-family: Monument Extended;
@@ -356,7 +356,7 @@ p{
     gap: 3rem;
     margin-bottom: 2rem;
 }
-.outline a{
+.outline button{
     text-decoration: none;
     height: 75px;
     width: 376px;
@@ -370,11 +370,21 @@ p{
     color: #388E3C;
     border: 1px dotted #388E3C;
 }
-.outline a:hover{
+.outline button:hover{
     background-color: #388E3C;
     color: white;
     border: none;
     transition: .5S linear ;
+    cursor: pointer;
+}
+#btn1a{
+    background-color: #388E3C;
+    color: white;
+    border: none;
+}
+.outline .evelis{
+    display: flex;
+    flex-direction: column;
 }
 .outline P:hover{
     background-color: #F5FFF3;
@@ -390,103 +400,93 @@ p{
     line-height: 35px;
     padding: .5rem 1rem;
 }
+.day2{
+    display: none;
+}
+
 .outline .evename{
     color: #388E3C;
 }
 
-
-footer {
-    margin-inline: 0rem;
-    margin-top: 0rem;
-    padding: 0rem 4rem;
-    background-color: #000000;
-}
-
-.logo {
-    width: 350px;
-    /* margin-right: 18rem; */
-    height: 350px;
-}
-
-.footer-div {
+/*  */
+.sponsors{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #EDF8EB;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.sponsor1{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.sponsor1 main{
+    display: flex;
+    gap: 2rem;
     align-items: center;
-    padding-top: 1rem;
 }
-
-.footer-container {
-    display: flex;  
-}
-.footer-container span{
-    display: flex;  
-}
-
-.footer-container p {
-    padding: 0rem 2rem 2rem;
-}
-
-
-.footer-container a {
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-}
-footer h3{
-    font-family: 'Montserrat',;
-    text-decoration: none;
-    color: white;
-    font-size: 25px;
-    font-weight: 300;
-}
-.orgs{
+.sponsor1 main span{
     display: flex;
-    gap: 5rem;
-    float: right;
-    margin-top: -8rem;
+    gap: 2rem;
 }
-.contact{
-    color: #fff;
-    margin-top: -3rem;
-    margin-bottom: 3rem;
-    display: flex;
-    justify-content: end;
-    font-family: 'Monument Extended', sans-serif;
-    font-size: 30px;
+.sponsors h1{
+    font-family: Monument Extended;
+    font-size: 32px;
     font-weight: 800;
+    line-height: 38px;
+    color: #212121;
 }
-.footer-container a:hover {
-    font-size: 20px;
-    font-weight: 600;
+#a1{
+    width: 170px;
 }
-
-footer hr {
-    border-style: none;
-    height: 0.5px;
-    background-color: rgb(162, 159, 159);
-    opacity: 0.3;
-    width: 100%;
-}
-#footerfb{
-    width: 40px;
-    margin-top: -8px;
-}
-#footerig{
-    width: 40px;
-    margin-top: -8px;
-}
-.copyright {
-    display: flex;
-    justify-content: center;
+.sponsors h2{
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 38px;
+    color: #212121;
 }
 
-.copyright p {
-    font-family: 'Montserrat', sans-serif;
+
+/* new foooter */
+footer{
     color: white;
-    font-size: 14px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 64px;
+}
+footer span{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+footer h1{
+    font-size: 30px;
+    font-family: Montserrat;
+    font-weight: 900;
+}
+footer a{
+    font-family: Montserrat;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+}
+footer p{
+    text-align: center;
+    padding-bottom: 30px;
+    margin-top: -1rem;
+}
+#ln{
+    background-color: white;
 }
 
 @media (max-width: 670px){
@@ -497,8 +497,8 @@ footer hr {
         display: block;
         position: absolute;
         z-index: 42;
-        left: 85vw;
         width: 40px;
+        right: 1rem;
         top: .7rem;
     }
     #close{
@@ -507,14 +507,13 @@ footer hr {
         position: absolute;
         z-index: 100;
         width: 20px;
-        /* right: 2rem; */
-        left: 85vw;
+        right: 2rem;
         top: 2rem;
-        transition: 0s linear;
+        transition: .55s linear;
         z-index: 50;
     }
     body{
-        width: 100%;
+        max-width: 100%;
         padding-inline: 1rem;
         overflow-x: hidden;
     }
@@ -542,12 +541,12 @@ footer hr {
         height: 100vh;
         padding-left: 2rem;
         padding-top: 5rem;
-        transition: 0s linear;
-        transform: translateX(0%);
+        transition: .5s linear;
+        transform: translateX(100%);
         z-index: 43;
     }
     /* padding inline */
-    .one,.two, .speakers, .instructors,.outline{
+    .one,.two, .speakers, .instructors,.outline,.sponsors{
         padding-inline: 1.5rem;
     }
 
@@ -558,7 +557,7 @@ footer hr {
         margin-inline: -1rem;
         gap: 2rem;
         padding-bottom: 16rem;
-        margin-bottom: 25rem;
+        margin-bottom: 5rem;
     }
     .top_left,.top_right{
         width: 100%;
@@ -571,10 +570,18 @@ footer hr {
         font-size: 18px;
     }
     .countdown{
-        gap: 1.8rem;
+        width: 100%;
+        gap: 1.5rem;
+        justify-content: flex-start;
+        padding-inline: -1rem;
+        margin-top: 1rem;
    }
     .countdown h1{
-        font-size: 40px;
+        font-size: 38px;
+        line-height: 35px;
+    }
+    #att{
+        display: none;
     }
     .countdown small{
         font-size: 12px;
@@ -583,9 +590,10 @@ footer hr {
         display: none;
     }
     .two{
-        flex-direction: column-reverse;
+        flex-direction: column;
         gap: 2rem;
         margin-inline: -1rem;
+        transform: translateY(-13rem);
     }
     .two input{
         width: 100%;
@@ -600,12 +608,12 @@ footer hr {
         gap: 2rem;
     }
     .eventinfo{
-        width: 90%;
-        /* transform: translateY(-50%); */
-        position: absolute;
+        width: 100%;
+        /* transform: translateY(-310vw); */
+        /* position: absolute;
         top: 85%;
         right: 0;
-        left: 5%;
+        left: 5%; */
     }
     .eventinfo p{
         width: 100%;
@@ -615,6 +623,9 @@ footer hr {
         width: 70vw;
         background-color: #388E3C;
         color: white;
+    }
+    #reg1{
+        border-radius: 30px;
     }
     .eventinfo input{
         width: 100%;
@@ -649,6 +660,10 @@ footer hr {
         font-size: 20px;
         margin-bottom: -1rem;
     }
+    .speakers{
+        
+        margin-top: -10rem;
+    }
     .speakers,.instructors{
         margin-inline: -1rem;
     }
@@ -661,7 +676,7 @@ footer hr {
         padding: 20px 10px;
     }
     .photo{
-        height: 200px;
+        min-height: 100vw;
         width: 100%;
         object-fit: cover;
         object-position: 10% 0%;
@@ -682,7 +697,7 @@ footer hr {
         background-color: #EDF8EB;
         padding: 14px;
     }
-    .outline a{
+    .outline button{
         width: 150px;
         height: initial;
         font-size: 16px;
@@ -699,85 +714,43 @@ footer hr {
         width: 90vw;
     }
 
-    /* footer */
-    footer{
+    .sponsors{
         margin-inline: -1rem;
-        text-align: center;
-        position: relative;
-        padding-top: 3rem;
+        padding-bottom: 15rem;
     }
-    .footer-div {
-        flex-direction: column;
-        gap: 2rem;
-        padding-top: 3rem;
+    .sponsors h1{
+        font-size: 20px;
     }
-    .footer hr{
-        width: 100%;
-    }
-    .footer-container {
-        flex-direction: row;
-        width: 100%;
-        align-items: center;
-        justify-content: flex-start;
-        align-items: flex-start;
-        width: 100vw;
-        padding-top: 1rem;
-    }
-    .footer-container span{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        align-items: flex-start;
-    }
-    .footer-container a{
+    .sponsors h2{
         font-size: 16px;
     }
-    .logo{
-        margin-top: -6rem;
-        margin-bottom: -8rem;
-        position: absolute;
-        top: -15px;
-        left: -20px;
+    .sponsor1 main{
+        gap: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
     }
-    .orgs{
-        margin-top: 0;
-        gap: 1.5rem;
-        float: none;
-        margin-left: -2rem;
-        width: 100vw;
-        padding-bottom: 3rem;
-        align-items: center;
+    .sponsors main span{
+        gap: 0rem;
     }
-    .orgs img{
-        width: 20px;
-    }
-    #footerfb{
-        width: 20px;
-        margin-top: 0x;
-    }
-    #footerig{
-        width: 20px;
-        margin-top: 0px;
-    } 
-    .orgs h3{
-        display: none;
-    }
-    .contact{
-        margin-top: -1rem;
-        justify-content: flex-start;
-        width: 100vw;
-        margin-bottom: 1rem;
-        margin-left: -2rem;
-    }
-    .contact h3{
-        font-size: 15px;
-        width: 100vw;
-        text-align: left;
+    .sponsor1 img{
+        width: 170px;
     }
 
+    /* footer */
+
+    footer{
+        margin-inline: -1rem;
+        padding-inline: 2rem;
+    }
+    footer h1{
+        font-size: 25px;
+    }
+    footer a{
+        font-size: 20px;
+    }
 }
 
-@media (max-width:1600px){
+@media (max-width:1600px) and (min-width:670px){
     body{
         max-width: 1600px;
     }

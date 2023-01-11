@@ -2,6 +2,10 @@
     font-family: Monument Extended;
     src: url(./fonts/MonumentExtended-Ultrabold.otf);
 }
+@font-face {
+    font-family: Montserrat;
+    src: url(./fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -192,6 +196,9 @@ nav li a:hover{
     font-weight: 800;
     line-height: 55px;
     letter-spacing: 0.03em;
+}
+#a1{
+    width: 170px;
 }
 #webbrigde{
     width: 220px;
@@ -995,10 +1002,13 @@ footer h3{
     margin-bottom: 3rem;
     display: flex;
     justify-content: end;
-    font-family: 'Monument Extended', sans-serif;
+    font-family: Montserrat;
     font-size: 30px;
     font-weight: 800;
-   
+}
+.contact a{
+    text-decoration: none;
+    color: white;
 }
 .footer-container a:hover {
     font-size: 20px;
@@ -1019,6 +1029,9 @@ footer hr {
 #footerig{
     width: 25px;
     margin-top: -8px;
+}
+#ln{
+    background-color: white;
 }
 .copyright {
     display: flex;
@@ -1220,6 +1233,9 @@ footer hr {
     }
     #baf{
         width: 140px;
+    }
+    #a1{
+        transform: translateX(2rem);
     }
     .patners img{
         width: 150px;
@@ -1731,11 +1747,15 @@ footer hr {
         width: 100vw;
         margin-bottom: 1rem;
         margin-left: -2rem;
+        text-align: left;
     }
     .contact h3{
         font-size: 15px;
         width: 100vw;
         text-align: left;
+    }
+    .contact a{
+        font-size: 18px;
     }
 }
 
