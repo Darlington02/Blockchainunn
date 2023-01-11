@@ -580,9 +580,9 @@ footer p{
         font-size: 38px;
         line-height: 35px;
     }
-    #att{
+    /* #att{
         display: none;
-    }
+    } */
     .countdown small{
         font-size: 12px;
     }
@@ -717,12 +717,14 @@ footer p{
     .sponsors{
         margin-inline: -1rem;
         padding-bottom: 15rem;
+        gap: 5rem;
     }
     .sponsors h1{
         font-size: 20px;
     }
     .sponsors h2{
-        font-size: 16px;
+        font-size: 24px;
+        font-weight: 700;
     }
     .sponsor1 main{
         gap: 1rem;

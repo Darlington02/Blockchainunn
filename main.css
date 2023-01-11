@@ -161,7 +161,8 @@ nav li a:hover{
 }
 .patners{
     display: flex;
-    gap: 2rem;
+    gap: 0rem;
+    flex-direction: column;
     align-items: center;
     padding-inline: 8rem;
 }
@@ -172,20 +173,28 @@ nav li a:hover{
     display: flex;
     gap: 2rem;
     width: 100%;
-    margin-bottom: -1rem;
+    margin-bottom: -3rem;
 }
 .allpatners{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 0rem;
     align-items: center;
-    width: 65%;
+    justify-content: center;
+    margin: auto;
+    width: 70%;
 }
-.patner2,.patnertop,.patner3{
+.patner2,.patnertop,.patner3,.patner4{
     display: flex;
     align-items: center;
     gap: 2rem;
     justify-content: center;
+}
+
+#patner2_con{
+    display: flex;
+    margin-left: -3rem;
+    gap: 2rem;
 }
 .patner3{
     gap: 7rem;
@@ -203,13 +212,13 @@ nav li a:hover{
 #webbrigde{
     width: 220px;
 }
-#ekolance{
+/* #ekolance{
     width: 120px;
-    margin-right: 7rem;
+    margin-right: 0rem;
 }
 .patner3{
     margin-top: -3rem;
-}
+} */
 #baf{
     width: 180px;
     background-color: #000000;
@@ -337,6 +346,12 @@ nav li a:hover{
     border: 1px solid #e5e5e5;
     padding: 30px;
     border-radius: 10px;
+}
+.vision{
+    background-color: #388E3C;
+    color: white;
+    box-shadow: 0px 0px 64px #388E3C;
+    border: none
 }
 .mission:hover{
     background-color: #388E3C;
@@ -551,6 +566,12 @@ nav li a:hover{
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
+}
+#bdtext{
+    display: none;
+}
+#bdtext_0{
+    display: flex;
 }
 .three{
     display: flex;
@@ -1206,6 +1227,10 @@ footer hr {
         width: 110%;
         overflow-x: hidden;
         margin-inline: -3rem;
+        height: 300px;
+        overflow-y: hidden;
+        margin-top: 2rem;
+        padding-top: 5rem;
         /* padding-inline: -1rem; */
     }
     .patner1_con{
@@ -1213,16 +1238,33 @@ footer hr {
         gap: 2rem;
         flex-direction: column;
     }
-    .patner2,.patnertop,.patner3{
+    .patner2,.patnertop,.patner3,.patner4{
         justify-content: center;
         align-items: center;
         width: 100%;
         gap: .1rem;
     }
+    .patner2,.patnertop,.patner3,.patner4{
+        animation: pats 10s linear infinite;
+    }
+    @keyframes pats {
+        50%{
+            transform: translateY(-7rem);
+        }
+    }
     .patner2{
         gap: 0rem;
     }
     .patner3{
+        gap: 2rem;
+    }
+    .patner4{
+        margin-top: -2rem;
+    }
+    #patner2_con{
+        display: flex;
+        margin-left: 0rem;
+        flex-direction: column;
         gap: 2rem;
     }
     .patnertop{
@@ -1235,7 +1277,7 @@ footer hr {
         width: 140px;
     }
     #a1{
-        transform: translateX(2rem);
+        transform: translateX(0rem);
     }
     .patners img{
         width: 150px;
@@ -1535,9 +1577,10 @@ footer hr {
         width: 40vw;
     }
     .reviewimg{
-        width: 50px;
+        width: 60px;
         height: 60px;
         margin-right: -3rem;
+        border-radius: 50%;
     }
     #next,#prev{
         display: none;
@@ -1552,8 +1595,29 @@ footer hr {
         width: 100vw;
         margin-right: -2rem;
     }
-    .card1{
-        animation: reviews 12s linear infinite;
+    .card1 {
+        flex-direction: column-reverse;
+        padding: 32px;
+        animation: reviews 15s linear infinite;
+        animation-play-state: running;
+    }
+    
+    @keyframes reviews {
+        0%,20%{
+            transform: translateX(0%);
+        }
+        25%,40%{
+            transform: translateX(-117%);
+        }
+        45%,60%{
+            transform: translateX(-230%);
+        }
+        65%,80%{
+            transform: translateX(-348%);
+        }
+        100%{
+            transform: translateX(-348%);
+        }
     }
     .card1 p{
         text-align: justify;

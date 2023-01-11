@@ -20,14 +20,14 @@ let rectangles = document.querySelectorAll('.rectangles')
 
 
 
-function bds(){
-    document.getElementById('bdtext').style.cssText = 'display:none;'
-    document.getElementById('bdtext_0').style.cssText = 'display:flex;'
-}
-function bdsc(){
-    document.getElementById('bdtext').style.cssText = 'display:block;'
-    document.getElementById('bdtext_0').style.cssText = 'display:none'
-}
+// function bds(){
+//     document.getElementById('bdtext_0').style.cssText = 'display:none;'
+//     document.getElementById('bdtext').style.cssText = 'display:flex;'
+// }
+// function bdsc(){
+//     document.getElementById('bdtext_0').style.cssText = 'display:block;'
+//     document.getElementById('bdtext').style.cssText = 'display:none'
+// }
 function fds(){
     document.getElementById('fdtext').style.cssText = 'display:none;'
     document.getElementById('fdtext_0').style.cssText = 'display:flex'
@@ -102,45 +102,6 @@ if(phoneSize.matches){
     document.getElementById('skilh').textContent = 'Skillsets We Offer...'
 }
 
-// if(phoneSize.matches){
-//     teachingHeader.textContent = 'WHAT WE TEACH'
-//     document.getElementById('logo').style.cssText = 'width: 100%; height: 400px; object-fit:cover';
-//     document.getElementById('webbrigde').style.width = '350px'
-// }
-
-
-
-
-// if(phoneSize2.matches){
-//     document.getElementById('teamHead').style.fontSize = '22px'
-//     document.getElementById('bunn').style.fontSize = '37px'
-//     document.getElementById('bunn').style.width = '80%'
-//     document.getElementById('bunn').style.margin = 'auto'
-//     document.getElementById('whyH').style.fontSize = '21px'
-//     communityHeader.style.cssText = 'font-size:20.6px;'
-//     for(i=0; i<rectangles.length; i++){
-//         rectangles[i].style.width = '25px'
-//     }
-//     document.getElementById('patnersHeaders').style.cssText = 'font-size:20px; line-height:25px'
-//     for(i=0; i<rectangles.length; i++){
-//         reviewH[i].style.width = '40vw'
-//     }
-// }
-// if(phoneSize3.matches){
-//     document.getElementById('bunn').style.fontSize = '35px'
-// }
-// if(phoneSize4.matches){
-//     document.getElementById('bunn').style.fontSize = '33px'
-// }
-// if(phoneSize5.matches){
-//     document.getElementById('bunn').style.fontSize = '31px'
-// }
-// if(phoneSize6.matches){
-//     document.getElementById('bunn').style.fontSize = '29px'
-// }
-
-
-
 
 
 
@@ -158,6 +119,38 @@ function phm(){
 
 document.querySelector('.vision').addEventListener('touchstart', phv)
 document.querySelector('.mission').addEventListener('touchstart', phm)
+
+
+let ani= document.querySelectorAll('.ani')
+let cards = document.querySelectorAll('.card1')
+
+function aa(){
+    for(i=0; i<ani.length; i++){
+        ani[i].style.cssText = 'animation-play-state: paused'
+}
+}
+function ab(){
+    for(i=0; i<ani.length; i++){
+        ani[i].style.cssText = 'animation-play-state: running'
+}
+}
+
+for(i=0; i<ani.length; i++){
+    ani[i].addEventListener('touchstart', aa)
+}
+
+for(i=0; i<ani.length; i++){
+    ani[i].addEventListener('touchend', ab)
+}
+
+for(i=0; i<cards.length; i++){
+    cards[i].addEventListener('touchstart', aa)
+    console.log('food')
+}
+
+for(i=0; i<cards.length; i++){
+    cards[i].addEventListener('touchend', ab)
+}
 
 
 
