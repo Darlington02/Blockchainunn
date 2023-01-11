@@ -146,23 +146,18 @@ if(phoneSize.matches){
 
 function phv(){
     document.querySelector('.vision').style.cssText = 'background-color: #388E3C; color: white; box-shadow: 0px 0px 64px #388E3C; border: none; transition: .3s linear;'
-}
-function phv1(){
-    document.querySelector('.vision').style.cssText = 'background:none; color: black; box-shadow: none; border:1px solid; transition: .3s linear;'
-}
-   
-
-function phm(){
-    document.querySelector('.mission').style.cssText = 'background-color: #388E3C; color: white; box-shadow: 0px 0px 64px #388E3C; border: none; transition: .3s linear;'
-}
-function phm1(){
     document.querySelector('.mission').style.cssText = 'background:none; color: black; box-shadow: none; border:1px solid; transition: .3s linear;'
 }
 
+
+function phm(){
+    document.querySelector('.mission').style.cssText = 'background-color: #388E3C; color: white; box-shadow: 0px 0px 64px #388E3C; border: none; transition: .3s linear;'
+    document.querySelector('.vision').style.cssText = 'background:none; color: black; box-shadow: none; border:1px solid; transition: .3s linear;'
+}
+
+
 document.querySelector('.vision').addEventListener('touchstart', phv)
-document.querySelector('.vision').addEventListener('touchend', phv1)
 document.querySelector('.mission').addEventListener('touchstart', phm)
-document.querySelector('.mission').addEventListener('touchstart', phm1)
 
 
 
