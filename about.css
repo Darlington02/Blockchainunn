@@ -496,7 +496,7 @@ footer h3{
     display: flex;
     justify-content: end;
     font-family: Montserrat;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 800;
 }
 .contact a{
@@ -539,12 +539,28 @@ footer hr {
     padding-bottom: 12px;
 }
 
-@media (max-width:1600px){
+@media only screen and (max-width:2600px) and (min-width:1920px){
+    body{
+        max-width: 2600px;
+    }
+    nav{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:1920px) and (min-width:1600px){
+    body{
+        max-width: 1920px;
+    }
+    nav{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:1600px) and (min-width:1440px) {
     body{
         max-width: 1600px;
     }
     nav{
-        width: 1600px;
+        width: 100%;
     }
 }
 
@@ -646,6 +662,9 @@ footer hr {
         color: #388E3C;
         font-size: 28px;
         font-weight: 300;
+    }
+    .one h1{
+        color: #388E3C;
     }
     .one::before{
         content: '';

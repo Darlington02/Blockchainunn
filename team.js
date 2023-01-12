@@ -7,7 +7,7 @@ let navList = document.getElementById('navList')
 if(phoneSize.matches){
     header.textContent = 'OUR TEAM'
     header.style.fontSize = '25px'
-    document.getElementById('fuwu').textContent = 'The Brains Behind'
+    document.getElementById('fuwu').textContent = 'The Brains Behind the movement...'
 }
 
 function menuOpen(){

@@ -164,40 +164,22 @@ nav li a:hover{
     gap: 0rem;
     flex-direction: column;
     align-items: center;
-    padding-inline: 8rem;
+    padding-inline: 6rem;
+    padding-bottom: 6rem;
+    padding-top: 2rem;
 }
 .patners header{
     width: 35%;
 }
-.patners article{
+.patners article span{
     display: flex;
-    gap: 2rem;
-    width: 100%;
-    margin-bottom: -3rem;
+    gap: 5rem;
+    align-items: center;
 }
-.allpatners{
+.patnersCon{
     display: flex;
     flex-direction: column;
-    gap: 0rem;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    width: 70%;
-}
-.patner2,.patnertop,.patner3,.patner4{
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    justify-content: center;
-}
-
-#patner2_con{
-    display: flex;
-    margin-left: -3rem;
-    gap: 2rem;
-}
-.patner3{
-    gap: 7rem;
+    gap: 5rem;
 }
 .patners h1{
     font-family: Monument Extended;
@@ -209,21 +191,14 @@ nav li a:hover{
 #a1{
     width: 170px;
 }
-#webbrigde{
-    width: 220px;
+#pan{
+    width: 170px;
 }
-/* #ekolance{
-    width: 120px;
-    margin-right: 0rem;
+#pat7,#pat8{
+    width: 170px;
 }
-.patner3{
-    margin-top: -3rem;
-} */
-#baf{
-    width: 180px;
-    background-color: #000000;
-    padding: 0px 10px;
-    object-fit: cover;
+#pat8{
+    border: 10px solid;
 }
 .why{
     display: flex;
@@ -283,19 +258,21 @@ nav li a:hover{
 }
 .one>div img{
     width: 100%;
-    height: 640px;  
+    height: 640px;
+    animation: tot 7s linear infinite;
+    animation-delay: 1s;
+    cursor: pointer;  
 }
-.one>div img:hover{
-    animation: tot 3s linear;
-    animation-iteration-count: 1;
-    cursor: pointer;
-}
+
 @keyframes tot {
-    50%{
-        transform: rotateX(180deg);
+    30%{
+        transform: rotateY(-180deg);
     }
-    100%{
-        transform: rotateX(0deg);
+    50%{
+        transform:skewX(100%);
+    }
+    80%{
+        transform: rotateX(180deg);
     }
 }
 .one>div{
@@ -343,27 +320,33 @@ nav li a:hover{
     font-size: 25px;
 }
 .one article div{
-    border: 1px solid #e5e5e5;
     padding: 30px;
     border-radius: 10px;
 }
 .vision{
     background-color: #388E3C;
     color: white;
-    box-shadow: 0px 0px 64px #388E3C;
+    box-shadow: 0px 0px 36px #388E3C;
     border: none
+}
+.mission{
+    border: 1px solid #e5e5e5;
+}
+#visionhr{
+    color: white;
+    background-color: white;
 }
 .mission:hover{
     background-color: #388E3C;
     color: white;
-    box-shadow: 0px 0px 64px #388E3C;
+    box-shadow: 0px 0px 36px #388E3C;
     border: none;
     transition: .3s linear;
 }
 .vision:hover{
     background-color: #388E3C;
     color: white;
-    box-shadow: 0px 0px 64px #388E3C;
+    box-shadow: 0px 0px 36px #388E3C;
     border: none;
     transition: .3s linear;
 }
@@ -538,40 +521,44 @@ nav li a:hover{
     transform: translateY(3px);
 }
 #bd{
+    position: relative;
     background-image: url(./images/blockchain\ tech.png);
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #fd{
+    position: relative;
     background-image: url(./images/image\ 7.png);
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #ds{
+    position: relative;
     background-image: url(./images/ui\ ux.jpg);
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #hd{
+    position: relative;
     background-image: url(./images/content.png);
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #ce{
+    position: relative;
     background-image: url(./images/crypto.jpg);
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
 }
-#bdtext{
-    display: none;
-}
-#bdtext_0{
-    display: flex;
+.more{
+    font-size: 11px;
+    position: absolute;
+    bottom: 0;right: 10%;
 }
 .three{
     display: flex;
@@ -677,7 +664,7 @@ nav li a:hover{
     width: 100vw;
 }
 .oldevents img{
-    width: 150px;
+    width: 200px;
 }
 .featured{
     overflow-x: hidden;
@@ -698,26 +685,22 @@ nav li a:hover{
     position: relative;
     padding: 2rem 1rem;
     width: 100%;
-    animation: slide_events 16s linear 1s infinite;
-}
-.oldevents img:hover{
-    width: 170px;
-    transition: 1s linear;
-    transition-delay: .2s;
+    animation: slide_events 12s linear 1s infinite;
+    animation-play-state: running;
 }
 .oldevents img{
     border-radius: 10px;
-    transition: .5s linear;
 }
-#b1_0{
-    width: 120px;
+.oldevents img:hover{
+    cursor: pointer;
 }
+
 @keyframes slide_events {
     0%{
         transform: translateX(-6%);
     }
     100%{
-        transform: translateX(-110%);
+        transform: translateX(-120%);
     }
 }
 .three div h2{
@@ -803,21 +786,22 @@ hr{
 .card1 {
     background-color: #f7fff9;
     z-index: 1;
-    animation: reviews 10s linear infinite;
+    animation: reviews 6s linear infinite;
     animation-delay: 3s;
+    animation-play-state: running;
     display: flex;
     flex-direction: column-reverse;
     padding: 64px;
 }
 
 @keyframes reviews {
-    0%,30%{
+    20%{
         transform: translateX(0%);
     }
-    40%,60%{
+    60%{
         transform: translateX(-115%);
     }
-    70%,90%{
+    90%{
         transform: translateX(-225%);
     }
     100%{
@@ -1024,7 +1008,7 @@ footer h3{
     display: flex;
     justify-content: end;
     font-family: Montserrat;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 800;
 }
 .contact a{
@@ -1199,9 +1183,14 @@ footer hr {
     .patnership{
         margin-inline: -1rem;
         margin-bottom: -1rem;
+        padding-inline: 1;
+        padding-bottom: 0rem;
+    }
+    .patners header{
+        width: 100%;
     }
     .patners h1{
-        font-size: 22px;
+        font-size: 20px;
         text-align: center;
         line-height: 25px;
         letter-spacing: 0;
@@ -1210,81 +1199,36 @@ footer hr {
         margin-top: -3rem;
         padding-inline: 2rem;
         flex-direction: column;
-        gap: 0rem;
-    }
-    .patners header{
-        width: 100%;
-    }
-    .patners article{
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin: auto;
-        gap: 0;
-    }
-    .allpatners{
-        display: flex;
-        width: 110%;
-        overflow-x: hidden;
-        margin-inline: -3rem;
-        height: 300px;
-        overflow-y: hidden;
-        margin-top: 2rem;
-        padding-top: 5rem;
-        /* padding-inline: -1rem; */
-    }
-    .patner1_con{
-        display: flex;
         gap: 2rem;
-        flex-direction: column;
     }
-    .patner2,.patnertop,.patner3,.patner4{
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        gap: .1rem;
+    .patners article span{
+        animation: patnershow 10s linear infinite;
+        animation-delay: 1s;
     }
-    .patner2,.patnertop,.patner3,.patner4{
-        animation: pats 10s linear infinite;
-    }
-    @keyframes pats {
-        50%{
-            transform: translateY(-7rem);
+    @keyframes patnershow {
+        100%{
+            transform: translateX(-200%);
         }
     }
-    .patner2{
-        gap: 0rem;
-    }
-    .patner3{
+    .patnersCon{
+        flex-direction: row;
         gap: 2rem;
+        width: 100%;
+        overflow: hidden;
     }
-    .patner4{
-        margin-top: -2rem;
-    }
-    #patner2_con{
-        display: flex;
-        margin-left: 0rem;
-        flex-direction: column;
-        gap: 2rem;
-    }
-    .patnertop{
-        margin-bottom: -5rem;
-    }
-    #webbridge{
-        width: 100px;
-    }
-    #baf{
-        width: 140px;
+    #web3{
+        width: 220px;
+        margin-right: 0;
     }
     #a1{
         transform: translateX(0rem);
+        width: 150px;
+    }
+    #pat7,#pat8{
+        width: 150px;
     }
     .patners img{
         width: 150px;
-    }
-    #ekolance{
-        width: 120px;
-        margin-right: 0rem;
     }
     hr{
         margin-bottom: -10px;
@@ -1598,7 +1542,7 @@ footer hr {
     .card1 {
         flex-direction: column-reverse;
         padding: 32px;
-        animation: reviews 60s linear infinite;
+        animation: reviews 10s linear infinite;
         animation-play-state: running;
     }
     
@@ -1808,7 +1752,7 @@ footer hr {
     .contact{
         margin-top: -1rem;
         justify-content: flex-start;
-        width: 100vw;
+        width: 90vw;
         margin-bottom: 1rem;
         margin-left: -2rem;
         text-align: left;
@@ -1828,23 +1772,31 @@ footer hr {
         max-width: 450px;
     }
 } */
+@media only screen and (max-width:2600px) and (min-width:1920px){
+    body{
+        max-width: 2600px;
+    }
+    nav{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:1920px) and (min-width:1600px){
+    body{
+        max-width: 1920px;
+    }
+    nav{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:1600px) and (min-width:1440px) {
+    body{
+        max-width: 1600px;
+    }
+    nav{
+        width: 100%;
+    }
+}
 
-@media only screen and (max-width:1920px){
-    body{
-        max-width: 1920px;
-    }
-    nav{
-        width: 100%;
-    }
-}
-@media only screen and (max-width:1600px){
-    body{
-        max-width: 1920px;
-    }
-    nav{
-        width: 100%;
-    }
-}
 
 
 

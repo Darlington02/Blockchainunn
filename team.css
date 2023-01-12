@@ -19,7 +19,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    max-width: 1600px;
+    max-width: 1440px;
     margin: auto;
     box-sizing: border-box;
     overflow-x: hidden;
@@ -62,7 +62,7 @@ nav{
     padding-inline: 3rem;
     z-index: 40;
     position: fixed;
-    width: 1600px;
+    width: 1440px;
     border-bottom: 5px solid gainsboro;
 }
 #navlogo{
@@ -291,7 +291,7 @@ footer h3{
     display: flex;
     justify-content: end;
     font-family: Montserrat;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 800;
 }
 .contact a{
@@ -566,7 +566,11 @@ footer hr {
         gap: 1rem;
     }
     .section h1{
-        font-size: 25px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    #fuwuhr{
+        margin-bottom: 7px;
     }
     .one{
         justify-content: left;
@@ -699,3 +703,27 @@ footer hr {
     }
 }
 
+@media only screen and (max-width:2600px) and (min-width:1920px){
+    body{
+        max-width: 2600px;
+    }
+    nav{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:1920px) and (min-width:1600px){
+    body{
+        max-width: 1920px;
+    }
+    nav{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:1600px) and (min-width:1440px) {
+    body{
+        max-width: 1600px;
+    }
+    nav{
+        width: 100%;
+    }
+}

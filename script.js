@@ -13,52 +13,81 @@ let preachImage = document.getElementById('preach')
 let allSections = document.querySelectorAll('section')
 let nlist = document.querySelectorAll('.nlist')
 let ce = document.getElementById('ce')
-document.getElementById('b1_0').style.width = '140px'
-document.getElementById('b1_1').style.width = '140px'
 let rectangles = document.querySelectorAll('.rectangles')
+let view = document.querySelectorAll('.more')
 
 
 
 
-// function bds(){
-//     document.getElementById('bdtext_0').style.cssText = 'display:none;'
-//     document.getElementById('bdtext').style.cssText = 'display:flex;'
-// }
-// function bdsc(){
-//     document.getElementById('bdtext_0').style.cssText = 'display:block;'
-//     document.getElementById('bdtext').style.cssText = 'display:none'
-// }
+function bds(){
+    document.getElementById('bdtext').style.cssText = 'display:none;'
+    document.getElementById('bdtext_0').style.cssText = 'display:flex;'
+    for(i=0;i<view.length;i++){
+        view[i].style.cssText = 'display:none;'
+    }
+}
+function bdsc(){
+    document.getElementById('bdtext').style.cssText = 'display:block;'
+    document.getElementById('bdtext_0').style.cssText = 'display:none'
+    for(i=0;i<view.length;i++){
+        view[i].style.cssText = 'display:block;'
+    }
+}
 function fds(){
     document.getElementById('fdtext').style.cssText = 'display:none;'
     document.getElementById('fdtext_0').style.cssText = 'display:flex'
+    for(i=0;i<view.length;i++){
+        view[i].style.cssText = 'display:none;'
+    }
 }
 function fdsc(){
     document.getElementById('fdtext').style.cssText = 'display:block;'
     document.getElementById('fdtext_0').style.cssText = 'display:none'
+    for(i=0;i<view.length;i++){
+        view[i].style.cssText = 'display:block;'
+    }
 }
 function dss(){
     document.getElementById('dstext').style.cssText = 'display:none;'
     document.getElementById('dstext_0').style.cssText = 'display:flex'
+    for(i=0;i<view.length;i++){
+        view[i].style.cssText = 'display:none;'
+    }
 }
 function dssc(){
     document.getElementById('dstext').style.cssText = 'display:block;'
     document.getElementById('dstext_0').style.cssText = 'display:none'
+    for(i=0;i<view.length;i++){
+        view[i].style.cssText = 'display:block;'
+    }
 }
 function hds(){
     document.getElementById('hdtext').style.cssText = 'display:none;'
     document.getElementById('hdtext_0').style.cssText = 'display:flex'
+    for(i=0;i<view.length;i++){
+        view[i].style.cssText = 'display:none;'
+    }
 }
 function hdsc(){
     document.getElementById('hdtext').style.cssText = 'display:block;'
     document.getElementById('hdtext_0').style.cssText = 'display:none'
+    for(i=0;i<view.length;i++){
+        view[i].style.cssText = 'display:block;'
+    }
 }
 function ces(){
     document.getElementById('cetext').style.cssText = 'display:none;'
     document.getElementById('cetext_0').style.cssText = 'display:flex'
+    for(i=0;i<view.length;i++){
+        view[i].style.cssText = 'display:none;'
+    }
 }
 function cesc(){
     document.getElementById('cetext').style.cssText = 'display:block;'
     document.getElementById('cetext_0').style.cssText = 'display:none'
+    for(i=0;i<view.length;i++){
+        view[i].style.cssText = 'display:block;'
+    }
 }
 
 
@@ -98,7 +127,6 @@ if(phoneSize.matches){
         })
     }
     document.getElementById('logo').style.cssText = 'width: 100%; height: 500px; object-fit:cover';
-    document.getElementById('webbrigde').style.width = '150px'
     document.getElementById('skilh').textContent = 'Skillsets We Offer...'
 }
 
@@ -106,13 +134,13 @@ if(phoneSize.matches){
 
 
 function phv(){
-    document.querySelector('.vision').style.cssText = 'background-color: #388E3C; color: white; box-shadow: 0px 0px 64px #388E3C; border: none; transition: .3s linear;'
+    document.querySelector('.vision').style.cssText = 'background-color: #388E3C; color: white; box-shadow: 0px 0px 36px #388E3C; border: none; transition: .3s linear;'
     document.querySelector('.mission').style.cssText = 'background:none; color: black; box-shadow: none; border:1px solid; transition: .3s linear;'
 }
 
 
 function phm(){
-    document.querySelector('.mission').style.cssText = 'background-color: #388E3C; color: white; box-shadow: 0px 0px 64px #388E3C; border: none; transition: .3s linear;'
+    document.querySelector('.mission').style.cssText = 'background-color: #388E3C; color: white; box-shadow: 0px 0px 36px #388E3C; border: none; transition: .3s linear;'
     document.querySelector('.vision').style.cssText = 'background:none; color: black; box-shadow: none; border:1px solid; transition: .3s linear;'
 }
 
@@ -121,37 +149,40 @@ document.querySelector('.vision').addEventListener('touchstart', phv)
 document.querySelector('.mission').addEventListener('touchstart', phm)
 
 
-let ani= document.querySelectorAll('.ani')
+let ani= document.querySelector('.oldevents')
+let eventimages= document.querySelectorAll('.ani')
 let cards = document.querySelectorAll('.card1')
 
-function aa(){
-    for(i=0; i<ani.length; i++){
-        ani[i].style.cssText = 'animation-play-state: paused'
-}
-}
-function ab(){
-    for(i=0; i<ani.length; i++){
-        ani[i].style.cssText = 'animation-play-state: running'
-}
-}
-
-for(i=0; i<ani.length; i++){
-    ani[i].addEventListener('touchstart', aa)
-}
-
-for(i=0; i<ani.length; i++){
-    ani[i].addEventListener('touchend', ab)
-}
-
-for(i=0; i<cards.length; i++){
-    cards[i].addEventListener('touchstart', aa)
-    console.log('food')
-}
-
-for(i=0; i<cards.length; i++){
-    cards[i].addEventListener('touchend', ab)
-}
 
 
+function misso(){
+    document.getElementById('misionhr').style.backgroundColor = 'white'
+}
+function missout(){
+    document.getElementById('misionhr').style.backgroundColor = '#388E3C'
+}
 
+function _aa(){
+    ani.style.cssText = 'animation-play-state: paused'
+}
 
+function _ab(){
+    ani.style.cssText = 'animation-play-state: running'
+}
+
+ani.addEventListener('touchstart', _aa)
+ani.addEventListener('touchend', _ab)
+
+function bb(){
+    for(i=0;i<cards.length;i++){
+        cards[i].style.cssText = 'animation-play-state: paused'
+    }
+}
+function bb2(){
+    for(i=0;i<cards.length;i++){
+        cards[i].style.cssText = 'animation-play-state: running'
+    }
+}
+
+cards[i].addEventListener('touchstart', bb)
+cards[i].addEventListener('touchend', bb2)
