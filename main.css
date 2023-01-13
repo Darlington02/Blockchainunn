@@ -59,11 +59,6 @@ nav{
     width: 1440px;
     border-bottom: 3px solid gainsboro;
 }
-/* nav img{
-    margin-bottom: -3rem;
-    margin-top: 0rem;
-    margin-left: -2rem;
-} */
 nav ul{
     list-style: none;
     display: flex;
@@ -161,7 +156,7 @@ nav li a:hover{
 }
 .patners{
     display: flex;
-    gap: 0rem;
+    gap: 1rem;
     flex-direction: column;
     align-items: center;
     padding-inline: 6rem;
@@ -169,7 +164,7 @@ nav li a:hover{
     padding-top: 2rem;
 }
 .patners header{
-    width: 35%;
+    width: 100%;
 }
 .patners article span{
     display: flex;
@@ -638,7 +633,7 @@ nav li a:hover{
 }
 .countdown article{
     display: flex;
-    gap: 10rem;
+    gap: 4rem;
     position: relative;
 }
 .countdown h1{

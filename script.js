@@ -80,7 +80,9 @@ if(tabSize.matches){
 function menuOpen(){
     navList.style.cssText = 'transform: translateX(0%)'
     closeBar.style.cssText = 'transform: translateX(0%)'
-    document.querySelector('html').style.overflow= 'hidden'
+    if(phoneSize.matches){
+            document.querySelector('html').style.overflow= 'hidden'
+        }
     for(i=0; i<allSections.length; i++){
         allSections[i].style.filter = 'opacity(.5) blur(3px)'
     }

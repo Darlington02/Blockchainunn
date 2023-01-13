@@ -360,9 +360,9 @@ footer hr {
         display: block;
         position: absolute;
         z-index: 42;
-        width: 40px;
+        width: 60px;
         right: 1rem;
-        top: .8rem;
+        top: 1rem;
     }
     #close{
         display: block;   
@@ -382,24 +382,17 @@ footer hr {
         padding-top: 18px;
         padding-bottom: 14px;
     }
-    #blogo{
-        width: 300px;
-        margin-left: -2.5rem;
-    }
     nav{
         width: 100%;
         padding-inline: 1rem;
         margin-inline: 0rem;
-        padding-top: .5rem;
-        padding-bottom: .5rem;
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
         margin-top: 0;
         border-bottom: 2px solid gainsboro;
     }
-    nav img{
-        margin-bottom: 0rem;
-        margin-top: 0rem;
-        margin-left: -2rem;
-        padding-left: -10rem;
+    #navlogo{
+        top: -1.5rem;
     }
     nav ul{
         /* display: none; */
@@ -414,6 +407,12 @@ footer hr {
         transition: .5s linear;
         transform: translateX(100%);
         z-index: 43;
+    }
+    #wu{
+        font-size: 14px;
+    }
+    #hlogo{
+        width: 400px;
     }
     .header h1{
         font-size: 30px;
