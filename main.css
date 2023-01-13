@@ -43,7 +43,7 @@ body::-webkit-scrollbar-thumb{
 #navlogo{
     width: 400px;
     position: absolute;
-    top: -9rem;
+    top: 0rem;
 }
 nav{
     display: flex;
@@ -1087,9 +1087,9 @@ footer hr {
         position: relative;
     }
     #navlogo{
-        width: 290px;
-        top: -8.5rem;
-        left: -2.5rem;
+        width: 250px;
+        top: -1.8rem;
+        left: -1.5rem;
     }
     nav{
         width: 100%;
@@ -1310,6 +1310,9 @@ footer hr {
     }
     hr{
         width: 50px;
+    }
+    #misionhr,#visionhr{
+        display: none;
     }
     .two{
         flex-direction: column;
@@ -1536,20 +1539,17 @@ footer hr {
     }
     
     @keyframes reviews {
-        0%,10%,20%{
+        /* 25%{
             transform: translateX(0%);
         }
-        20%,40%{
+        50%{
             transform: translateX(-117%);
         }
-        40%,60%{
+        75%{
             transform: translateX(-230%);
-        }
-        60%,80%{
-            transform: translateX(-348%);
-        }
+        } */
         100%{
-            transform: translateX(-348%);
+            transform: translateX(-390%);
         }
     }
     .card1 p{

@@ -70,7 +70,7 @@ nav{
 #navlogo{
     width: 400px;
     position: absolute;
-    top: -9rem;
+    top: 0rem;
 }
 #menu{
     display: none;
@@ -413,13 +413,12 @@ nav li a:hover{
 .seven div{
     display: flex;
 }
-/* .seven div img{
-    width: 300px;
-} */
+.seven div img{
+    border-radius: 30px;
+}
 .evesli img{
     width: 100px;
     display: none;
-    /* height: 450px; */
     animation: eveslide 20s linear infinite;
     animation-delay: 3s;
     object-fit: cover;
@@ -640,9 +639,9 @@ footer hr {
         position: relative;
     }
     #navlogo{
-        width: 290px;
-        top: -8.5rem;
-        left: -2.5rem;
+        width: 250px;
+        top: -1.8rem;
+        left: -1.5rem;
     }
     nav{
         width: 100%;

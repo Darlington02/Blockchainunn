@@ -111,25 +111,18 @@ if(phoneSize.matches){
 }
 
 
-let green = false
+
 
 function phv(){
-    if(green === true){
     document.querySelector('.vision').style.cssText = 'background-color: #388E3C; color: white; box-shadow: 0px 0px 36px #388E3C; border: none; transition: .3s linear;'
     document.querySelector('.mission').style.cssText = 'background:none; color: black; box-shadow: none; border:1px solid; transition: .3s linear;'
-    document.getElementById('misionhr').style.backgroundColor = '#388E3C'
-    green = false
-}
 }
 
 
 function phm(){
-    if(green === false){
     document.querySelector('.mission').style.cssText = 'background-color: #388E3C; color: white; box-shadow: 0px 0px 36px #388E3C; border: none; transition: .3s linear;'
     document.querySelector('.vision').style.cssText = 'background:none; color: black; box-shadow: none; border:1px solid; transition: .3s linear;'
     document.getElementById('visionhr').style.backgroundColor = '#388E3C'
-    green = true
-}
 }
 
 
@@ -150,6 +143,8 @@ function missout(){
     document.getElementById('misionhr').style.backgroundColor = '#388E3C'
 }
 
+// old events section
+
 function _aa(){
     ani.style.cssText = 'animation-play-state: paused'
 }
@@ -165,28 +160,55 @@ if(!phoneSize.matches){
     homeEve.addEventListener('mouseout', _ab)
 }
 
-if(phoneSize.matches){
-    homeEve.addEventListener('touchstart', _aa)
-    homeEve.addEventListener('touchend', _ab)
+let eve = false
+
+homeEve.addEventListener('click', ()=>{
+    if(phoneSize.matches && eve ===false){
+            homeEve.style.cssText = 'animation-play-state: paused'
+            eve = true
+            console.log('food')
+        }
+    else if(phoneSize.matches && eve===true ){
+            homeEve.style.cssText = 'animation-play-state: running'
+            eve = false
+        }
+})
+
+
+
+// Review section
+
+function bb1(){
+    for(i=0;i<cards.length;i++){
+        cards[i].style.cssText = 'animation-play-state: paused'
+    }
+}
+function bb2(){
+    for(i=0;i<cards.length;i++){
+        cards[i].style.cssText = 'animation-play-state: running'
+    }
 }
 
-function bb(){
-    if(green ===false ){
-        for(i=0;i<cards.length;i++){
-            cards[i].style.cssText = 'animation-play-state: paused'
-            green = true
-        }
-    }
-        else if(green===true){
-        for(i=0;i<cards.length;i++){
-            cards[i].style.cssText = 'animation-play-state: running'
-            green = false
-        }
-    }
-}
-// function bb2(){
-  
-// }
 
-cards[i].addEventListener('touchstart', bb)
+let green = false
+
+
+for(i=0;i<cards.length;i++){
+    cards[i].addEventListener('click', ()=>{
+        if(phoneSize.matches && green ===false){
+            for(i=0;i<cards.length;i++){
+                cards[i].style.cssText = 'animation-play-state: paused'
+                green = true
+            }
+        }
+        else if(phoneSize.matches && green===true ){
+            for(i=0;i<cards.length;i++){
+                cards[i].style.cssText = 'animation-play-state: running'
+                green = false
+            }
+        }
+})
+}
+
+
 // cards[i].addEventListener('touchstart', bb2)

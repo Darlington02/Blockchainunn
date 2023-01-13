@@ -41,7 +41,7 @@ body{
 #navlogo{
     width: 400px;
     position: absolute;
-    top: -9rem;
+    top: 0rem;
 }
 body::-webkit-scrollbar{
     width: 6px;
@@ -432,21 +432,24 @@ p{
     gap: 2rem;
 }
 .sponsors h1{
-    font-family: Montserrat;
+    font-family: Monument Extended;
     font-size: 32px;
     font-weight: 800;
     line-height: 38px;
     color: #212121;
+    color: #388E3C;
 }
 #a1{
     width: 170px;
 }
 .sponsors h2{
+    font-family: Montserrat;
     font-family: Monument Extended;
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 22px;
+    font-weight: bolder;
     line-height: 38px;
     color: #212121;
+    /* color: #388E3C; */
 }
 
 
@@ -488,6 +491,12 @@ footer p{
 #ln{
     background-color: white;
 }
+#call{
+    background-color: white;
+    width: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
 
 @media (max-width: 670px){
     html{
@@ -523,9 +532,9 @@ footer p{
         position: relative;
     }
     #navlogo{
-        width: 290px;
-        top: -8.5rem;
-        left: -2.5rem;
+        width: 250px;
+        top: -1.8rem;
+        left: -1.5rem;
     }
     nav{
         width: 100%;

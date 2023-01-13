@@ -56,23 +56,23 @@ let ani= document.querySelectorAll('.ani')
 let ani2= document.querySelectorAll('.evesli')
 
 
-function aa(){
-    for(i=0; i<ani.length; i++){
-        ani[i].style.cssText = 'animation-play-state: paused'
-}
-}
-function ab(){
-    for(i=0; i<ani.length; i++){
-        ani[i].style.cssText = 'animation-play-state: running'
-}
-}
+let psteve = false
 
-for(i=0; i<ani.length; i++){
-    ani[i].addEventListener('touchstart', aa)
-}
-
-for(i=0; i<ani.length; i++){
-    ani[i].addEventListener('touchend', ab)
+for(i=0;i<ani.length;i++){
+    ani[i].addEventListener('click', ()=>{
+        if(phoneSize.matches && psteve ===false){
+            for(i=0;i<ani.length;i++){
+                ani[i].style.cssText = 'animation-play-state: paused'
+                psteve = true
+            }
+        }
+        else if(phoneSize.matches && psteve===true ){
+            for(i=0;i<ani.length;i++){
+                ani[i].style.cssText = 'animation-play-state: running'
+                psteve = false
+            }
+        }
+})
 }
 
 
