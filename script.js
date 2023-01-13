@@ -171,21 +171,22 @@ if(phoneSize.matches){
 }
 
 function bb(){
-    for(i=0;i<cards.length;i++){
-        if(green ===false ){
+    if(green ===false ){
+        for(i=0;i<cards.length;i++){
             cards[i].style.cssText = 'animation-play-state: paused'
             green = true
         }
     }
-}
-function bb2(){
-    for(i=0;i<cards.length;i++){
-        if(green===true){
+        else if(green===true){
+        for(i=0;i<cards.length;i++){
             cards[i].style.cssText = 'animation-play-state: running'
             green = false
         }
     }
 }
+// function bb2(){
+  
+// }
 
 cards[i].addEventListener('touchstart', bb)
-cards[i].addEventListener('touchstart', bb2)
+// cards[i].addEventListener('touchstart', bb2)

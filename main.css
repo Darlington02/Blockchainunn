@@ -1536,7 +1536,7 @@ footer hr {
     }
     
     @keyframes reviews {
-        0%,20%{
+        0%,10%,20%{
             transform: translateX(0%);
         }
         20%,40%{
