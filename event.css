@@ -759,7 +759,14 @@ footer p{
     footer a{
         font-size: 20px;
     }
+    #call{
+        margin-right: 10px;
+        margin-bottom: 5px;
+        width: 20px;
+        transform: translateY(6px);
+    }
     #numbers{
+        display: block;
         width: 97%;
     }
 }
