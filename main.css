@@ -555,7 +555,7 @@ nav li a:hover{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.more{
+.more,.more2,.more3,.more4,.more5{
     font-size: 11px;
     position: absolute;
     bottom: 0;right: 10%;
@@ -685,7 +685,7 @@ nav li a:hover{
     position: relative;
     padding: 2rem 1rem;
     width: 100%;
-    animation: slide_events 12s linear 1s infinite;
+    animation: slide_events 16s linear 1s infinite;
     animation-play-state: running;
 }
 .oldevents img{
@@ -1109,17 +1109,6 @@ footer hr {
         transform: translateX(100%);
         z-index: 43;
     }
-        /* #blogo{
-        width: 300px;
-        margin-left: -2.5rem;
-        transform: translateY(0);
-    } */
-    /* nav img{
-        margin-bottom: 0rem;
-        margin-top: 0rem;
-        margin-left: -2rem;
-        padding-left: -10rem;
-    } */
     .top main{
         margin-inline: -1rem;
         margin-top: 0rem;
@@ -1464,7 +1453,7 @@ footer hr {
         transform: translateY(4px);
     }
     .oldevents{
-        animation: slide_event 9s linear 1s infinite;
+        animation: slide_event 23s linear 1s infinite;
     }
     @keyframes slide_event {
         100%{
@@ -1550,13 +1539,13 @@ footer hr {
         0%,20%{
             transform: translateX(0%);
         }
-        25%,40%{
+        20%,40%{
             transform: translateX(-117%);
         }
-        45%,60%{
+        40%,60%{
             transform: translateX(-230%);
         }
-        65%,80%{
+        60%,80%{
             transform: translateX(-348%);
         }
         100%{

@@ -14,7 +14,7 @@ let allSections = document.querySelectorAll('section')
 let nlist = document.querySelectorAll('.nlist')
 let ce = document.getElementById('ce')
 let rectangles = document.querySelectorAll('.rectangles')
-let view = document.querySelectorAll('.more')
+// let view = document.querySelectorAll('.more')
 
 
 
@@ -22,72 +22,52 @@ let view = document.querySelectorAll('.more')
 function bds(){
     document.getElementById('bdtext').style.cssText = 'display:none;'
     document.getElementById('bdtext_0').style.cssText = 'display:flex;'
-    for(i=0;i<view.length;i++){
-        view[i].style.cssText = 'display:none;'
-    }
+    document.querySelector('.more').style.cssText = 'display:none;'
 }
 function bdsc(){
     document.getElementById('bdtext').style.cssText = 'display:block;'
     document.getElementById('bdtext_0').style.cssText = 'display:none'
-    for(i=0;i<view.length;i++){
-        view[i].style.cssText = 'display:block;'
-    }
+    document.querySelector('.more').style.cssText = 'display:block;'
 }
 function fds(){
     document.getElementById('fdtext').style.cssText = 'display:none;'
     document.getElementById('fdtext_0').style.cssText = 'display:flex'
-    for(i=0;i<view.length;i++){
-        view[i].style.cssText = 'display:none;'
-    }
+    document.querySelector('.more2').style.cssText = 'display:none;'
 }
 function fdsc(){
     document.getElementById('fdtext').style.cssText = 'display:block;'
     document.getElementById('fdtext_0').style.cssText = 'display:none'
-    for(i=0;i<view.length;i++){
-        view[i].style.cssText = 'display:block;'
-    }
+    document.querySelector('.more2').style.cssText = 'display:block;'
 }
 function dss(){
     document.getElementById('dstext').style.cssText = 'display:none;'
     document.getElementById('dstext_0').style.cssText = 'display:flex'
-    for(i=0;i<view.length;i++){
-        view[i].style.cssText = 'display:none;'
-    }
+    document.querySelector('.more3').style.cssText = 'display:none;'
 }
 function dssc(){
     document.getElementById('dstext').style.cssText = 'display:block;'
     document.getElementById('dstext_0').style.cssText = 'display:none'
-    for(i=0;i<view.length;i++){
-        view[i].style.cssText = 'display:block;'
-    }
+    document.querySelector('.more3').style.cssText = 'display:block;'
 }
 function hds(){
     document.getElementById('hdtext').style.cssText = 'display:none;'
     document.getElementById('hdtext_0').style.cssText = 'display:flex'
-    for(i=0;i<view.length;i++){
-        view[i].style.cssText = 'display:none;'
-    }
+    document.querySelector('.more4').style.cssText = 'display:none;'
 }
 function hdsc(){
     document.getElementById('hdtext').style.cssText = 'display:block;'
     document.getElementById('hdtext_0').style.cssText = 'display:none'
-    for(i=0;i<view.length;i++){
-        view[i].style.cssText = 'display:block;'
-    }
+    document.querySelector('.more4').style.cssText = 'display:block;'
 }
 function ces(){
     document.getElementById('cetext').style.cssText = 'display:none;'
     document.getElementById('cetext_0').style.cssText = 'display:flex'
-    for(i=0;i<view.length;i++){
-        view[i].style.cssText = 'display:none;'
-    }
+    document.querySelector('.more5').style.cssText = 'display:none;'
 }
 function cesc(){
     document.getElementById('cetext').style.cssText = 'display:block;'
     document.getElementById('cetext_0').style.cssText = 'display:none'
-    for(i=0;i<view.length;i++){
-        view[i].style.cssText = 'display:block;'
-    }
+    document.querySelector('.more5').style.cssText = 'display:block;'
 }
 
 
@@ -136,12 +116,14 @@ if(phoneSize.matches){
 function phv(){
     document.querySelector('.vision').style.cssText = 'background-color: #388E3C; color: white; box-shadow: 0px 0px 36px #388E3C; border: none; transition: .3s linear;'
     document.querySelector('.mission').style.cssText = 'background:none; color: black; box-shadow: none; border:1px solid; transition: .3s linear;'
+    document.getElementById('misionhr').style.backgroundColor = '#388E3C'
 }
 
 
 function phm(){
     document.querySelector('.mission').style.cssText = 'background-color: #388E3C; color: white; box-shadow: 0px 0px 36px #388E3C; border: none; transition: .3s linear;'
     document.querySelector('.vision').style.cssText = 'background:none; color: black; box-shadow: none; border:1px solid; transition: .3s linear;'
+    document.getElementById('visionhr').style.backgroundColor = '#388E3C'
 }
 
 
@@ -170,8 +152,17 @@ function _ab(){
     ani.style.cssText = 'animation-play-state: running'
 }
 
-ani.addEventListener('touchstart', _aa)
-ani.addEventListener('touchend', _ab)
+let homeEve = document.querySelector('.oldevents')
+
+if(!phoneSize.matches){
+    homeEve.addEventListener('mouseover', _aa)
+    homeEve.addEventListener('mouseout', _ab)
+}
+
+if(phoneSize.matches){
+    ani.addEventListener('touchstart', _aa)
+    ani.addEventListener('touchend', _ab)
+}
 
 function bb(){
     for(i=0;i<cards.length;i++){
@@ -185,4 +176,4 @@ function bb2(){
 }
 
 cards[i].addEventListener('touchstart', bb)
-cards[i].addEventListener('touchend', bb2)
+cards[i].addEventListener('touchmove', bb2)
