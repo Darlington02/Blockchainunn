@@ -114,21 +114,21 @@ if(phoneSize.matches){
 let green = false
 
 function phv(){
-    if(green === false){
+    if(green === true){
     document.querySelector('.vision').style.cssText = 'background-color: #388E3C; color: white; box-shadow: 0px 0px 36px #388E3C; border: none; transition: .3s linear;'
     document.querySelector('.mission').style.cssText = 'background:none; color: black; box-shadow: none; border:1px solid; transition: .3s linear;'
     document.getElementById('misionhr').style.backgroundColor = '#388E3C'
-    green = true
+    green = false
 }
 }
 
 
 function phm(){
-    if(green === true){
+    if(green === false){
     document.querySelector('.mission').style.cssText = 'background-color: #388E3C; color: white; box-shadow: 0px 0px 36px #388E3C; border: none; transition: .3s linear;'
     document.querySelector('.vision').style.cssText = 'background:none; color: black; box-shadow: none; border:1px solid; transition: .3s linear;'
     document.getElementById('visionhr').style.backgroundColor = '#388E3C'
-    green = false
+    green = true
 }
 }
 
@@ -182,4 +182,4 @@ function bb2(){
 }
 
 cards[i].addEventListener('touchstart', bb)
-cards[i].addEventListener('touchend', bb2)
+cards[i].addEventListener('touchcancel', bb2)
