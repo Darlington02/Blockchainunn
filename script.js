@@ -172,14 +172,20 @@ if(phoneSize.matches){
 
 function bb(){
     for(i=0;i<cards.length;i++){
-        cards[i].style.cssText = 'animation-play-state: paused'
+        if(green ===false ){
+            cards[i].style.cssText = 'animation-play-state: paused'
+            green = true
+        }
     }
 }
 function bb2(){
     for(i=0;i<cards.length;i++){
-        cards[i].style.cssText = 'animation-play-state: running'
+        if(green===true){
+            cards[i].style.cssText = 'animation-play-state: running'
+            green = false
+        }
     }
 }
 
 cards[i].addEventListener('touchstart', bb)
-cards[i].addEventListener('touchcancel', bb2)
+cards[i].addEventListener('touchstart', bb2)
