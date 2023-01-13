@@ -1539,15 +1539,9 @@ footer hr {
     }
     
     @keyframes reviews {
-        /* 25%{
+        10%{
             transform: translateX(0%);
         }
-        50%{
-            transform: translateX(-117%);
-        }
-        75%{
-            transform: translateX(-230%);
-        } */
         100%{
             transform: translateX(-390%);
         }
