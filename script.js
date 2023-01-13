@@ -111,19 +111,25 @@ if(phoneSize.matches){
 }
 
 
-
+let green = false
 
 function phv(){
+    if(green === false){
     document.querySelector('.vision').style.cssText = 'background-color: #388E3C; color: white; box-shadow: 0px 0px 36px #388E3C; border: none; transition: .3s linear;'
     document.querySelector('.mission').style.cssText = 'background:none; color: black; box-shadow: none; border:1px solid; transition: .3s linear;'
     document.getElementById('misionhr').style.backgroundColor = '#388E3C'
+    green = true
+}
 }
 
 
 function phm(){
+    if(green === true){
     document.querySelector('.mission').style.cssText = 'background-color: #388E3C; color: white; box-shadow: 0px 0px 36px #388E3C; border: none; transition: .3s linear;'
     document.querySelector('.vision').style.cssText = 'background:none; color: black; box-shadow: none; border:1px solid; transition: .3s linear;'
     document.getElementById('visionhr').style.backgroundColor = '#388E3C'
+    green = false
+}
 }
 
 
@@ -131,7 +137,7 @@ document.querySelector('.vision').addEventListener('touchstart', phv)
 document.querySelector('.mission').addEventListener('touchstart', phm)
 
 
-let ani= document.querySelector('.oldevents')
+
 let eventimages= document.querySelectorAll('.ani')
 let cards = document.querySelectorAll('.card1')
 
@@ -160,8 +166,8 @@ if(!phoneSize.matches){
 }
 
 if(phoneSize.matches){
-    ani.addEventListener('touchstart', _aa)
-    ani.addEventListener('touchend', _ab)
+    homeEve.addEventListener('touchstart', _aa)
+    homeEve.addEventListener('touchend', _ab)
 }
 
 function bb(){
@@ -176,4 +182,4 @@ function bb2(){
 }
 
 cards[i].addEventListener('touchstart', bb)
-cards[i].addEventListener('touchmove', bb2)
+cards[i].addEventListener('touchend', bb2)
