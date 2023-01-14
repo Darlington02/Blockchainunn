@@ -360,9 +360,9 @@ footer hr {
         display: block;
         position: absolute;
         z-index: 42;
-        width: 60px;
+        width: 40px;
         right: 1rem;
-        top: 1rem;
+        top: .75rem;
     }
     #close{
         display: block;   
@@ -386,13 +386,14 @@ footer hr {
         width: 100%;
         padding-inline: 1rem;
         margin-inline: 0rem;
-        padding-top: 1.5rem;
-        padding-bottom: 2rem;
+        padding-top: 1.75rem;
+        padding-bottom: .25rem;
         margin-top: 0;
         border-bottom: 2px solid gainsboro;
     }
     #navlogo{
-        top: -1.5rem;
+        top: -1.8rem;
+        width: 300px;
     }
     nav ul{
         /* display: none; */
@@ -410,6 +411,9 @@ footer hr {
     }
     #wu,#wu1{
         font-size: 14px;
+    }
+    .teamwu{
+        gap: 0;
     }
     #hlogo{
         width: 400px;
