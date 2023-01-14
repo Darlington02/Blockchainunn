@@ -10,9 +10,9 @@ function menuOpen(){
     closeBar.style.cssText = 'transform: translateX(0%)'
     document.querySelector('html').style.overflow= 'hidden'
     for(i=0; i<allSections.length; i++){
-        allSections[i].style.filter = 'brightness(20%)'
+        allSections[i].style.filter = 'opacity(.5) blur(3px)'
     }
-    document.querySelector('footer').style.filter = 'opacity(.5) brightness(20%)' 
+    document.querySelector('footer').style.filter = 'opacity(.5) blur(3px)' 
 }
 function menuClose(){
     navList.style.cssText = 'transform: translateX(100%)'

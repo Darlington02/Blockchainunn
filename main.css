@@ -1306,9 +1306,9 @@ footer hr {
     hr{
         width: 50px;
     }
-    #misionhr,#visionhr{
+    /* #misionhr,#visionhr{
         display: none;
-    }
+    } */
     .two{
         flex-direction: column;
         margin-inline: -1rem;

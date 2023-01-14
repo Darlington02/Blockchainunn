@@ -408,7 +408,7 @@ footer hr {
         transform: translateX(100%);
         z-index: 43;
     }
-    #wu{
+    #wu,#wu1{
         font-size: 14px;
     }
     #hlogo{
@@ -545,7 +545,7 @@ footer hr {
     #hlogo{
         width: 300px;
     }
-    #wu{
+    #wu,#wu1{
         width: 100%;
     }
     .header h1{

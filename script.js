@@ -113,23 +113,28 @@ if(phoneSize.matches){
 }
 
 
-
+let ishrWhite = true
 
 function phv(){
-    document.querySelector('.vision').style.cssText = 'background-color: #388E3C; color: white; box-shadow: 0px 0px 36px #388E3C; border: none; transition: .3s linear;'
-    document.querySelector('.mission').style.cssText = 'background:none; color: black; box-shadow: none; border:1px solid; transition: .3s linear;'
+        document.querySelector('.vision').style.cssText = 'background-color: #388E3C; color: white; box-shadow: 0px 0px 36px #388E3C; border: none; transition: .3s linear;'
+        document.querySelector('.mission').style.cssText = 'background:none; color: black; box-shadow: none; border:1px solid; transition: .3s linear;'
+        document.getElementById('misionhr').style.backgroundColor = '#388E3C'
+        document.getElementById('visionhr').style.backgroundColor = '#fff'
 }
 
 
 function phm(){
-    document.querySelector('.mission').style.cssText = 'background-color: #388E3C; color: white; box-shadow: 0px 0px 36px #388E3C; border: none; transition: .3s linear;'
-    document.querySelector('.vision').style.cssText = 'background:none; color: black; box-shadow: none; border:1px solid; transition: .3s linear;'
-    document.getElementById('visionhr').style.backgroundColor = '#388E3C'
+        document.querySelector('.mission').style.cssText = 'background-color: #388E3C; color: white; box-shadow: 0px 0px 36px #388E3C; border: none; transition: .3s linear;'
+        document.querySelector('.vision').style.cssText = 'background:none; color: black; box-shadow: none; border:1px solid; transition: .3s linear;'
+        document.getElementById('visionhr').style.backgroundColor = '#388E3C'
+        document.getElementById('misionhr').style.backgroundColor = '#fff'
+  
 }
 
 
-document.querySelector('.vision').addEventListener('touchstart', phv)
+
 document.querySelector('.mission').addEventListener('touchstart', phm)
+document.querySelector('.vision').addEventListener('touchstart', phv)
 
 
 
@@ -139,10 +144,14 @@ let cards = document.querySelectorAll('.card1')
 
 
 function misso(){
-    document.getElementById('misionhr').style.backgroundColor = 'white'
+    if(!phoneSize.matches){
+        document.getElementById('misionhr').style.backgroundColor = 'white'
+    }
 }
 function missout(){
-    document.getElementById('misionhr').style.backgroundColor = '#388E3C'
+    if(!phoneSize.matches){
+        document.getElementById('misionhr').style.backgroundColor = '#388E3C'
+    }
 }
 
 // old events section

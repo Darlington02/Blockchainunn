@@ -228,6 +228,7 @@ nav li a:hover{
 .four header{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 .four article{
     display: flex;
@@ -240,6 +241,7 @@ nav li a:hover{
 .four main{
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
 }
 .four div{
     width: 50%;
@@ -395,7 +397,7 @@ nav li a:hover{
 .seven article{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     width: 25%;
 }
 .seven article h2{
