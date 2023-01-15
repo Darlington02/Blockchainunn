@@ -253,13 +253,6 @@ nav li a:hover{
     line-height: 20px;
     letter-spacing: 0.02em;
 }
-#reg{
-    background-color: #388E3C;
-    color: white;
-    font-size: 22px;
-    border-radius: 15px;
-}
-
 
 /*  */
 .speakers, .instructors{
@@ -572,7 +565,7 @@ footer p{
         width: 100%;
     }
     .top_left h1{
-        font-size: 24px;
+        font-size: 20px;
         line-height: 28.8px;
     }
     .top_left h2{
@@ -586,7 +579,7 @@ footer p{
         margin-top: 1rem;
    }
     .countdown h1{
-        font-size: 38px;
+        font-size: 28px;
         line-height: 35px;
     }
     /* #att{
@@ -597,6 +590,14 @@ footer p{
     }
     #register{
         display: none;
+    }
+    #reg{
+        background-color: #388E3C;
+        color: white;
+        width: 100%;
+        font-size: 18px;
+        padding: 24px;
+        border-radius: 15px;
     }
     .two{
         flex-direction: column;
@@ -685,13 +686,14 @@ footer p{
         padding: 20px 10px;
     }
     .photo{
-        min-height: 100vw;
+        /* min-height: 100vw; */
+        border-radius: 5px;
         width: 100%;
+        height: 320px;
         object-fit: cover;
-        object-position: 10% 0%;
-        border-top-left-radius: 50px;
-        border-bottom-left-radius: 0px;
-        border-top-right-radius: 50px;
+        object-position: 0% 10%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
     }
     .outline{
         margin-inline: -1rem;
@@ -771,7 +773,7 @@ footer p{
     }
 }
 
-@media only screen and (max-width:2600px) and (min-width:1920px){
+@media only screen and (max-width:2600px) and (min-width:1921px){
     body{
         max-width: 2600px;
     }
@@ -779,7 +781,7 @@ footer p{
         width: 100%;
     }
 }
-@media only screen and (max-width:1920px) and (min-width:1600px){
+@media only screen and (max-width:1920px) and (min-width:1601px){
     body{
         max-width: 1920px;
     }
@@ -787,11 +789,280 @@ footer p{
         width: 100%;
     }
 }
-@media only screen and (max-width:1600px) and (min-width:1440px) {
+@media only screen and (max-width:1600px) and (min-width:1441px) {
     body{
         max-width: 1600px;
     }
     nav{
         width: 100%;
+    }
+}
+@media (max-width:1440px) and (min-width:1025px){
+    html{
+        overflow-x: hidden;
+    }
+    nav{
+        width: 100%;
+    }
+    /* #navlogo{
+        left: 0rem;
+    } */
+    .top_left{
+        width: 50%;
+    }
+    .top_right{
+        width: 50%;
+    }
+    .countdown h1{
+        font-size: 40px;
+    }
+    .eveinfo{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .eventinfo p{
+        font-size: 14px;
+        width: 100%;
+    }
+    .eventinfo p img{
+        width: 20px;
+    }
+    .photo{
+        width: 300px;
+    }
+}
+@media (max-width:1280px) and (min-width:1025px){
+    .top_left h1{
+        font-size: 30px;
+    }
+    .top_left h2{
+        font-size: 22px;
+    }
+    .countdown{
+        gap: 2rem;
+        justify-content: space-between;
+    }
+    .countdown h1{
+        font-size: 35px;
+    }
+    #register{
+        visibility: hidden;
+    }
+    .two{
+        flex-direction: column;
+    }
+    .eventdetails{
+        width: 100%;
+    }
+    .eveinfo{
+        flex-direction: row;
+    }
+    nav li a{
+        font-size: 14px;
+    }
+    #navlogo{
+        width: 300px;
+        top: .5rem;
+    }
+    .eventdetails .wte h1,.speakers h1, .instructors h1,.sponsors h1,.outline h1{
+        font-size: 25px;
+    }
+    .outline button{
+        font-size: 20px;
+        padding: 12px 28px;
+    }
+    .outline article{
+        gap: 1rem;
+    }
+    .outline p{
+        font-size: 16px;
+    }
+    footer h1{
+        font-size: 25px;
+    }
+    footer a{
+        font-size: 18px;
+    }
+}
+@media (max-width:1140px) and (min-width:1025px){
+    .photo{
+        width: 250px;
+    }
+}
+@media (max-width:1024px) and (min-width:670px){
+    html{
+        overflow-x: hidden;
+    }
+    #menu{
+        display: block;
+        position: absolute;
+        z-index: 42;
+        width: 40px;
+        right: 1rem;
+        top: .7rem;
+    }
+    #close{
+        display: block;   
+        transform: translateX(300%);
+        position: absolute;
+        z-index: 100;
+        width: 20px;
+        right: 2rem;
+        top: 2rem;
+        transition: .55s linear;
+        z-index: 50;
+    }
+    body{
+        width: 100%;
+        padding-inline: 1rem;
+        overflow-x: hidden;
+    }
+    nav main{
+        width: 100%;
+        background-color: white;
+        position: relative;
+        padding-top: 4px;
+    }
+    nav{
+        width: 100%;
+        padding-inline: 1rem;
+        margin-inline: -1rem;
+    }
+    #navlogo{
+        width: 300px;
+        top: -2rem;
+    }
+    nav ul{
+        position:absolute;
+        inset: 0 0 0 30%;
+        flex-direction: column;
+        justify-content: initial;
+        background-color: #F5FFF3;
+        height: 100vh;
+        padding-left: 2rem;
+        padding-top: 5rem;
+        transition: .5s linear;
+        transform: translateX(100%);
+        z-index: 43;
+        overflow-y: scroll;
+    }
+    /* padding inline */
+    .one,.two, .speakers, .instructors,.outline,.sponsors,footer{
+        padding-inline: 3rem;
+        margin-inline:-1rem;
+    }
+
+    /* padding inline */
+    .one{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .top_left{
+        width: 100%;
+    }
+    .top_right{
+        width: 100%;
+    }
+    .top_left h1{
+        font-size: 30px;
+    }
+    .top_left h2{
+        font-size: 20px;
+    }
+    .countdown h1{
+        font-size: 30px;
+    }
+    #register{
+        visibility: hidden;
+    }
+    .eventdetails{
+        width: 100%;
+    }
+    .eventdetails main{
+        gap: 5rem;
+    }
+    .eveinfo{
+        flex-direction: row;
+    }
+
+    .two{
+        flex-direction: column;
+    }
+    .eventinfo p{
+        font-size: 14px;
+        align-items: center;
+    }
+    .eventinfo p img{
+        width: 20px;
+    }
+    .two input{
+        width: 100%;
+    }
+    #reg{
+        background-color: #388E3C;
+        color: white;
+        font-size: 14px;
+        border-radius: 15px;
+        width: 200px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        height: 50px;
+    }
+    .eventdetails .wte h1,.speakers h1, .instructors h1,.sponsors h1,.outline h1{
+        font-size: 22px;
+    }
+    .eventdetails .wte p{
+        font-size: 14px;
+        line-height: 26px;
+        margin-top: -2rem;
+    }
+    .photo{
+        width: 200px;
+    }
+    .three .text h2{
+        font-size: 16px;
+    }
+    .three .text p{
+        font-size: 12px;
+    }
+    .outline button{
+        font-size: 16px;
+        padding: 8px 16px;
+        width: 200px;
+    }
+    .outline article{
+        gap: 1rem;
+    }
+    .outline p{
+        font-size: 14px;
+    }
+    .outline button{
+        font-size: 16px;
+        padding: 6px 18px;
+        width: 125px;
+        height: 60px;
+    }
+    .sponsors h2{
+        font-size: 16px;
+    }
+    .sponsors span img{
+        width: 150px;
+    }
+    footer h1{
+        font-size: 22px;
+    }
+    footer a{
+        font-size: 16px;
+    }
+}
+@media (max-width:980px) and (min-width:670px){
+    .threeG{
+        flex-direction: column;
+    }
+    .three{
+        width: 100%;
+    }
+    .photo{
+        width: 300px;
     }
 }

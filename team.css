@@ -429,45 +429,56 @@ footer hr {
         width: 100%;
     }
     footer{
-        margin-inline: 0rem;
-        text-align: center;
+        position: relative;
+        /* height: 400px; */
+        padding-top: 6em;
     }
-    .footer-div {
+    .footer-div{
         flex-direction: column;
-        gap: 2rem;
-        padding-top: 3rem;
-    }
-    .footer hr{
-        width: 100%;
-    }
-    .footer-container {
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
     }
     .logo{
-        margin-top: -6rem;
-        margin-bottom: -8rem;
+        position: absolute;
+        top: 1rem;
+        height: 70px;
+        object-fit: cover;
     }
     .orgs{
-        margin-top: 0;
-        gap: 1rem;
-        float: initial;
+        float: none;
+        width: 100%;
         margin: auto;
+        display: flex;
         justify-content: center;
-        padding-bottom: 1rem;
-    }
-    .orgs h3{
-        display: none;
+        margin-top: 0rem;
     }
     .contact{
         margin-top: 0rem;
         justify-content: center;
-    }
-    .contact h3{
-        font-size: 20px;
+        margin-top: 2rem;
     }
  
+}
+@media (max-width:1024px) and (min-width:670px){
+    footer{
+        position: relative;
+        /* height: 400px; */
+        padding-top: 6em;
+    }
+    .footer-div{
+        flex-direction: column;
+    }
+    .orgs{
+        float: none;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 0rem;
+    }
+    .contact{
+        margin-top: 0rem;
+        justify-content:center;
+        margin-top: 2rem;
+    }
 }
 @media (max-width:760px){
     html{
@@ -514,12 +525,6 @@ footer hr {
         padding-bottom: 2rem;
         margin-inline: 0rem;
     }
-    /* nav img{
-        margin-bottom: 0rem;
-        margin-top: 0rem;
-        margin-left: -2rem;
-        padding-left: -10rem;
-    } */
     nav ul{
         position:absolute;
         inset: 0 0 0 30%;
@@ -614,6 +619,21 @@ footer hr {
     p{
         width: 75%;
     }
+    
+}
+@media (max-width:760px) and (min-width: 600px){
+    #kt{
+        width: 100%;
+        height: 620px;
+    }
+}
+@media (max-width:600px) and (min-width: 450px){
+    #kt{
+        width: 100%;
+        height: 520px;
+    }
+}
+@media (max-width:670px) {
     footer{
         margin-inline: -1rem;
         text-align: center;
@@ -694,19 +714,6 @@ footer hr {
         font-size: 18px;
     }
 }
-@media (max-width:760px) and (min-width: 600px){
-    #kt{
-        width: 100%;
-        height: 620px;
-    }
-}
-@media (max-width:600px) and (min-width: 450px){
-    #kt{
-        width: 100%;
-        height: 520px;
-    }
-}
-
 @media only screen and (max-width:2600px) and (min-width:1920px){
     body{
         max-width: 2600px;

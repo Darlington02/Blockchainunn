@@ -6,7 +6,7 @@ const second = document.getElementById('seconds')
 
 
 const currentDate = new Date().getFullYear()
-const customDate = new Date(`March 17 ${currentDate} 00:00:00`)
+const customDate = new Date(`April 28 ${currentDate} 00:00:00`)
 
 
 function countdown (){
