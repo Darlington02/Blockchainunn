@@ -992,6 +992,7 @@ footer h3{
 }
 .orgs{
     display: flex;
+    align-items: center;
     gap: 5rem;
     float: right;
     margin-top: -8rem;
@@ -1745,12 +1746,8 @@ footer hr {
     }
 }
 
-/* @media only screen and (max-width: 450px){
-    body{
-        max-width: 450px;
-    }
-} */
-@media only screen and (max-width:2600px) and (min-width:1920px){
+
+@media only screen and (max-width:2600px) and (min-width:1921px){
     body{
         max-width: 2600px;
     }
@@ -1758,7 +1755,7 @@ footer hr {
         width: 100%;
     }
 }
-@media only screen and (max-width:1920px) and (min-width:1600px){
+@media only screen and (max-width:1920px) and (min-width:1601px){
     body{
         max-width: 1920px;
     }
@@ -1766,7 +1763,7 @@ footer hr {
         width: 100%;
     }
 }
-@media only screen and (max-width:1600px) and (min-width:1440px) {
+@media only screen and (max-width:1600px) and (min-width:1441px) {
     body{
         max-width: 1600px;
     }
@@ -1776,21 +1773,86 @@ footer hr {
 }
 
 
+@media (max-width:1320px) and (min-width:1025px){
+    nav li a{
+        font-size: 14px;
+    }
+    #navlogo{
+        width: 300px;
+        top: .8rem;
+    }
+    .footer-container a{
+        font-size: 14px;
+    }
+    .logo{
+        width: 250px;
+        height: 250px;
+    }
+    .orgs{
+        margin-top: -6rem;
+        margin-bottom: 1rem;
+        align-items: center;
+    }
+    .contact{
+        font-size: 18px;
+    }
 
+}
 
-@media (max-width:1200px) and (min-width:670px){
+@media (max-width:1140px) and (min-width:1025px){
+    .cfs{
+        flex-direction: column;
+    }
+    .teaml{
+        width: 100%;
+    }
+    .skills ul li h2{
+        font-size: 18px;
+    }
+    .skills ul li span{
+        font-size: 16px;
+    }
+    .skills ul li span p{
+        font-size: 12px;
+    }
+}
+
+@media (max-width:1440px) and (min-width:1025px){
     html{
         overflow-x: hidden;
     }
+    nav{
+        width: 100%;
+    }
+    #navlogo{
+        left: .5rem;
+    }
     .top main{
         border: 1px solid;
+        margin-top: 3rem;
+    }
+    .top main header{
+        margin-top: 3rem;
+    }
+    .top main h1{
+        font-size: 85px;
+        width: 100%;
     }
     .top main p{
-        width: 100%;
+        width: 70%;
+        font-size: 22px;
+    }
+    .rectangles{
+        width: 60px;
+    }
+    .top main button{
+        width: 200px;
+        font-size: 20px;
     }
     .videos iframe{
         width: 750px;
         height: 320px;
+        transform: translateY(-6rem);
     }
     .patnership{
         margin-inline: -6rem;
@@ -1798,36 +1860,28 @@ footer hr {
     }
     .patners{
         flex-direction: column;
+        gap: 4rem;
         padding-inline: 0rem;
     }
     .patners article{
         gap: -0rem;
         flex-direction: column;
-        width: 40%;
+        width: 100%;
         margin: auto;
         margin-top: -3rem;
     }
     .patners h1{
         font-size: 25px;
     }
-    .patnertop{
-        margin-bottom: -6rem;
-    }
-    .patner3{
-        margin-top: -2rem;
-    }
-    .patners main{
-        justify-content: center;
-    }
-    #baf{
-        transform: translateX(6rem);
-    }
-    #ekolance{
-        margin-left: -5rem;
-    }
     .why{
         padding-inline: 3rem;
         margin-inline: -6rem;
+    }
+    .why header{
+        width: 60%;
+    }
+    .why main{
+        width: 40%;
     }
     .why h1{
         font-size: 25px;
@@ -1836,46 +1890,46 @@ footer hr {
         font-size: 16px;
     }
     .why main img{
-        width: 400px;
+        width: 450px;
     }
     .one{
         position: relative;
-        padding-top: 4rem;
+        padding-top: 8rem;
         padding-bottom: 4rem;
         padding-inline: 3rem;
     }
-    .one>div{
+    /* .one>div{
         justify-content: center;
         width: 100%;
         opacity: .2;
         position: absolute;
-        top: 0rem;
+        top: 2rem;
         left: 0;
         bottom: 0;
         right: 0;
         margin: auto;
-    }
-    #logo{
-        height: 400px; 
+    } */
+    .one>div img{
+        width:500px;
+        height: 500px;
     }
     .one article{
-        width: 100%;
+        width: 60%;
         padding-inline: 1rem;
     }
     .one article>div{
         margin-bottom: 2rem;
     }
-    .problem{
+    .two{
+        flex-direction: column;
         padding-inline: 3rem;
+        margin-inline: -6rem;
     }
-    #teaching{
-        font-size: 25px;
-    }
-    .teaches main div p{
-        font-size: 18px;
+    .two article{
+        flex-direction: row;
     }
     .community{
-        padding-inline: -3rem;
+        padding-inline: 3rem;
     }
     .community header h1{
         font-size: 25px;
@@ -1893,37 +1947,39 @@ footer hr {
         font-size: 39px;
         color: #2E7D32;
     }
-    .two{
-        flex-direction: column;
-        margin-inline: -6rem;
-        padding-inline: 3rem;
-    }
-    .two article{
-        flex-direction: column;
-        Padding-inline: 1rem;
-    }
-    .two header, .two div{
-        width: 100%;
-    }
-    .two header,.three header,.testimonials h1,.team-section header h1{
+
+
+    /* font size  */
+    .two header,.three header h1,.testimonials h1,.team-section header h1,#skilh{
         font-family: Monument Extended;
         font-size: 22px;
         line-height: 26.4px;
     }
+    /* font-size ends */
+
+
     #dive{
         font-size: 25px;
     }
     #budv h1, #buds h1, #bucs h1{
         font-size: 20px;
     }
-    .achieve{
+    .skills{
+        margin-inline: -6rem;
         padding-inline: 3rem;
     }
-    .achieve h1{
-        font-size: 25px;
+    #skilh{
+        margin-top: 5px;
     }
-    .achieve h3{
-        font-size: 20px;
+    .countdown{
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+    #days,#hours,#minutes,#seconds,#att{ 
+        font-size: 32px;
+    }
+    #fulldet{
+        padding-top: 10px;
     }
     .testimonials{
         padding-inline: 1rem;
@@ -1940,20 +1996,6 @@ footer hr {
     }
     .two div h1, .three article h1{
         font-size: 18px;
-    }
-    .two div button{
-        font-size: 14px;
-        padding: 7px 11px;
-    }
-    .three{
-        padding-inline: 3rem;
-        margin-inline: -6rem;
-    }
-    .three main{
-        flex-direction: row;
-    }
-    .three article{
-        flex-direction: row;
     }
     .newevent h1{
         font-size: 55px;
@@ -1987,47 +2029,8 @@ footer hr {
     #prev{
         left: 3rem;
     }
-    footer{
-        margin-inline: -6rem;
-        text-align: center;
-    }
-    .footer-div {
-        flex-direction: column;
-        gap: 2rem;
-        padding-top: 3rem;
-    }
-    .footer hr{
-        width: 100%;
-    }
-    .footer-container {
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-    }
-    .orgs{
-        margin-top: 0;
-        gap: 1rem;
-        float: initial;
-        margin: auto;
-        justify-content: center;
-        padding-bottom: 1rem;
-    }
-    .orgs h3{
-        display: none;
-    }
-    .logo{
-        margin-top: -6rem;
-        margin-bottom: -8rem;
-    }
-    .contact{
-        margin-top: 0rem;
-        justify-content: center;
-    }
-    .contact h3{
-        font-size: 20px;
-    }
 }
-@media (max-width: 1000px)  and (min-width: 670px){
+@media (max-width: 1024px)  and (min-width: 670px){
         html{
         overflow-x: hidden;
     }
@@ -2059,24 +2062,23 @@ footer hr {
         width: 100%;
         background-color: white;
         position: relative;
-        padding-top: 18px;
-        padding-bottom: 14px;
-    }
-    #blogo{
-        width: 300px;
-        margin-left: -2.5rem;
-        transform: translateY(0);
+        padding-top: 4px;
+        /* padding-bottom: 14px; */
     }
     nav{
         width: 100%;
         padding-inline: 1rem;
         margin-inline: -1rem;
     }
-    nav img{
+    /* nav img{
         margin-bottom: 0rem;
         margin-top: 0rem;
         margin-left: -2rem;
         padding-left: -10rem;
+    } */
+    #navlogo{
+        width: 300px;
+        top: -2rem;
     }
     nav ul{
         /* display: none; */
@@ -2093,22 +2095,25 @@ footer hr {
         z-index: 43;
     }
     .top,.patnership,.why,.one,.problem,.community,.two,.achieve,.three,.teamsec,.testimonials{
-        padding-inline: 2rem;
+        padding-inline: 3rem;
         margin-inline: -1rem;
     }
     .top main{
         padding-top: -2rem;
+        height: 700px;
     }
     .top main h1{
-        width: 50%;
+        width: 100%;
         line-height: 60px;
         margin: auto;
-        font-size: 350%;
-        text-align: center;
+        font-size: 70px;
+        padding-top: 3rem;
+        /* border: 1px solid; */
+        /* text-align: center; */
     }
     .top main p{
         width: 80%;
-        font-size: 22px;
+        font-size: 18px;
     }
     .rectangles{
         width: 48px;
@@ -2119,12 +2124,185 @@ footer hr {
         padding: 10px;
         height: 50px;
     }
+    .videos iframe{
+        width: 550px;
+        height: 250px;
+    }
+    .patnership{
+        margin-inline: -1rem;
+        margin-bottom: -1rem;
+        padding-inline: 1;
+        padding-bottom: 0rem;
+    }
+    .patners header{
+        width: 100%;
+    }
+    .patners h1{
+        font-size: 20px;
+        text-align: center;
+        line-height: 25px;
+        letter-spacing: 0;
+    }
+    .patners{
+        margin-top: -3rem;
+        padding-inline: 2rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .patners article span{
+        animation: patnershow 10s linear infinite;
+        animation-delay: 1s;
+    }
+    @keyframes patnershow {
+        100%{
+            transform: translateX(-120%);
+        }
+    }
+    .patnersCon{
+        flex-direction: row;
+        gap: 2rem;
+        width: 100%;
+        overflow: hidden;
+    }
+    #web3{
+        width: 220px;
+        margin-right: 0;
+    }
+    #a1{
+        transform: translateX(0rem);
+        width: 150px;
+    }
+    #pat7,#pat8{
+        width: 150px;
+    }
+    .patners img{
+        width: 150px;
+    }
     .why header{
         width: 100%;
     }
     .why h1{
-        width: 120%;
+        /* width: 120%; */
+       font-size: 20px;
         line-height: 30px;
+    }
+    .why h3{
+        font-size: 16px;
+    }
+    .why p{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .why main img{
+        width: 400px;
+    }
+    #read{
+        font-size: 16px;
+    }
+    #logo{
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        right: 0;
+        opacity: .5;
+    }
+    .one>div{
+        width: 0%;
+    }
+    .one>div img{
+        animation: tot 10s linear infinite;
+    }
+    @keyframes tot {
+        20%{
+            transform: rotateY(-180deg);
+        }
+        50%{
+            transform:translateX(-200%);
+        }
+        80%{
+            transform: rotateX(180deg);
+        }
+    }
+    /* .one div img{
+        position: absolute;
+    } */
+    .one{
+        position: relative;
+    }
+    .one article{
+        flex-direction: row;
+        width: 100vw;
+        /* border: 1px solid; */
+    }
+    .one article div{
+        width: 50%;
+    }
+    .one p{
+        font-size: 16px;
+    }
+    .two article{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .two div{
+        width: 100%;
+        font-size: 16px;
+    }
+    #dive{
+        width: 100%;
+        font-size: 20px;
+    } 
+    #budv h1, #buds h1, #bucs h1{
+        font-size: 18px;
+    }
+    .two button{
+        font-size: 14px;
+    }
+    .skills{
+        padding-inline: 3rem; 
+    }
+    .skills h1{
+        font-size: 20px;
+    }
+    .skills article{
+        flex-direction: row;
+        gap: 2rem;
+        width: 100%;
+    }
+    .skills ul{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 2rem;
+        width: 100%;
+    }
+    .skills ul li{
+        width: 100%;
+        font-size: 16px;
+    }
+    .skills ul li h2{
+        font-size: 20px;
+    }
+    .three header h1{
+        font-size: 20px;
+    }
+    .countdown{
+        gap: 1rem;
+    }
+    .countdown h1{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .countdown h3{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    #days,#hours,#minutes,#seconds,#att{
+        font-size: 25px;
+    }
+    #teamHead{
+        font-size: 20px;
+        margin-top: 20px;
     }
     .cfs{
         flex-direction: column;
@@ -2132,12 +2310,38 @@ footer hr {
     .teaml{
         width: 100%;
     }
-    .problem .pdiv h1{
-        font-size: 25px;
+    .teaml p{
+        font-size: 16px;
     }
-    .problem .pdiv p{
-        font-size: 18px;
-        line-height: 25px;
+    .otherst{
+        margin-top: 2rem;
+    }
+    #reviewsHeader{
+        font-size: 20px;
+    }
+    .reviewidentity p{
+        font-size: 14px;
+    }
+    .card1{
+        padding: 36px;
+        animation-duration: 15s;
+    }
+    @keyframes reviews {
+        20%{
+            transform: translateX(0%);
+        }
+        60%{
+            transform: translateX(-115%);
+        }
+        90%{
+            transform: translateX(-275%);
+        }
+        100%{
+            transform: translateX(-275%);
+        }
+    }
+    .community h1{
+        font-size: 20px;
     }
     .community-breakdown h4{
         font-size: 27px;
@@ -2145,116 +2349,113 @@ footer hr {
     .community-breakdown p{
         font-size: 18px;
     }
-    .newevent h1{
-        font-size: 50px;
-        line-height: 50px;
+    footer{
+        position: relative;
+        /* height: 400px; */
+        padding-top: 5em;
     }
-    .neweventText{
-        font-size: 18px;
-        line-height: 28px;
+    .footer-div{
+        flex-direction: column;
+    }
+    .logo{
+        position: absolute;
+        top: 1rem;
+        height: 70px;
+        object-fit: cover;
+    }
+    .orgs{
+        float: none;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 0rem;
+    }
+    .contact{
+        margin-top: 0rem;
+        justify-content: center;
+        margin-top: 2rem;
     }
 }
-@media (max-width: 670px) and (min-width: 450px){
+
+@media (max-width:860px) and (min-width:670px) {
     .top main h1{
-        text-align: center;
-    }
-}
-@media (max-width: 900px) and (min-width: 670px){
-    .textarea{
-        padding-bottom: 1rem;
-        text-align: center;
+        font-size: 60px;
     }
     .why{
         flex-direction: column;
-        gap: 1rem;
+    }
+    .why main{
+        width: 100%;
     }
     .why main img{
         width: 100%;
-        border-radius: 20px;
+        height: 350px;
+        border-radius: 50px;
         object-fit: cover;
     }
-    .why h3{
-        font-size: 16px;
+    .one article{
+        flex-direction: column;
     }
-    .why p{
-        font-size: 14px;
-        line-height: 25px;
+    .one article div{
+        width: 100%;
     }
-    .one div h1{
-        font-size: 22px;
+    #logo{
+        width: 500px;
+        height: 500px;
+        top: 1rem;
+        left: 0rem;
+        right: 0rem;
+        width: 100%;
+        height: 100%;
+        /* margin: auto; */
     }
-    .problem .pdiv h1{
-        font-size: 22px;
+    .two header{
+        width: 100%;
     }
-    .problem .pdiv p{
-        font-size: 16px;
-        line-height: 25px;
-    }
-    .teaches{
-        flex-direction: row;
-        gap: 1rem;
-    }
-    #teaching{
-        font-size: 22px;
-    }
-    .community h1{
-        font-size: 22px;
-    }
-    .community-breakdown h4{
+    .countdown h1{
         font-size: 25px;
+    } 
+    .countdown article{
+        gap: 2.2rem;
+    }
+    @keyframes tot {
+        30%{
+            transform: rotateY(-180deg);
+        }
+        50%{
+            transform:skewX(100%);
+        }
+        80%{
+            transform: rotateX(180deg);
+        }
+    }
+    .reviewidentity h2{
+        font-size: 16px;
+        line-height: 26px;
+    } 
+    .card1 p{
+        font-size: 14px;
+    }
+    .reviewimg{
+        width: 50px;
+        height: 50px;
+    }
+    .community-breakdown{
+        gap: 2rem;
     }
     .community-breakdown p{
+        font-size: 12px;
+    }
+    .photo{
+        height: 300px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .footer-container a{
         font-size: 16px;
     }
-    #dive{
-        font-size: 22px;
-    }
-    .activity{
-        margin-inline: -2rem;
-        padding-inline: 2rem;
-    }
-    .activity_top,.activity_bottom{
-        display: flex;
-        flex-direction: column;
-    }
-    .teaches main div{
-        width: 100%;
-    }
-    .teaches main div p{
-        width: 40vw;
-    }
-    .problem .activity h4{
-        position: relative;
-    }
-    .teaches main div::before{
-        width: 100%;
-    }
-    .achieve h3{
-        font-size: 18px;
-        line-height: 25px;
-    }
-    .newevent h1{
-        font-size: 40px;
-        line-height: 40px;
-    }
-    .neweventText{
-        font-size: 16px;
-        line-height: 28px;
-    }
-    .teamsec{
-        margin-top: -3rem;
-    }
-    .card1, .card2 {
-        padding: 1.5rem 1rem;
-        box-shadow: 0px 0px 15px #fbf2f2;
-        font-size: 14px;
-        line-height: 22px;
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        margin-right: -2rem;
-    }
-    #yt2{
-        display: none;
+    .footer-container p {
+        padding: 0rem 1rem 2rem;
     }
 }

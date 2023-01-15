@@ -1,5 +1,5 @@
 let communityHeader = document.getElementById('dive')
-let tabSize = window.matchMedia('(max-width:900px)')
+let tabSize = window.matchMedia('(max-width:1024px)')
 let phoneSize = window.matchMedia('(max-width:670px)')
 let menubar = document.getElementById('menu')
 let closeBar = document.getElementById('close')
@@ -113,7 +113,7 @@ if(phoneSize.matches){
 }
 
 
-let ishrWhite = true
+
 
 function phv(){
         document.querySelector('.vision').style.cssText = 'background-color: #388E3C; color: white; box-shadow: 0px 0px 36px #388E3C; border: none; transition: .3s linear;'
@@ -174,12 +174,12 @@ if(!phoneSize.matches){
 let eve = false
 
 homeEve.addEventListener('click', ()=>{
-    if(phoneSize.matches && eve ===false){
+    if(tabSize.matches && eve ===false){
             homeEve.style.cssText = 'animation-play-state: paused'
             eve = true
             console.log('food')
         }
-    else if(phoneSize.matches && eve===true ){
+    else if(tabSize.matches && eve===true ){
             homeEve.style.cssText = 'animation-play-state: running'
             eve = false
         }
@@ -206,13 +206,13 @@ let green = false
 
 for(i=0;i<cards.length;i++){
     cards[i].addEventListener('click', ()=>{
-        if(phoneSize.matches && green ===false){
+        if(tabSize.matches && green ===false){
             for(i=0;i<cards.length;i++){
                 cards[i].style.cssText = 'animation-play-state: paused'
                 green = true
             }
         }
-        else if(phoneSize.matches && green===true ){
+        else if(tabSize.matches && green===true ){
             for(i=0;i<cards.length;i++){
                 cards[i].style.cssText = 'animation-play-state: running'
                 green = false
@@ -222,4 +222,3 @@ for(i=0;i<cards.length;i++){
 }
 
 
-// cards[i].addEventListener('touchstart', bb2)

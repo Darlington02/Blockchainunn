@@ -35,6 +35,3 @@ function day2(){
 
 }
 
-if(phoneSize.matches){
-    document.getElementById('wtep').textContent = "At BlockchainUNN conference 2.0, we would delve deep into discussions about Blockchain Technology. At the conference, the possibilities of the Technology would be discussed at length so that everyone can get into the space and tap into the opportunity it presents. Also, the skills that are needed and most likely to be in high demand will be discussed."
-}
