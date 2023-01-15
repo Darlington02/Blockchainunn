@@ -458,6 +458,13 @@ footer hr {
  
 }
 @media (max-width:1024px) and (min-width:670px){
+    nav{
+        padding-bottom: 10px;
+    }
+    #navlogo{
+        width: 250px;
+        top: -1.3rem;
+    }
     footer{
         position: relative;
         /* height: 400px; */
