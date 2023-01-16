@@ -628,6 +628,10 @@ footer p{
     .eventinfo p{
         width: 100%;
     }
+    #wtep{
+        font-size: 12px;
+        line-height: 26.8px;
+    }
     #phreg{
         display: block;
         width: 70vw;
