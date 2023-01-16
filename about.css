@@ -784,9 +784,8 @@ footer hr {
     }
     /* padding end */
     .one{
-        padding-bottom: 4rem;
-        padding-top: 6rem;
-        padding-bottom: 3rem;
+        padding-top: 4rem;
+        padding-bottom: 5rem;
         margin-top: -3rem;
         position: relative;
         background: none;
@@ -800,6 +799,9 @@ footer hr {
     }
     .one h1{
         color: #388E3C;
+    }
+    .one p{
+        font-size: 12px;
     }
     .one::before{
         content: '';
@@ -884,6 +886,12 @@ footer hr {
     .four h1, .four p{
         position: relative;
         color: white;
+    }
+    .four h1{
+        font-size: 20px;
+    }
+    .four p{
+        font-size: 12px;
     }
     .seven main{
         flex-direction: column;
