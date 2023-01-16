@@ -576,6 +576,82 @@ footer hr {
     }
     nav{
         width: 100%;
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
+    nav ul{
+        gap: 5rem;
+        margin-right: 3rem;
+    }
+    nav li a{
+        font-size: 25px;
+    }
+    #navlogo{
+        width: 500px;
+        left: 3rem;
+        top: 1rem;
+    }
+    /* padding inline section */
+    .one,.two,.three,.four,.five,.six,.seven{
+        padding-inline: 6rem;
+    }
+    /* padding end */
+    .one{
+        padding-top: 8rem;
+    }
+    .one h1,.two h1,.three h1,.four h1,.six h1{
+        font-size: 30px;
+        line-height: 70px;
+    }
+    .one p,.two p,.three p,.four p,.five li,.six li{
+        font-size: 25px;
+        line-height: 50px;
+    }
+    .three main{
+        padding: 64px 64px;
+    }
+    @keyframes slideshow1 {
+        87%,100%{
+            transform: translateX(-480%);
+        }
+    }
+    @keyframes slideshow2 {
+        87%,100%{
+            transform: translateX(-480%);
+        }
+    }
+    .imgslide1 img{
+        width: 100%;
+    }
+    .four header,.four main{
+        gap: 3rem;
+    }
+    .five h2{
+        font-size: 25px;
+    }
+    .six li{
+        padding: 30px;
+    }
+    .seven article h2{
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .seven article p{
+        font-size: 22px;
+        line-height: 38px;
+    }
+    .logo{
+        width: 500px;
+        height: 500px;
+    }
+    .footer-container a{
+        font-size: 25px;
+    }
+    .orgs{
+        align-items: center;
+    }
+    .orgs img{
+        width: 50px;
     }
 }
 @media only screen and (max-width:1920px) and (min-width:1601px){
@@ -584,6 +660,89 @@ footer hr {
     }
     nav{
         width: 100%;
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
+    nav ul{
+        gap: 5rem;
+        margin-right: 3rem;
+    }
+    nav li a{
+        font-size: 25px;
+    }
+    #navlogo{
+        width: 500px;
+        left: 3rem;
+        top: 1rem;
+    }
+    /* padding inline section */
+    .one,.two,.three,.four,.five,.six,.seven{
+        padding-inline: 6rem;
+    }
+    /* padding end */
+    .one{
+        padding-top: 8rem;
+    }
+    .one h1,.two h1,.three h1,.four h1,.six h1{
+        font-size: 30px;
+        line-height: 70px;
+    }
+    .one p,.two p,.three p,.four p,.five li,.six li{
+        font-size: 22px;
+        line-height: 40px;
+    }
+    .two{
+        gap: 3rem;
+    }
+    .three main{
+        padding: 48px 48px;
+    }
+    @keyframes slideshow1 {
+        87%,100%{
+            transform: translateX(-480%);
+        }
+    }
+    @keyframes slideshow2 {
+        87%,100%{
+            transform: translateX(-480%);
+        }
+    }
+    .imgslide1 img{
+        width: 100%;
+    }
+    .four header,.four main{
+        gap: 0rem;
+    }
+    .five h2{
+        font-size: 25px;
+    }
+    .six li{
+        padding: 30px;
+    }
+    .seven article h2{
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .seven article p{
+        font-size: 22px;
+        line-height: 38px;
+    }
+    .dseve img{
+        width: 500px;
+        height: 400px;
+    }
+    .logo{
+        width: 500px;
+        height: 500px;
+    }
+    .footer-container a{
+        font-size: 25px;
+    }
+    .orgs{
+        align-items: center;
+    }
+    .orgs img{
+        width: 50px;
     }
 }
 @media only screen and (max-width:1600px) and (min-width:1441px) {
@@ -592,6 +751,10 @@ footer hr {
     }
     nav{
         width: 100%;
+    }
+    .dseve div img{
+        width: 350px;
+        height: 350px;
     }
 }
 

@@ -7,6 +7,8 @@ let teaches = document.querySelectorAll('.teaching')
 let achieve1 = document.querySelectorAll('.ac2')
 let achieve2 = document.querySelectorAll('.ac1')
 
+document.cookie = 'cookie2=value2; Samesite=None; Secure'
+
 if(phoneSize.matches){
     document.getElementById('skills').textContent = 'What we teach'
 }

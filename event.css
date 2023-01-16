@@ -436,7 +436,6 @@ p{
     width: 170px;
 }
 .sponsors h2{
-    font-family: Montserrat;
     font-family: Monument Extended;
     font-size: 22px;
     font-weight: bolder;
@@ -783,7 +782,91 @@ footer p{
     }
     nav{
         width: 100%;
+        padding-top: 4rem;
+        padding-bottom: 3rem;
     }
+    nav ul{
+        gap: 5rem;
+        margin-right: 3rem;
+    }
+    nav li a{
+        font-size: 25px;
+    }
+    #navlogo{
+        width: 500px;
+        left: 3rem;
+        top: 1rem;
+    }
+    .one{
+        padding-top: 23rem;
+        padding-bottom: 10rem;
+    }
+    .top_left h1{
+        font-size: 55px;
+        line-height: 70px;
+    }
+    .countdown{
+        gap: 6rem;
+    }
+    .countdown h1{
+        font-size: 60px;
+    }
+    .countdown small{
+        font-size: 20px;
+    }
+    #register{
+        font-size: 30px;
+        margin-top: 1rem;
+        transform: translateY(9rem);
+    }
+    .eventinfo h1{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .eventinfo p{
+        font-size: 25px;
+        line-height: 40px;
+    }
+    .eventdetails .wte p{
+        font-size: 25px;
+        line-height: 50px;
+    }
+    .two input{
+        width: 1000px;
+        padding: 40px 25px;
+        font-size: 24px;
+    }
+    .two input ::-webkit-input-placeholder{
+        font-size: 20px;
+    }
+    .form{
+        margin-top: 3rem;
+    }
+    .three h2{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .three p{
+        font-size: 25px;
+        line-height: 40px;
+    }
+    .outline p{
+        font-size: 25px;
+        line-height: 50px;
+    }
+    .sponsors h2{
+        font-size: 28px;
+    }
+    footer h1{
+        font-size: 40px;
+    }
+    footer a,footer p{
+        font-size: 28px;
+    }
+    #numbers{
+        font-size: 25px;
+    }
+
 }
 @media only screen and (max-width:1920px) and (min-width:1601px){
     body{
@@ -791,6 +874,89 @@ footer p{
     }
     nav{
         width: 100%;
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
+    nav ul{
+        gap: 5rem;
+        margin-right: 3rem;
+    }
+    nav li a{
+        font-size: 25px;
+    }
+    #navlogo{
+        width: 500px;
+        left: 3rem;
+        top: 1rem;
+    }
+    .one{
+        padding-top: 23rem;
+        padding-bottom: 10rem;
+    }
+    .top_left h1{
+        font-size: 50px;
+        line-height: 70px;
+    }
+    .countdown{
+        gap: 6rem;
+    }
+    .countdown h1{
+        font-size: 50px;
+    }
+    .countdown small{
+        font-size: 20px;
+    }
+    #register{
+        font-size: 30px;
+        margin-top: 1rem;
+        transform: translateY(9rem);
+    }
+    .eventinfo h1{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .eventinfo p{
+        font-size: 22px;
+        line-height: 40px;
+    }
+    .eventdetails .wte p{
+        font-size: 22px;
+        line-height: 40px;
+    }
+    .two input{
+        width: 800px;
+        padding: 40px 25px;
+        font-size: 24px;
+    }
+    .two input ::-webkit-input-placeholder{
+        font-size: 20px;
+    }
+    .form{
+        margin-top: 3rem;
+    }
+    .three h2{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .three p{
+        font-size: 25px;
+        line-height: 40px;
+    }
+    .outline p{
+        font-size: 25px;
+        line-height: 50px;
+    }
+    .sponsors h2{
+        font-size: 28px;
+    }
+    footer h1{
+        font-size: 40px;
+    }
+    footer a,footer p{
+        font-size: 28px;
+    }
+    #numbers{
+        font-size: 25px;
     }
 }
 @media only screen and (max-width:1600px) and (min-width:1441px) {

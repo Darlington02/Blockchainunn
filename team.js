@@ -4,6 +4,8 @@ let menubar = document.getElementById('menu')
 let closeBar = document.getElementById('close')
 let navList = document.getElementById('navList')
 
+document.cookie = 'cookie2=value2; Samesite=None; Secure'
+
 if(phoneSize.matches){
     header.textContent = 'OUR TEAM'
     header.style.fontSize = '25px'

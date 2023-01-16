@@ -129,7 +129,7 @@ nav li a:hover{
     font-weight: 600;
     line-height: 29px;
     margin-top: 3em;
-    z-index: 9;
+    z-index: 0;
 }
 .top main button:hover{
     cursor: pointer;
@@ -283,7 +283,7 @@ nav li a:hover{
     background-color: #F5FFF3;
     margin-top: -8rem;
 }
-.one h1, .two header h1, .three header h1,.problem h1, .why h3{
+.one h1, .two header h1, .three header h1, .why h3{
     font-family: Monument Extended;
     font-size: 30px;
     font-weight: 800;
@@ -295,7 +295,7 @@ nav li a:hover{
     font-size: 20px;
     font-weight: 400;
 }
-.one p,.problem p{
+.one p{
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 600;
@@ -1753,6 +1753,149 @@ footer hr {
     }
     nav{
         width: 100%;
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
+    nav ul{
+        gap: 5rem;
+        margin-right: 3rem;
+    }
+    nav li a{
+        font-size: 25px;
+    }
+    #navlogo{
+        width: 500px;
+        left: 3rem;
+        top: 1rem;
+    }
+    .textarea{
+        padding-top: 12rem;
+        /* padding-bottom: 20rem; */
+    }
+    .top main h1{
+        font-size: 120px;
+        line-height: 130px;
+        width: 100%;
+    }
+    .top main p{
+        font-size: 40px;
+        line-height: 60px;
+        width: 80%;
+    }
+    .top main button{
+        z-index: 0;
+    }
+    .videos iframe{
+        transform: translateY(-3rem);
+        width: 1000px;
+        height: 500px;
+    }
+    .patners{
+        padding-top: 5rem;
+    }
+    .patners h1,.one article h1{
+        font-size: 30px;
+        line-height: 70px;
+    }
+    .why p{
+        font-size: 25px;
+        line-height: 50px;
+    }
+    .why h3{
+        font-size: 25px;
+        line-height: 60px;
+    }
+    .patnersCon{
+        flex-direction: row;
+    }
+    .why header{
+        width: 60%;
+    }
+    .why main{
+        width: 40%;
+    }
+    #preach{
+        width: 100%;
+        object-fit: cover;
+    }
+    #read{
+        font-size: 22px;
+        padding: 15px;
+    }
+    .one>div img{
+        height: 100%;
+    }
+    .one p{
+        font-size: 28px;
+        line-height: 50px;
+    }
+    .one article div{
+        padding: 64px;
+    }
+    #budv h1, #buds h1, #bucs h1{
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .two button{
+        font-size: 22px;
+        padding: 15px 20px;
+    }
+    .skills ul li{
+        height: 300px;
+    }
+    .skills ul li h2{
+        font-size: 32px;
+        line-height: 40px;
+        padding: 40px 60px;
+    }
+    .skills article{
+        gap: 3rem;
+    }
+    .countdown h1{
+        font-size: 55px;
+        line-height: 75px;
+    }
+    .oldevents img{
+        width: 300px;
+    }
+    .teaml h2{
+        font-size: 24px;
+        line-height: 50px;
+    }
+    .teaml p{
+        font-size: 22px;
+        line-height: 40px;
+    }
+    .otherst div img{
+        width: 80px;
+    }
+    .otherst a{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+    .reviewidentity p{
+        font-size: 24px;
+    }
+    .card1 p{
+        font-size: 24px;
+        line-height: 50px;
+    }
+    .reviewimg{
+        width: 100px;
+        height: 100px;
+    }
+    .logo{
+        width: 500px;
+        height: 500px;
+    }
+    .footer-container a{
+        font-size: 25px;
+    }
+    .orgs{
+        align-items: center;
+    }
+    .orgs img{
+        width: 50px;
     }
 }
 @media only screen and (max-width:1920px) and (min-width:1601px){
@@ -1761,6 +1904,149 @@ footer hr {
     }
     nav{
         width: 100%;
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
+    nav ul{
+        gap: 5rem;
+        margin-right: 3rem;
+    }
+    nav li a{
+        font-size: 25px;
+    }
+    #navlogo{
+        width: 500px;
+        left: 3rem;
+        top: 1rem;
+    }
+    .textarea{
+        padding-top: 12rem;
+        /* padding-bottom: 20rem; */
+    }
+    .top main h1{
+        font-size: 120px;
+        line-height: 130px;
+        width: 100%;
+    }
+    .top main p{
+        font-size: 40px;
+        line-height: 60px;
+        width: 80%;
+    }
+    .top main button{
+        z-index: 0;
+    }
+    .videos iframe{
+        transform: translateY(-3rem);
+        width: 1000px;
+        height: 500px;
+    }
+    .patners{
+        padding-top: 5rem;
+    }
+    .patners h1,.one article h1{
+        font-size: 30px;
+        line-height: 70px;
+    }
+    .why p{
+        font-size: 25px;
+        line-height: 50px;
+    }
+    .why h3{
+        font-size: 25px;
+        line-height: 60px;
+    }
+    /* .patnersCon{
+        flex-direction: row;
+    } */
+    .why header{
+        width: 60%;
+    }
+    .why main{
+        width: 40%;
+    }
+    #preach{
+        width: 100%;
+        object-fit: cover;
+    }
+    #read{
+        font-size: 22px;
+        padding: 15px;
+    }
+    .one>div img{
+        height: 100%;
+    }
+    .one p{
+        font-size: 28px;
+        line-height: 50px;
+    }
+    .one article div{
+        padding: 48px;
+    }
+    #budv h1, #buds h1, #bucs h1{
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .two button{
+        font-size: 22px;
+        padding: 15px 20px;
+    }
+    .skills ul li{
+        height: 300px;
+    }
+    .skills ul li h2{
+        font-size: 32px;
+        line-height: 40px;
+        padding: 40px 60px;
+    }
+    .skills article{
+        gap: 3rem;
+    }
+    .countdown h1{
+        font-size: 45px;
+        line-height: 75px;
+    }
+    .oldevents img{
+        width: 300px;
+    }
+    .teaml h2{
+        font-size: 24px;
+        line-height: 50px;
+    }
+    .teaml p{
+        font-size: 22px;
+        line-height: 40px;
+    }
+    .otherst div img{
+        width: 80px;
+    }
+    .otherst a{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+    .reviewidentity p{
+        font-size: 24px;
+    }
+    .card1 p{
+        font-size: 24px;
+        line-height: 50px;
+    }
+    .reviewimg{
+        width: 100px;
+        height: 100px;
+    }
+    .logo{
+        width: 500px;
+        height: 500px;
+    }
+    .footer-container a{
+        font-size: 25px;
+    }
+    .orgs{
+        align-items: center;
+    }
+    .orgs img{
+        width: 50px;
     }
 }
 @media only screen and (max-width:1600px) and (min-width:1441px) {

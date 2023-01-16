@@ -4,6 +4,8 @@ let closeBar = document.getElementById('close')
 let navList = document.getElementById('navList')
 let allSections = document.querySelectorAll('section')
 
+document.cookie = 'cookie2=value2; Samesite=None; Secure'
+
 
 function menuOpen(){
     navList.style.cssText = 'transform: translateX(0%)'

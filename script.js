@@ -14,7 +14,10 @@ let allSections = document.querySelectorAll('section')
 let nlist = document.querySelectorAll('.nlist')
 let ce = document.getElementById('ce')
 let rectangles = document.querySelectorAll('.rectangles')
-// let view = document.querySelectorAll('.more')
+
+// cookies
+document.cookie = 'cookie2=value2; Samesite=None; Secure'
+
 
 
 

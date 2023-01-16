@@ -727,7 +727,53 @@ footer hr {
     }
     nav{
         width: 100%;
+        padding-top: 4rem;
+        padding-bottom: 3rem;
     }
+    nav ul{
+        gap: 5rem;
+        margin-right: 3rem;
+    }
+    nav li a{
+        font-size: 25px;
+    }
+    #navlogo{
+        width: 500px;
+        left: 3rem;
+        top: 1rem;
+    }
+    .teamwu{
+        padding-top: 20rem;
+    }
+    .header h1{
+        font-size: 50px;
+        line-height: 80px;
+    }
+    .teamwu p{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    #hlogo{
+        width: 600px;
+    }
+    .text h2{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .text p{
+        font-size: 25px;
+        line-height: 40px;
+    }
+    footer h1{
+        font-size: 40px;
+    }
+    footer a,footer p{
+        font-size: 28px;
+    }
+    #numbers{
+        font-size: 25px;
+    }
+
 }
 @media only screen and (max-width:1920px) and (min-width:1600px){
     body{
@@ -735,6 +781,51 @@ footer hr {
     }
     nav{
         width: 100%;
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
+    nav ul{
+        gap: 5rem;
+        margin-right: 3rem;
+    }
+    nav li a{
+        font-size: 25px;
+    }
+    #navlogo{
+        width: 500px;
+        left: 3rem;
+        top: 1rem;
+    }
+    .teamwu{
+        padding-top: 20rem;
+    }
+    .header h1{
+        font-size: 50px;
+        line-height: 80px;
+    }
+    .teamwu p{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    #hlogo{
+        width: 600px;
+    }
+    .text h2{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .text p{
+        font-size: 25px;
+        line-height: 40px;
+    }
+    footer h1{
+        font-size: 40px;
+    }
+    footer a,footer p{
+        font-size: 28px;
+    }
+    #numbers{
+        font-size: 25px;
     }
 }
 @media only screen and (max-width:1600px) and (min-width:1440px) {
