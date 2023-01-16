@@ -2156,7 +2156,7 @@ footer hr {
     }
     @keyframes patnershow {
         100%{
-            transform: translateX(-120%);
+            transform: translateX(-140%);
         }
     }
     .patnersCon{

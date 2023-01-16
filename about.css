@@ -786,10 +786,10 @@ footer hr {
     .one{
         padding-bottom: 4rem;
         padding-top: 6rem;
+        padding-bottom: 3rem;
         margin-top: -3rem;
         position: relative;
         background: none;
-        height: 100vh;
     }
     .one header{
         width: 100%;
@@ -828,10 +828,19 @@ footer hr {
     .two main{
         width: 100%;
     }
+    .two p{
+        font-size: 12px;
+    }
     .two img{
         width: 100%;
         height: 300px;
         object-fit: cover;
+    }
+    .three p{
+        font-size: 12px;
+    }
+    .four p{
+        font-size: 12px;
     }
     .four{
         gap: 4rem;
