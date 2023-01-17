@@ -26,6 +26,7 @@
 <body>
 
 <h2>Attendees - <?php echo $total_rows; ?></h2>
+<a href="exportData.php"><p class="export">Export CSV</p></a>
 <div class="table-wrapper">
     <table class="fl-table">
         <thead>

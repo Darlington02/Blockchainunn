@@ -36,6 +36,16 @@ h2{
     background-color: white;
 }
 
+.export{
+    display: block;
+    text-align: right;
+    font-size: 15px;
+    font-weight: bolder;
+    color: blue;
+    cursor: pointer;
+    padding: 0 50px 10px;
+}
+
 .fl-table td, .fl-table th {
     text-align: center;
     padding: 8px;
@@ -72,6 +82,7 @@ h2{
     border-radius: 7px;
     padding: 7px 20px;
     border: none;
+    cursor: pointer;
 }
 /* Responsive */
 
@@ -79,14 +90,6 @@ h2{
     .fl-table {
         display: block;
         width: 100%;
-    }
-    .table-wrapper:before{
-        content: "Scroll horizontally >";
-        display: block;
-        text-align: right;
-        font-size: 13px;
-        color: black;
-        padding: 0 0 10px;
     }
     .fl-table thead, .fl-table tbody, .fl-table thead th {
         display: block;
